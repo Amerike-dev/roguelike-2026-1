@@ -1,0 +1,1 @@
+Esta carpeta debe contener todos los objetos que se deban modificar para balancear el juego. Es vital mantenerla organizada.
