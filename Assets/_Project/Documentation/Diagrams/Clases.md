@@ -2,7 +2,7 @@ classDiagram
   class Player {
     + float baseSpeed
     + float humidity
-    + enum playerCondition { Normal, Disness, Poison }
+    + PlayerCondition playerCondition
     + Weapon currentWeapon
     + bool invertInput
     + List<Collectable> collectables
@@ -14,3 +14,12 @@ classDiagram
     + PlayerMovement(float horizontalInput, float verticalInput)
     + float ChangeSpeed()
   }
+
+  class PlayerCondition {
+    <<enum>>
+    Normal
+    Dizzy
+    Poison
+  }
+
+  Player *-- PlayerCondition : utiliza
