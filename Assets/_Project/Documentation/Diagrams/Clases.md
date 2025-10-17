@@ -1,4 +1,6 @@
 classDiagram
+  direction LR
+
   class Player {
     + float baseSpeed
     + float humidity
