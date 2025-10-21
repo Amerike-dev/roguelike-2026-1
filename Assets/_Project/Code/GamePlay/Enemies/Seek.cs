@@ -2,11 +2,10 @@ using UnityEngine;
 
 public class Seek
 {
-    public Transform _enemy;
-    public Transform _target;
-    public float _maxVelocity = 5f;
-    public float _velocity = 2f;
-    public float steering;
+    private Transform _enemy;
+    private Transform _target;
+    private float _maxVelocity = 5f;
+    private float _velocity = 2f;
 
     private Vector2 _currentVelocity;
     

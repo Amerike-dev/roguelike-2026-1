@@ -219,19 +219,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 526084688}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c527c2ab0be8e7d429aeb4519a3e1ae4, type: 3}
+  m_Script: {fileID: 11500000, guid: 4339ac1f24b72df43b8944dcc2b6e631, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AngelPlayerMov
-  mPosAct:
-    m_Name: M Pos Act
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 0ddbeae4-026e-4c19-90ce-010ba3f1038f
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  velocity: 5
+  velocidadMovimiento: 5
+  _camera: {fileID: 991596031}
 --- !u!1 &730888096
 GameObject:
   m_ObjectHideFlags: 0
@@ -263,6 +255,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyController
   target: {fileID: 526084690}
+  maxVelocity: 5
+  velocity: 2
 --- !u!212 &730888098
 SpriteRenderer:
   m_ObjectHideFlags: 0
