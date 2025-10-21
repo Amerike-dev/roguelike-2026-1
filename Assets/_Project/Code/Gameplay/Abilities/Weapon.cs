@@ -1,16 +1,9 @@
 using UnityEngine;
 
-public class Weapon : MonoBehaviour
+public enum WeaponType { Range, MidRange, Melee, Special }
+public class Weapon
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public string name;
+    public float damage;
+    public WeaponType weaponType;
 }
