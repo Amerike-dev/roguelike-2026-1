@@ -24,20 +24,3 @@ classDiagram
   }
 
   Player *-- PlayerCondition : utiliza
-
-
-  class Weapon {
-    + string name
-    + float damage
-    
-  }
-
-  class WeaponType{
-    <<enum>>
-    Melee
-    MidRange
-    Range
-    Especial
-  }
-  Weapon *-- WeaponType : utiliza
-  
