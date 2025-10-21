@@ -7,6 +7,8 @@ public class PlayerController : MonoBehaviour
     private GameObject playerGO;
     [SerializeField] private Sprite capsuleSprite;
     
+    private CombatManager combatManager;
+    
     void Start()
     {
         playerGO = new GameObject("Player");
@@ -20,6 +22,10 @@ public class PlayerController : MonoBehaviour
         playerGO.AddComponent<CapsuleCollider2D>();
 
         player = new Player(rb);
+        
+        combatManager = playerGO.AddComponent<CombatManager>();
+
+        player.currentWeapon = new Spear();
     }
 
     void Update()
@@ -33,9 +39,12 @@ public class PlayerController : MonoBehaviour
 
     public void SystemCombat()
     {
+        if(combatManager == null) return;
+        
         if (Input.GetButtonDown("Fire1"))
         {
             Debug.Log("Atacando ando");
+            combatManager.Attack(player.currentWeapon);
         }
     }
 }

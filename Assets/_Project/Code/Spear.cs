@@ -1,16 +1,17 @@
 using UnityEngine;
 
-public class Spear : MonoBehaviour
+public class Spear : Weapon
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public Spear()
     {
-        
+        name = "Spear";
+        damage = 5f;
+        weaponType = WeaponType.MidRange;
     }
 
-    // Update is called once per frame
-    void Update()
+    public override void UseWeapon()
     {
-        
+        base.UseWeapon();
+        Debug.Log("Atacando");
     }
 }

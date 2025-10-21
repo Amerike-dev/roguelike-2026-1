@@ -2,15 +2,13 @@ using UnityEngine;
 
 public class CombatManager : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public void Attack(Weapon currentWeapon)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (currentWeapon == null)
+        {
+            Debug.Log("El player no tiene arma asignada");
+            return;
+        }
+        currentWeapon.UseWeapon();
     }
 }
