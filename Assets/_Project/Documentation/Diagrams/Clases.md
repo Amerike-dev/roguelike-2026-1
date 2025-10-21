@@ -24,3 +24,75 @@ classDiagram
   }
 
   Player *-- PlayerCondition : utiliza
+
+  class Collectable {
+    + string name
+    + float boost
+  }
+
+  class CatfishOil {
+
+  }
+
+  class TunaFlakes {
+
+  }
+
+  class TroutFin {
+
+  }
+
+  class Remoras {
+
+  }
+
+  Collectable <|-- CatfishOil
+  Collectable <|-- TunaFlakes
+  Collectable <|-- TroutFin
+  Collectable <|-- Remoras
+
+  class Weapon {
+    + string name
+    + float damage
+  }
+
+  class WeaponType {
+    <<enum>>
+    Range
+    MidRange
+    Melee
+    Special
+  }
+
+  Weapon *-- WeaponType : utiliza
+
+  class ArticSlap {
+
+  }
+
+  class OneLumaFork {
+
+  }
+
+  class Guerrilla {
+
+  }
+
+  class GoldenClaw {
+
+  }
+
+  class FeatherOfFreedom {
+
+  }
+
+  class PenguinClap {
+
+  }
+
+  Weapon <|-- ArticSlap
+  Weapon <|-- OneLumaFork
+  Weapon <|-- Guerrilla
+  Weapon <|-- GoldenClaw
+  Weapon <|-- FeatherOfFreedom
+  Weapon <|-- PenguinClap
