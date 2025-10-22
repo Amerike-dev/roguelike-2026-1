@@ -3,12 +3,23 @@ using UnityEngine;
 public enum WeaponType { Range, MidRange, Melee, Special }
 public class Weapon
 {
-    public string name;
-    public float damage;
-    public WeaponType weaponType;
+    private Weapons scriptable;
+
+    public string Name
+    {
+        get
+        {
+            return scriptable.weaponName;
+        }
+    }
+
+    public Weapon(Weapons scriptable)
+    {
+        this.scriptable = scriptable;
+    }
 
     public virtual void UseWeapon()
     {
-        Debug.Log("La arma llamada " + name + " hace un dano de " + damage + " y es de tipo " + weaponType);
+        Debug.Log("La arma llamada " + scriptable.weaponName + " hace un dano de " + scriptable.damage + " y es de tipo " + scriptable.weaponType);
     }
 }

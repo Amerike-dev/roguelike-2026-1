@@ -149,6 +149,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   capsuleSprite: {fileID: -9095717837082945937, guid: 207ee8102dd4143d288186ef0be518ee, type: 3}
+  weaponList:
+  - {fileID: 11400000, guid: 0fda928f545bda041b3c91ffbf33c4e0, type: 2}
+  - {fileID: 11400000, guid: 6af339d5b47002a4e83e7780b353decf, type: 2}
+  - {fileID: 11400000, guid: c5550d465c427cf4f94c66b49ee6ec47, type: 2}
+  - {fileID: 11400000, guid: 1073b77b117c8ba4f9192ab07c0e176f, type: 2}
+  - {fileID: 11400000, guid: 1b3ed41fd6f4eca408c0036f83386091, type: 2}
+  - {fileID: 11400000, guid: 277b532d7840b1e4793056754e5c0337, type: 2}
+  initialWeapon: 2
 --- !u!4 &870760408
 Transform:
   m_ObjectHideFlags: 0

@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2ad525b13b0aa14bae869efefe93880, type: 3}
   m_Name: Trinche_de_una_luca
   m_EditorClassIdentifier: Assembly-CSharp::Weapons
+  weaponName: Trinche de una Luca
   cooldown: 3
   damage: 7
   range: 2
   damp: 2
+  weaponType: 1
