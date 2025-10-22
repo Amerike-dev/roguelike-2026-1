@@ -4,6 +4,14 @@ public enum WeaponType { Range, MidRange, Melee, Special }
 public class Weapon
 {
     private Weapons scriptable;
+
+    public string Name
+    {
+        get
+        {
+            return scriptable.weaponName;
+        }
+    }
     
     /*public string name;
     public float damage;
