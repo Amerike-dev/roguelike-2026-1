@@ -10,7 +10,7 @@
 
 - ##### Enemigos
 
-    El inicio de la ruta se ve obstaculizado por Pinguinos siendo controlados por sombreros navideños llamados "**Prisioneros**", zorros enviados por *Santa*, Gaviotas locales y el ***capo*** de la frontera Antartica hacía America, gigante leon marino: **Morsov**.
+    El inicio de la ruta se ve obstaculizado por Pinguinos siendo controlados por sombreros navideños llamados "**Prisioneros**", zorros enviados por *Santa*, Gaviotas locales y el ***capo*** de la frontera Antartica hacía America, una morsa gigante: **Morsov**.
 
 - ##### Clima
 
@@ -22,7 +22,7 @@
 
 ---
 
-Después de una intensa pelea con **Morsov** el pinguino resulta vencedor en el duelo, domando a  aquel capo y utilizandolo como transporte hasta que toquen suelo, llegando hasta *Lima*. Debido a la victoria con el *capo* lobo de mar *los espiritus del oro* advierten al pinguino de una embarcación qu podría utilizar, pero estaba en la colección del **Rey del Oro**.
+Después de una intensa pelea con **Morsov** el pinguino resulta vencedor en el duelo, domando al capo y utilizandolo como transporte hasta que toquen suelo, llegando a *Lima*. Debido a la victoria ante **Morsov**, la *Bendición Artica* de la zona: *los espiritus del oro*, advierten al pinguino de una embarcación qu podría utilizar, pero estaba en la colección del **Rey del Oro**.
 
 - ##### Enemigos
 
@@ -38,7 +38,9 @@ Después de una intensa pelea con **Morsov** el pinguino resulta vencedor en el 
 
 #### México
 
-Al robar la embarcación del **Rey del Oro** el pinguino queda a la deriva en el mar unos días hasta que llega a la costa. Los *Gavilanes* convencen al pinguino negociando la reparacioón de la embarcación a cambio de su ayuda en la pelea contra la *Quetzal*.
+---
+
+Al robar la embarcación del **Rey del Oro** el pinguino queda a la deriva en el mar unos días hasta que llega a la costa. Los *Gavilanes*, conocidos como los ***insurgentes***, convencen al pinguino negociando la reparacioón de la embarcación a cambio de su ayuda en la pelea contra la *Quetzal*.
 
 - ##### Enemigos
 
@@ -52,4 +54,38 @@ Al robar la embarcación del **Rey del Oro** el pinguino queda a la deriva en el
 
     ---
 
-#### Canada
+#### Alaska
+
+---
+
+Con la embarcación reparada el pinguino busco navegar hacía Canada, perdiendose en el mar por querer siempre ir hacía el norte. Durante una noche llego hasta terreno nevado, siendo recibido por un pinguino que se creía muerto por parte de *Santa*. El famoso *Pinguino Ermitaño* le pide ayuda al pinguino para derrocar la **Secta Albina** antes de indicarle el camino para llegar con un representante de Santa.
+
+- ##### Enemigos
+
+    Hay varios *Ciervos* y *Venados* que se caracterizan por ser atacantes cuerpo a cuerpo y utilizando toda su fuerza. Los *Castores* **utilizan la clase que le haga counter a la clase inicial del pinguino** y los *Osos gordos* pequeños siendo tankes vivientes.
+
+    **Rhacn** es el lider de la **Secta Albina**, lleva una toga que lo hace parecer inofensivo, pero debajo su cuerpo sufrió una mutación volviendolo un ser fornido y extremadamente fuerte.
+
+- ##### Clima
+
+    Al ser un clima familiar para el pinguino no hay limitantes en su humedad, pero su ***velocidad y ataque*** se puede ver reducido por *Las ventiscas del Norte* en la que pueden estar invuidos algunos enemigos. Afortunadamente *Pie Grande* puede otorgar una *Bendición Artica* subiendo el ataque del pinguino.
+
+    ---
+
+#### Estrecho de Bering
+
+---
+
+Junto al *Pinguino Ermitaño* llegaron hacía una gran superficie de *hielo* que hacia millones de años no se había vuelto a congelar. Por encima de ellos paso el trineo y se perdio a la distancia, obligando a los pinguinos en pasar por la masa de hielo.
+
+- ##### Enemigos
+
+    *Muñecos de nieve Navideños* que atacan a distancia y *Osos polares Navideños* que son más fuertes y resistentes que sus iguales de Alaska son los enemigos más frecuentes en este pasaje. Los más agresivos son los *Duendes* que atacan a los pinguinos en un estado de colera y por último los *Duendes con regalos* siendo los únicos que explotan al contacto.
+
+    Para ser finalmente recibidos por un **Husky** encargado de ponerles fin a su pinguinezca existencia.
+
+- #### Clima
+
+    Una constante ventisca que, de manera aleatoria, causa **daño** y la humedad se consigue únicamente en la tienda para no compremeter la firmeza del puente helado en el que se encuentran. **La Bendición Artica** lo toma el **Pinguino Ermitaño**, al ser el acompañante del pinguino y por estar en tierra de nadie, siendo una copia del *pinguino*.
+
+    ---
