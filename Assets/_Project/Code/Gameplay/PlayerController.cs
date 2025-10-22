@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Sprite capsuleSprite;
     
     private CombatManager combatManager;
+    [SerializeField] private Weapons initialWeapon;
     
     void Start()
     {
@@ -25,7 +26,7 @@ public class PlayerController : MonoBehaviour
         
         combatManager = playerGO.AddComponent<CombatManager>();
 
-        player.currentWeapon = new Spear();
+        if (initialWeapon != null) player.currentWeapon = new Weapon(initialWeapon);
     }
 
     void Update()

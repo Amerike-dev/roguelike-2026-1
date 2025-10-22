@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2ad525b13b0aa14bae869efefe93880, type: 3}
   m_Name: Palmada_pinguinesca
   m_EditorClassIdentifier: Assembly-CSharp::Weapons
+  weaponName: Palmada Pinguinesca
   cooldown: 1
   damage: 1
   range: 0
   damp: 0
+  weaponType: 2

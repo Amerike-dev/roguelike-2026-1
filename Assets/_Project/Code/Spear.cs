@@ -1,7 +1,8 @@
 using UnityEngine;
 
-public class Spear : Weapon
+public class Spear // : Weapon
 {
+    /*
     public Spear()
     {
         name = "Spear";
@@ -14,4 +15,5 @@ public class Spear : Weapon
         base.UseWeapon();
         Debug.Log("Atacando");
     }
+    */
 }

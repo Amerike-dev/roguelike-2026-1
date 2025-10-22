@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2ad525b13b0aa14bae869efefe93880, type: 3}
   m_Name: Cachetada_Artica
   m_EditorClassIdentifier: Assembly-CSharp::Weapons
+  weaponName: Cachetada Artica
   cooldown: 2
   damage: 2
   range: 0
   damp: 1
+  weaponType: 2
