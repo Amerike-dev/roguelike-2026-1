@@ -2,24 +2,22 @@ using UnityEngine;
 
 public class Seek
 {
+    [Header("Resources")]
     private Transform _enemy;
     private Transform _target;
-    private float _maxVelocity = 5f;
-    private float _velocity = 2f;
-    public float _distance;
 
+    [Header("Properties")]
+    private float _maxVelocity = 5f;
     private Vector2 _currentVelocity;
     
-    public Seek(Transform enemy,Transform target,float maxVelocity,float velocity)
+    public Seek(Transform enemy,Transform target,float maxVelocity)
     {
         this._enemy = enemy;
         this._target = target;
         this._maxVelocity = maxVelocity;
-        this._velocity = velocity;
     }
     public void GetSteering()
     {
-        _distance = Vector2.Distance(_target.position, _enemy.position);
         Vector2 _direction = (_target.position- _enemy.position);
         Vector2 desireVelocity = _direction * _maxVelocity;
         Vector2 steering = desireVelocity - _currentVelocity;

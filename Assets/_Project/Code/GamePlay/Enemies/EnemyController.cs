@@ -10,7 +10,7 @@ public class EnemyController : MonoBehaviour
     public float velocity = 2f;
     public void Initialized()
     {
-        _seekMovement = new Seek(enemy, target, maxVelocity, velocity);
+        _seekMovement = new Seek(enemy, target, maxVelocity);
     }
     void Start()
     {
@@ -21,6 +21,5 @@ public class EnemyController : MonoBehaviour
     void Update()
     {
         _seekMovement?.GetSteering();
-        Debug.Log(_seekMovement._distance);
     }
 }

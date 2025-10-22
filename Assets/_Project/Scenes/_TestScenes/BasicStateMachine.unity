@@ -326,7 +326,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1206677537}
   - component: {fileID: 1206677536}
-  - component: {fileID: 1206677535}
+  - component: {fileID: 1206677538}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -334,21 +334,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1206677535
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1206677534}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63b36d154411be94b9683d83f5794218, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EnemyController
-  target: {fileID: 25742543}
-  maxVelocity: 5
-  velocity: 2
 --- !u!212 &1206677536
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -422,6 +407,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1206677538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1206677534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51394f9e3834e164ebfadd217814714b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Enemy
+  target: {fileID: 25742543}
+  enemy: {fileID: 0}
+  maxVelocity: 5
+  viewRadius: 4
+  _currentStateName: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

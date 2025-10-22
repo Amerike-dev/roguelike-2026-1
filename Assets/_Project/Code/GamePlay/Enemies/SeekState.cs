@@ -1,29 +1,32 @@
 using UnityEngine;
 
-public class IdleState : IState
+public class SeekState : IState
 {
     public Enemy enemy;
-    public IdleState(Enemy enemy)
+    public SeekState(Enemy enemy)
     {
         this.enemy = enemy;
-    }
+    }  
     public void Enter()
     {
-        Debug.Log("Idle State ON");
+        Debug.Log("Seek State ON");
     }
     public void Update()
     {
         //Calculation of the Distance between the Target and the Enemy.
         float distance = Vector2.Distance(enemy.target.position, enemy.enemy.position);
         //Conditions for the changing the state.
-        if (enemy.target == null) return;
-        if (distance < enemy.viewRadius)
+        if(distance < enemy.viewRadius)
         {
-            enemy.ChangeState(new SeekState(enemy)); //Change to Seek State.
+            enemy?.Seek(); //Implementation of the Seek method.
         }
+        if (distance > enemy.viewRadius)
+        {
+            enemy.ChangeState(new IdleState(enemy)); //Change to Idle State.
+        }        
     }
     public void Exit()
     {
-        Debug.Log("Idle State OFF");
+        Debug.Log("Seek State OFF");
     }
 }

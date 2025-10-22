@@ -2,9 +2,9 @@ using UnityEngine;
 
 public class StateMachine
 {
-    public State CurrentState { get; private set; }
+    public IState CurrentState { get; private set; }
 
-    public void ChangeState(State newState)
+    public void ChangeState(IState newState)
     {
         if (CurrentState != null)
             CurrentState.Exit();
@@ -17,7 +17,6 @@ public class StateMachine
 
     public void Update()
     {
-        if (CurrentState != null)
-            CurrentState.Update();
+        CurrentState?.Update();
     }
 }
