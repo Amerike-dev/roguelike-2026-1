@@ -21,5 +21,6 @@ public class EnemyController : MonoBehaviour
     void Update()
     {
         _seekMovement?.GetSteering();
+        Debug.Log(_seekMovement._distance);
     }
 }

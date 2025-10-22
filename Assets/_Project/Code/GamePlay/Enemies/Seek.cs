@@ -6,6 +6,7 @@ public class Seek
     private Transform _target;
     private float _maxVelocity = 5f;
     private float _velocity = 2f;
+    public float _distance;
 
     private Vector2 _currentVelocity;
     
@@ -18,6 +19,7 @@ public class Seek
     }
     public void GetSteering()
     {
+        _distance = Vector2.Distance(_target.position, _enemy.position);
         Vector2 _direction = (_target.position- _enemy.position);
         Vector2 desireVelocity = _direction * _maxVelocity;
         Vector2 steering = desireVelocity - _currentVelocity;
