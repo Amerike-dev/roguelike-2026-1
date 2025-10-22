@@ -12,10 +12,6 @@ public class Weapon
             return scriptable.weaponName;
         }
     }
-    
-    /*public string name;
-    public float damage;
-    public WeaponType weaponType;*/
 
     public Weapon(Weapons scriptable)
     {
