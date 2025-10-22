@@ -38,4 +38,18 @@ Después de una intensa pelea con **Morsov** el pinguino resulta vencedor en el 
 
 #### México
 
+Al robar la embarcación del **Rey del Oro** el pinguino queda a la deriva en el mar unos días hasta que llega a la costa. Los *Gavilanes* convencen al pinguino negociando la reparacioón de la embarcación a cambio de su ayuda en la pelea contra la *Quetzal*.
 
+- ##### Enemigos
+
+    La *Guacamaya* es el enemigo más agresivo atacando directamente al pinguino y sin importar cuanto daño reciba el no se alejara, al contrario el pajaro *Carpintero* ataca al pinguino sucesivamente para que momentaneamente se aleje del pinguino, se le debe atacar en el tiempo que se acerque al pinguino. Y el *Mulato Azul*, siguiendo la misma filosofía de la *Guacamaya*, pero teniendo la capacidad de llamar ***a más tropas*** con su canto.
+
+    ***Quetzal***, un ave del mismo nombre es una acrobata aerea que, por sus propios intereses, esta apoyando el golpe de las aves contra los *Gavilanes*. Si ***Quetzal*** se rinde, los *insurgentes* obtienen una ventaja.
+
+- ##### Clima
+
+    Hay humedad en el ambiente, pero el calor del *Ecuador* aún es palpable. Puede que hayan varios puntos para poder recuperar energía, en contra parte al ser golpeado empieza a perder humedad. La *Bendición Artica* de los ***Dioses de la lluvia*** (Cocijo/Dzahui) no pueden impedir que no se pierda humedad, pero regala *golpes* de resistencia que no le restara energía al pinguino.
+
+    ---
+
+#### Canada
