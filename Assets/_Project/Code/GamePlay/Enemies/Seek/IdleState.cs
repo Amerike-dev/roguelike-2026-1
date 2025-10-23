@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class IdleState : IState
 {
-    public Enemy enemy;
-    public IdleState(Enemy enemy)
+    public EnemyBehaviour enemy;
+    public IdleState(EnemyBehaviour enemy)
     {
         this.enemy = enemy;
     }
@@ -13,13 +13,11 @@ public class IdleState : IState
     }
     public void Update()
     {
-        //Calculation of the Distance between the Target and the Enemy.
         float distance = Vector2.Distance(enemy.target.position, enemy.enemy.position);
-        //Conditions for the changing the state.
         if (enemy.target == null) return;
         if (distance < enemy.viewRadius)
         {
-            enemy.ChangeState(new SeekState(enemy)); //Change to Seek State.
+            enemy.ChangeState(new SeekState(enemy));
         }
     }
     public void Exit()
