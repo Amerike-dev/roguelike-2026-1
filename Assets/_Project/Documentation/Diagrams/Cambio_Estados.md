@@ -1,6 +1,5 @@
 ```mermaid
 flowchart TB
-
     A[**IdleState**]-->B{**distance<enemy.viewRadius**}
     B--Yes-->C[null]
     C-->A
