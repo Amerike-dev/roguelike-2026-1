@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: cb1667a522e4b924b9b9c0bcbb0d0db4
+guid: 0e8603541fc066a49be4f6e0adb89b85
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4068827624708354564
-    second: Penguin_Roguelike_DialogoNormal_DialogoCurioso_0
+      213: -753455804781905259
+    second: Penguin_Roguelike_DialogoConJefes_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,11 +96,37 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Penguin_Roguelike_DialogoNormal_DialogoCurioso_0
+      name: Penguin_Roguelike_DialogoConJefes_0
       rect:
         serializedVersion: 2
         x: 0
@@ -115,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 402b907ca21677830800000000000000
-      internalID: 4068827624708354564
+      spriteID: 59ab40200ff2b85f0800000000000000
+      internalID: -753455804781905259
       vertices: []
       indices: 
       edges: []
@@ -135,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Penguin_Roguelike_DialogoNormal_DialogoCurioso_0: 4068827624708354564
+      Penguin_Roguelike_DialogoConJefes_0: -753455804781905259
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

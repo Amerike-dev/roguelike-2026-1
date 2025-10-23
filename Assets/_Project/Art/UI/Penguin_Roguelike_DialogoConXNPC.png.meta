@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 9ffe339a3fb1018429fa21a325bf9f69
+guid: 41012e432dbcf49439aa32210b6a0c29
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6557253575065345309
-    second: Penguin_Roguelike_DialogoJefe_0
+      213: 6665455631025970463
+    second: Penguin_Roguelike_DialogoConXNPC_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,11 +96,37 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Penguin_Roguelike_DialogoJefe_0
+      name: Penguin_Roguelike_DialogoConXNPC_0
       rect:
         serializedVersion: 2
         x: 0
@@ -115,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3e2e1148d94fff4a0800000000000000
-      internalID: -6557253575065345309
+      spriteID: f1d1e61d494708c50800000000000000
+      internalID: 6665455631025970463
       vertices: []
       indices: 
       edges: []
@@ -135,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Penguin_Roguelike_DialogoJefe_0: -6557253575065345309
+      Penguin_Roguelike_DialogoConXNPC_0: 6665455631025970463
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
