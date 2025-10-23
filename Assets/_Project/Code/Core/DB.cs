@@ -5,21 +5,25 @@ public enum playerData
 {
     name
 }
-public class DB 
+
+
+public class DB
 {
 
-    private TextAsset _jsonFilePlayer;
+    [SerializeField] private string _jsonString;
     private PlayerData _playerData;
+    private string _location;
     
     
-    public DB(TextAsset _playerJson)
+    public DB(string jsonLocation)
     {
-        _jsonFilePlayer = _playerJson;
-        string _jsonString = _jsonFilePlayer.text;
-        _playerData = JsonUtility.FromJson<PlayerData>( _jsonString );
+        _location = jsonLocation;
+        _jsonString = File.ReadAllText(_location);
+        _playerData = JsonUtility.FromJson<PlayerData>(_jsonString);
+  
     }
 
-    public void Write(playerData key, string value)
+    public void Write(playerData key, string value = "value")
     {
         switch (key)
         {
@@ -40,14 +44,14 @@ public class DB
         };
         return data;
     }
-    public void Update()
+    public void Save()
     {
-        
+        File.WriteAllText(_location, JsonUtility.ToJson(_playerData));
     }
 
 
     public void Delete()
     {
-        
+        File.Delete(_location);
     }
 }

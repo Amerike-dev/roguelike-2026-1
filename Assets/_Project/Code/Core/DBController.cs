@@ -3,6 +3,13 @@ using UnityEngine.Windows;
 
 public class DBController : MonoBehaviour
 {
-    public 
-    private DB db = new DB();
+    public string jsonLocation; 
+    public DB db;
+
+    private void Awake()
+    {
+        db = new DB(jsonLocation);
+    }
+
+
 }
