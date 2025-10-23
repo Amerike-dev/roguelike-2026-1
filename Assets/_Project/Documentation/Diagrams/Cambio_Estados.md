@@ -7,5 +7,5 @@ flowchart TB
     B--No-->D[Cambio SeekState]
     D-->E{**distance>enemy.viewRadius**}
     E--No-->F[null]
-    E-->B
+    E--Yes-->B
     F-->E
