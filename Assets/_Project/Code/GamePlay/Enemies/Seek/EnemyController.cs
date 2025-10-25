@@ -10,7 +10,7 @@ public class EnemyController : MonoBehaviour
     public float velocity = 2f;
     public void Initialized()
     {
-        _seekMovement = new Seek(enemy, target, maxVelocity, velocity);
+        _seekMovement = new Seek(enemy, target, maxVelocity);
     }
     void Start()
     {
