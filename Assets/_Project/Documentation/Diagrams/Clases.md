@@ -100,7 +100,7 @@ classDiagram
   Weapon <|-- FeatherOfFreedom
   Weapon <|-- PenguinClap
 
-  Class Weapons : ScriptableObject{
+  class Weapons : ScriptableObject{
     + string weaponName
     + int cooldown
     + int damage
