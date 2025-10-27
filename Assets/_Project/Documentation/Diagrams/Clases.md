@@ -52,8 +52,11 @@ classDiagram
   Collectable <|-- Remoras
 
   class Weapon {
-    + string name
-    + float damage
+    - Weapons scriptable
+    + getName string
+    + Weapon(Weapons scriptable)
+    + virtual UseWeapon()
+
   }
 
   class WeaponType {
@@ -64,7 +67,7 @@ classDiagram
     Special
   }
 
-  Weapon *-- WeaponType : utiliza
+  Weapons *-- WeaponType : utiliza
 
   class ArticSlap {
 
@@ -96,3 +99,14 @@ classDiagram
   Weapon <|-- GoldenClaw
   Weapon <|-- FeatherOfFreedom
   Weapon <|-- PenguinClap
+
+  class Weapons{
+    + string weaponName
+    + int cooldown
+    + int damage
+    + int range
+    + int damp
+    + WeaponType weaponType
+  
+  }
+  Weapons <|-- ScriptableObject
