@@ -5,36 +5,36 @@ using UnityEngine.UI;
 public class RielImage : MonoBehaviour
 {
     public SceneManager sceneManager;
+    public GameObject back;
+    public GameObject logo;
     public Sprite[] imagenes;
     public Image imagenUI;
 
     public string scene;
     void Start()
     {
-        StartCoroutine(RielChange());
-    }
-
-    void Update()
-    {
-        
+        StartCoroutine(Logo());
     }
     IEnumerator RielChange()
     {
-        imagenUI.color = new Color(1, 1, 1, 1);
-        imagenUI.sprite = imagenes[0];
+        logo.SetActive(false);
+        back.SetActive(true);
         yield return new WaitForSeconds(2f);
-        for(int i=1; i < imagenes.Length; i++)
+        back.SetActive(false);
+        
+        for(int i=0; i < imagenes.Length; i++)
         {
             imagenUI.sprite = imagenes[i];
+            Debug.Log("Hola");
+            yield return new WaitForSeconds(2f);
         }
         sceneManager.LoadScene(scene);
     }
-    /*IEnumerator Fade(float inicio, float fin, float duracion)
+    IEnumerator Logo()
     {
-        float tiempo = 0f;
-        while (tiempo < duracion)
-        {
-            float
-        }
-    }*/
+        back.SetActive(false);
+        logo.SetActive(true);
+        yield return new WaitForSeconds(2f);
+        StartCoroutine(RielChange());
+    }
 }
