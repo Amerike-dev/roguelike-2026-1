@@ -15,6 +15,27 @@
   En cuanto reciban daño, su velocidad de movimiento aumentará a **medianamente rápida**.  
   *(Este enemigo no puede aturdir al jugador).*
 
+### Enemigo 2: Prisioneros
+
+- **Historia de los prisioneros:**  
+  Morsov es un ser vil y malvado, el científico perverso de Santa Claus. Desarrolló una tecnología secreta capaz de controlar la mente de los animales mediante gorritos navideños con antenas.  
+  Los prisioneros son los antiguos amigos, compañeros y familiares de nuestro protagonista, convertidos en recipientes vacíos de lo que solían ser.  
+  Solo la promesa de un convivio navideño con ponche gratis fue suficiente para convencerlos de caer en el engaño que los llevó a donde están ahora.  
+  Nuestro héroe no tiene ninguna manera de revertir el control sobre ellos; su única opción es derrotarlos en combate.
+
+- **Estilo de arte:**  
+  Pingüinos con gorro de Navidad que incluye una antena.
+
+- **Ataques y comportamiento:**  
+  Los ataques de los prisioneros serán de varios tipos. Tienen **40 puntos de vida** y sus ataques reducen **5 puntos de vida** al jugador.  
+
+  - **Ataques y comportamiento:**  
+    Los ataques vendrán en variantes más débiles de las armas iniciales del jugador:
+
+    - Cachetada Ártica  
+    - Trinche de una Luca  
+    - El Guerrillero
+
 ## Perú
 ### Enemigo 1: Anacondas
 
@@ -28,7 +49,24 @@
 - **Ataques y comportamiento:**  
   Los ataques de las anacondas serán de dos tipos, estos cuentan con 36 puntos de vida pero en la cabeza les podras hacer el doble de daño, su velocidad sera rapida:  
   - **A distancia:** atacarán con un disparo usando su flauta dulce peruana cada vez que se encuentren lejos del jugador, esto bajara 5 puntos de vida.  
-  - **A melee:** realizarán una picadura que reducirá la **humedad** del jugador, esto bajara 3 puntos de vida.
+  - **A melee:** realizarán una picadura que reducirá la **humedad** del jugador, esto bajara 3 puntos de vida. 
+
+  ### Enemigo 2: Cuys
+- **Historia de los cuys:**  
+
+  Los cuys son el musculo del rey. El rey cuy ha podido reinar con un puño de hierro gracias a ellos. Ágiles, letales pero no tan resistentes, los cuys fungen como la gestapo peruana.
+
+- **Estilo de arte:**  
+
+  Los cuys deben verse muy tiernos, con ojos grandes que transmitan inocencia como máscara de su letalidad. Cuando atacan, dejan atrás su fachada adorable para convertirse en máquinas letales de asesinato.
+
+- **Ataques y comportamiento:**  
+
+  Los ataques de los cuys serán de un solo tipo, pero usarán uno diferente cuando su vida sea menor a la mitad. Estos cuentan con **16 puntos de vida** y su **velocidad será muy rápida**:  
+
+  - Arriba del **50 % de vida:** una pequeña embestida de corto rango que hace **1 punto de daño**.  
+  - Debajo del **50 % de vida:** sacarán dos cuchillas y comenzarán a embestir al jugador con ataques muy rápidos mientras avanzan, y cada uno de los ataques hace **2 puntos de daño**.
+
 
 ## México
 
