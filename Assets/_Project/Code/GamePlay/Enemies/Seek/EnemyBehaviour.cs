@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class EnemyBehaviour : MonoBehaviour
@@ -36,5 +37,21 @@ public class EnemyBehaviour : MonoBehaviour
     public void Seek()
     {
         _seekMovement?.GetSteering();
+    }
+    public void EnterWander()
+    {
+        StartCoroutine(GenerateRandomTargets());
+    }
+    public void ExitWander()
+    {
+        StopCoroutine(GenerateRandomTargets());
+    }
+
+    public IEnumerator GenerateRandomTargets()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(2);
+        }
     }
 }
