@@ -532,7 +532,7 @@ MonoBehaviour:
   _currentStateName: 
   distX: 14
   distY: 8
-  changeTime: 3
+  changeTime: 4
   targetPoint: {x: 0, y: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
