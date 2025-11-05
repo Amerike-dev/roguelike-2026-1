@@ -6,7 +6,7 @@ using System;
 public class MapData
 {
     public string type;
-    public int size;
+    public int[] size;
     public EnemyData[] enemies;
     public DecorationData[] decorations;
 }

@@ -40,9 +40,9 @@ public class ProceduralMapController : MonoBehaviour
 
         Tilemap tilemap = tileMap.GetComponent<Tilemap>();
 
-        MapData mapData = dungeonData.dungeons[0];
+        MapData mapData = dungeonData.dungeons[1];
 
-        Map map = new Map(Vector2Int.zero, new Vector2Int(mapData.size, mapData.size), tilemap);
+        Map map = new Map(Vector2Int.zero, new Vector2Int(mapData.size[0], mapData.size[1]), tilemap);
         List<Vector3Int> coordinates = map.GenerateCoordinates();
         map.Render(tiles[0], coordinates);
 
