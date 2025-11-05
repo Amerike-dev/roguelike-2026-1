@@ -38,7 +38,7 @@
         },
         {
             "type": "normal",
-            "size": [15, 15],
+            "size": [10, 10],
             "enemies":[],
             "decorations":
             [
@@ -50,42 +50,42 @@
                 {
                     "name": "Exit",
                     "type": 0,
-                    "position": [15 , 5]
+                    "position": [10 , 5]
                 },
                 {
                     "name": "Shop_1",
                     "type": 2,
-                    "position": [7 , 7]
+                    "position": [4 , 5]
                 },
                 {
                     "name": "Shop_2",
                     "type": 2,
-                    "position": [7 , 8]
+                    "position": [4 , 6]
                 },
                 {
                     "name": "Shop_3",
                     "type": 2,
-                    "position": [8 , 7]
+                    "position": [5 , 5]
                 },
                 {
                     "name": "Shop_4",
                     "type": 2,
-                    "position": [8 , 8]
+                    "position": [5 , 6]
                 },
                 {
                     "name": "Shop_table_1",
                     "type": 3,
-                    "position": [5 , 5]
+                    "position": [3 , 3]
                 },
                 {
                     "name": "Shop_table_2",
                     "type": 3,
-                    "position": [6 , 4]
+                    "position": [5 , 2]
                 },
                 {
                     "name": "Shop_table_3",
                     "type": 3,
-                    "position": [10 , 5]
+                    "position": [6 , 3]
                 }
             ]
         }
