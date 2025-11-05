@@ -13,6 +13,12 @@ public class EnemyBehaviour : MonoBehaviour
     public float maxVelocity = 5f;
     public float viewRadius = 4f;
     public string _currentStateName="";
+    
+    [Header("Wander")]
+    public float distX;
+    public float distY;
+    public float changeTime;
+    public Vector2 targetPoint;
 
     public void Initialized()
     {
@@ -51,7 +57,10 @@ public class EnemyBehaviour : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(2);
+            float x = Random.Range(-distX, distX);
+            float y = Random.Range(-distY, distY);
+            targetPoint = new Vector2(x, y);
+            yield return new WaitForSeconds(changeTime);
         }
     }
 }
