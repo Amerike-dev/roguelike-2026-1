@@ -21,8 +21,6 @@ public class WanderState : IState
         
         Debug.DrawLine(currentPos, target, Color.red);
         
-        //enemy.transform.position = Vector2.MoveTowards(currentPos, target, enemy.maxVelocity * Time.deltaTime);
-        
         float distance = Vector2.Distance(currentPos, target);
         if (distance < 0.1f) return;
         

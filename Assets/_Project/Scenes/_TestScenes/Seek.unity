@@ -624,10 +624,10 @@ MonoBehaviour:
   distY: 8
   changeTime: 3
   targetPoint: {x: 0, y: 0}
-  circleDistance: 5
+  circleDistance: 6
   circleOrigin: {x: 0, y: 0}
   circle: {fileID: 395879769}
-  circleRadius: 2
+  circleRadius: 3
   displacement: {x: 0, y: 0}
   wanderAngle: 0
   changeAngle: 1
