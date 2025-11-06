@@ -19,6 +19,10 @@ public class IdleState : IState
         {
             enemy.ChangeState(new SeekState(enemy));
         }
+        else
+        {
+            enemy.ChangeState(new WanderState(enemy));
+        }
     }
     public void Exit()
     {
