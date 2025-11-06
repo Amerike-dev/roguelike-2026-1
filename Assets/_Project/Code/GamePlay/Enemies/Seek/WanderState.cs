@@ -1,3 +1,4 @@
+using System.Runtime.CompilerServices;
 using UnityEngine;
 
 public class WanderState : IState
@@ -28,6 +29,11 @@ public class WanderState : IState
         
         float playerDistance = Vector2.Distance(enemy.target.position, enemy.transform.position);
         if (playerDistance < enemy.viewRadius) enemy.ChangeState(new SeekState(enemy));
+
+        enemy.circleOrigin = (target - currentPos).normalized * enemy.circleDistance;
+        Debug.DrawLine(currentPos, enemy.circleOrigin + currentPos, Color.blue);
+        enemy.circle.transform.position = enemy.circleOrigin + currentPos;
+        enemy.circle.transform.localScale = new Vector2(enemy.circleRadius, enemy.circleRadius);
     }
     
     public void Exit()

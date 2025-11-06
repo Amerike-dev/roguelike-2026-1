@@ -19,6 +19,10 @@ public class EnemyBehaviour : MonoBehaviour
     public float distY;
     public float changeTime;
     public Vector2 targetPoint;
+    public float circleDistance;
+    public Vector2 circleOrigin;
+    public GameObject circle;
+    public float circleRadius;
 
     public void Initialized()
     {
