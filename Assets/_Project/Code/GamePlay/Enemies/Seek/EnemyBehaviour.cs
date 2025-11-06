@@ -24,6 +24,8 @@ public class EnemyBehaviour : MonoBehaviour
     public GameObject circle;
     public float circleRadius;
     public Vector2 displacement;
+    public float wanderAngle;
+    public float changeAngle;
 
     public void Initialized()
     {
@@ -52,10 +54,12 @@ public class EnemyBehaviour : MonoBehaviour
     public void EnterWander()
     {
         StartCoroutine(GenerateRandomTargets());
+        StartCoroutine(GenerateRandomAngles());
     }
     public void ExitWander()
     {
         StopCoroutine(GenerateRandomTargets());
+        StopCoroutine(GenerateRandomAngles());
     }
 
     public IEnumerator GenerateRandomTargets()
@@ -66,6 +70,15 @@ public class EnemyBehaviour : MonoBehaviour
             float y = Random.Range(-distY, distY);
             targetPoint = new Vector2(x, y);
             yield return new WaitForSeconds(changeTime);
+        }
+    }
+
+    public IEnumerator GenerateRandomAngles()
+    {
+        while (true)
+        {
+            wanderAngle = Random.Range(0, 360f);
+            yield return new WaitForSeconds(changeAngle);
         }
     }
 }

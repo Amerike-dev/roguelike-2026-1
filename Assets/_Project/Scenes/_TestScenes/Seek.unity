@@ -622,12 +622,15 @@ MonoBehaviour:
   _currentStateName: 
   distX: 14
   distY: 8
-  changeTime: 4
+  changeTime: 3
   targetPoint: {x: 0, y: 0}
-  circleDistance: 2
+  circleDistance: 5
   circleOrigin: {x: 0, y: 0}
   circle: {fileID: 395879769}
-  circleRadius: 0.5
+  circleRadius: 2
+  displacement: {x: 0, y: 0}
+  wanderAngle: 0
+  changeAngle: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

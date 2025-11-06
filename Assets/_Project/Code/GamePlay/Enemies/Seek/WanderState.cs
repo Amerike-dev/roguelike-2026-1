@@ -1,4 +1,3 @@
-using System.Runtime.CompilerServices;
 using UnityEngine;
 
 public class WanderState : IState
@@ -22,7 +21,7 @@ public class WanderState : IState
         
         Debug.DrawLine(currentPos, target, Color.red);
         
-        enemy.transform.position = Vector2.MoveTowards(currentPos, target, enemy.maxVelocity * Time.deltaTime);
+        //enemy.transform.position = Vector2.MoveTowards(currentPos, target, enemy.maxVelocity * Time.deltaTime);
         
         float distance = Vector2.Distance(currentPos, target);
         if (distance < 0.1f) return;
@@ -34,9 +33,14 @@ public class WanderState : IState
         Debug.DrawLine(currentPos, enemy.circleOrigin + currentPos, Color.blue);
         enemy.circle.transform.position = enemy.circleOrigin + currentPos;
         enemy.circle.transform.localScale = new Vector2(enemy.circleRadius, enemy.circleRadius);
-
-        enemy.displacement = ((target - currentPos).normalized * enemy.circleRadius) * enemy.circleDistance;
-        Debug.DrawLine(enemy.circleOrigin + currentPos, enemy.displacement, Color.green);
+        
+        Quaternion rotate = Quaternion.AngleAxis(enemy.wanderAngle, Vector3.forward);
+        enemy.displacement = rotate * (target - currentPos).normalized * (enemy.circleRadius / 2);
+        Vector2 endPoint = (enemy.circleOrigin + currentPos) + enemy.displacement;
+        Debug.DrawLine(enemy.circleOrigin + currentPos, endPoint, Color.green);
+        Debug.DrawLine(currentPos, endPoint, Color.yellow);
+        
+        enemy.transform.position = Vector2.MoveTowards(currentPos, endPoint, enemy.maxVelocity * Time.deltaTime);
     }
     
     public void Exit()
