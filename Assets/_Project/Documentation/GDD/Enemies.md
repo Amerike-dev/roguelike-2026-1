@@ -15,6 +15,26 @@
   En cuanto reciban daño, su velocidad de movimiento aumentará a **medianamente rápida**.  
   *(Este enemigo no puede aturdir al jugador).*
 
+### Enemigo Jefe : Morsov
+- **Historia de Morsov:**  
+  Morsov fue un sujeto de pruebas de un equipo de investigacion Rusa lo que ocaciono que su personalidad sea erratica asi como un anelo por la libertad la cual obtuvo al ser liberado del laboratorio por **Santa**, despues de ser liberado Santa le permitio hacer lo que quiera creando asi su propio club de motocicleta, aunque su tranquilidad se desvanecio caundo su **Salvador** le pidio que se encargara de un pinguino que se atrevio a amenazarlo.
+
+- **Estilo de arte:**  
+  Morsov tiene un parche en el ojo derecho, varias cicatrices por los expeimenyos del laboratorio, cabello en punta *(Aunque en realidad es un peluquin)* y tiene varias cicatrices en casi todo el cuerpo.
+
+- **Ataques y Comportamiento**  
+  Morsov cuenta con 2 Faces, 2 Ataques y 3 etapas de combate.
+  Morsov cuenta con 80 pontos de vida, su velocidad sera igual 3/4 de la velocidad del jugador y sus ataques no gastan humedad.  
+  **Fases**
+  - **Primera Fase:**
+  Vida entre el 100% y 41% Morsov solo se mueve de un lado al otro mientras ataca.  
+  -**Segunda Fase**
+  Vida entre 40% y 0% Morsov ya se puede por toda la zona de Agua y los tiles que conectan el agua con la tierra.
+
+  **Ataques**  
+  - **Mele**
+  Morsov azota el suelo generando daño en area causando 7 puntos de daño.
+
 ## Perú
 ### Enemigo 1: Anacondas
 
