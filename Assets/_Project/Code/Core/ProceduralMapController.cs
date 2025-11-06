@@ -40,7 +40,11 @@ public class ProceduralMapController : MonoBehaviour
 
         Tilemap tilemap = tileMap.GetComponent<Tilemap>();
 
-        MapData mapData = dungeonData.dungeons[1];
+
+
+
+
+        MapData mapData = dungeonData.dungeons[2];
 
         Map map = new Map(Vector2Int.zero, new Vector2Int(mapData.size[0], mapData.size[1]), tilemap);
         List<Vector3Int> coordinates = map.GenerateCoordinates();
@@ -48,12 +52,49 @@ public class ProceduralMapController : MonoBehaviour
 
         foreach (DecorationData decoration in mapData.decorations)
         {
-            PlaceNewTiles(new Vector3Int(decoration.position[0], decoration.position[1]), tiles[1], tilemap);
+            foreach(LocationData location in decoration.locations)
+            {
+                PlaceNewTiles(location, new Vector3Int(location.positions[0], location.positions[1]), tiles[decoration.type], tilemap);
+            }
         }
     }
 
-    void PlaceNewTiles(Vector3Int coordinates, Tile tile, Tilemap tilemap)
+    void PlaceNewTiles(LocationData location, Vector3Int coordinates, Tile tile, Tilemap tilemap)
     {
-        tilemap.SetTile(coordinates, tile);
+
+        switch(location.type)
+        {
+            case 0:
+
+                for (int x = location.positions[0]; x < location.size + location.positions[0]; x++)
+                {
+                    for (int y = location.positions[1]; y < location.size + location.positions[1]; y++)
+                    {
+                        tilemap.SetTile(new Vector3Int(x, y), tile);
+                    }
+                }
+
+                break;
+
+            case 1:
+
+                for (int x = location.positions[0]; x < location.size + location.positions[0]; x++)
+                {
+                    tilemap.SetTile(new Vector3Int(x, location.positions[1]), tile);
+                }
+
+                break;
+
+            case 2:
+
+                for (int y = location.positions[1]; y < location.size + location.positions[1]; y++)
+                {
+                    tilemap.SetTile(new Vector3Int(location.positions[0], y), tile);
+                }
+
+                break;
+        }
+
+        
     }
 }
