@@ -23,6 +23,7 @@ public class EnemyBehaviour : MonoBehaviour
     public Vector2 circleOrigin;
     public GameObject circle;
     public float circleRadius;
+    public Vector2 displacement;
 
     public void Initialized()
     {
