@@ -40,10 +40,7 @@ public class ProceduralMapController : MonoBehaviour
 
         Tilemap tilemap = tileMap.GetComponent<Tilemap>();
 
-
-
-
-
+        //Map Generation
         MapData mapData = dungeonData.dungeons[2];
 
         Map map = new Map(Vector2Int.zero, new Vector2Int(mapData.size[0], mapData.size[1]), tilemap);
@@ -73,7 +70,6 @@ public class ProceduralMapController : MonoBehaviour
                         tilemap.SetTile(new Vector3Int(x, y), tile);
                     }
                 }
-
                 break;
 
             case 1:
@@ -82,7 +78,6 @@ public class ProceduralMapController : MonoBehaviour
                 {
                     tilemap.SetTile(new Vector3Int(x, location.positions[1]), tile);
                 }
-
                 break;
 
             case 2:
@@ -91,7 +86,6 @@ public class ProceduralMapController : MonoBehaviour
                 {
                     tilemap.SetTile(new Vector3Int(location.positions[0], y), tile);
                 }
-
                 break;
         }
 
