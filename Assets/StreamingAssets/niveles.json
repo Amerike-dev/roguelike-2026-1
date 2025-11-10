@@ -1,0 +1,231 @@
+{
+    "dungeons":
+    [
+        {
+            "type": "normal",
+            "size": [15, 15],
+            "enemies":
+            [
+                {
+                    "wave": 0,
+                    "position": [4 , 10],
+                    "enemyType": 1
+                },
+                {
+                    "wave": 1,
+                    "position": [10 , 10],
+                    "enemyType": 2
+                }
+            ],
+            "decorations":
+            [
+                {
+                    "name": "Entrance",
+                    "type": 0,
+                    "locations":
+                    [
+                        {
+                            "positions": [5 , -1],
+                            "size": 1,
+                            "type": 0,
+                            "name": "Square"
+                        }
+                    ]
+                },
+                {
+                    "name": "Exit",
+                    "type": 0,
+                    "locations":
+                    [
+                        {
+                            "positions":[5 , 15],
+                            "size":1,
+                            "type":0,
+                            "name": "Square"
+                        }
+                    ]
+                },
+                {
+                    "name": "Rock",
+                    "type": 1,
+                    "locations":
+                    [
+                        {
+                            "positions":[3 , 2],
+                            "size":1,
+                            "type":0,
+                            "name": "Square"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "shop",
+            "size": [10, 10],
+            "enemies":[],
+            "decorations":
+            [
+                {
+                    "name": "Entrance",
+                    "type": 0,
+                    "locations":
+                    [
+                        {
+                            "positions": [-1 , 5],
+                            "size":1,
+                            "type":0,
+                            "name":"Square"
+                        }
+                    ]
+                },
+                {
+                    "name": "Exit",
+                    "type": 0,
+                    "locations": 
+                    [
+                        {
+                            "positions":[10 , 5],
+                            "size":1,
+                            "type":0,
+                            "name":"Square"
+                        }
+                    ]
+                },
+                {
+                    "name": "Shop",
+                    "type": 1,
+                    "locations":
+                    [
+                        {
+                            "positions":[4 , 5],
+                            "size":2,
+                            "type":0,
+                            "name":"Square"
+                        }
+                    ]
+                },
+                {
+                    "name": "Shop_table",
+                    "type": 2,
+                    "locations":
+                    [
+                        {
+                            "positions":[3 , 3],
+                            "size":1,
+                            "type":0,
+                            "name":"Square"
+                        },
+                        {
+                            "positions":[5 , 2],
+                            "size":1,
+                            "type":0,
+                            "name":"Square"
+                        },
+                        {
+                            "positions":[6 , 3],
+                            "size":1,
+                            "type":0,
+                            "name":"Square"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "boss",
+            "size":[30 , 30],
+            "enemies":[],
+            "decorations":
+            [
+                {
+                    "name": "Ocean",
+                    "type": 2,
+                    "locations":
+                    [
+                        {
+                            "positions":[0 , 10],
+                            "size":20,
+                            "type":0,
+                            "name":"Square"
+                        },
+                        {
+                            "positions":[10 , 10],
+                            "size":20,
+                            "type":0,
+                            "name":"Square"
+                        },
+                        {
+                            "positions":[4 , 8],
+                            "size":4,
+                            "type":0,
+                            "name":"Square"
+                        },
+                        {
+                            "positions":[7 , 6],
+                            "size":4,
+                            "type":0,
+                            "name":"Square"
+                        },
+                        {
+                            "positions":[10 , 7],
+                            "size":5,
+                            "type":0,
+                            "name":"Square"
+                        },
+                        {
+                            "positions":[15 , 8],
+                            "size":9,
+                            "type":0,
+                            "name":"Square"
+                        },
+                        {
+                            "positions":[24 , 9],
+                            "size":6,
+                            "type":0,
+                            "name":"Square"
+                        }
+                    ]
+                },
+                {
+                    "name": "Island",
+                    "type": 1,
+                    "locations":
+                    [
+                        {
+                            "positions":[3 , 18],
+                            "size":4,
+                            "type":0,
+                            "name":"Square"
+                        },
+                        {
+                            "positions":[15 , 12],
+                            "size":3,
+                            "type":1,
+                            "name":"Long Line"
+                        },
+                        {
+                            "positions":[25 , 20],
+                            "size":4,
+                            "type":2,
+                            "name":"Up Line"
+                        }
+                    ]
+                },
+                {
+                    "name": "Entrance",
+                    "type":1,
+                    "locations":
+                    [
+                        {
+                            "positions":[15,-1],
+                            "size":1,
+                            "type":0,
+                            "name":"Square"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class EnemyBehaviour : MonoBehaviour
@@ -12,6 +13,19 @@ public class EnemyBehaviour : MonoBehaviour
     public float maxVelocity = 5f;
     public float viewRadius = 4f;
     public string _currentStateName="";
+    
+    [Header("Wander")]
+    public float distX;
+    public float distY;
+    public float changeTime;
+    public Vector2 targetPoint;
+    public float circleDistance;
+    public Vector2 circleOrigin;
+    public GameObject circle;
+    public float circleRadius;
+    public Vector2 displacement;
+    public float wanderAngle;
+    public float changeAngle;
 
     public void Initialized()
     {
@@ -36,5 +50,35 @@ public class EnemyBehaviour : MonoBehaviour
     public void Seek()
     {
         _seekMovement?.GetSteering();
+    }
+    public void EnterWander()
+    {
+        StartCoroutine(GenerateRandomTargets());
+        StartCoroutine(GenerateRandomAngles());
+    }
+    public void ExitWander()
+    {
+        StopCoroutine(GenerateRandomTargets());
+        StopCoroutine(GenerateRandomAngles());
+    }
+
+    public IEnumerator GenerateRandomTargets()
+    {
+        while (true)
+        {
+            float x = Random.Range(-distX, distX);
+            float y = Random.Range(-distY, distY);
+            targetPoint = new Vector2(x, y);
+            yield return new WaitForSeconds(changeTime);
+        }
+    }
+
+    public IEnumerator GenerateRandomAngles()
+    {
+        while (true)
+        {
+            wanderAngle = Random.Range(0, 360f);
+            yield return new WaitForSeconds(changeAngle);
+        }
     }
 }
