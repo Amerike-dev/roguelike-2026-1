@@ -88,6 +88,23 @@
   - **A melee:** este ataque será similar al de la Guacamaya, realizando **picotazos** que reducen **3 puntos de vida** al jugador.  
   - **Llamar a la clika (invocar enemigos):** este ataque invoca **3 Mulatos Azules** en **formación triangular**.  
     Estos Mulatos tienen **menos vida que el original** y **no mueren si el invocador es derrotado**, solo si el jugador los elimina directamente.
+
+### Enemigo 2: Guacamayas
+
+- **Historia de las Guacamayas:**  
+  Guerreras agresivas y luchadoras por naturaleza. Con la valentía de un luchador profesional, atacan al pinguino sin retroceder, buscando una victoria rápida sin importar el daño que reciban.
+
+- **Estilo de arte:**  
+  Plumajes brillantes en rojo, azul y amarillo, acompañados de una **máscara de luchador** que cubre su rostro, dándoles una apariencia intimidante. Su postura desafiante refleja la actitud de un luchador profesional.
+
+- **Ataques y comportamiento:**
+  - **Embestida Aérea (Luchador Volador):** La **Guacamaya** salta y se lanza hacia el pinguino, causando **4 puntos de daño**.
+  - **Golpe de Pico (Luchador de Pico):** Un ataque rápido con su pico afilado, causando **2 puntos de daño**.
+
+- **Puntos de vida y velocidad:**  
+  - **Vida:** 30 puntos.  
+  - **Velocidad:** Alta. Se mueve rápidamente, realizando acrobacias y ataques impredecibles.
+
 ## Alaska
 
 ### Enemigo 1: Castores
@@ -109,6 +126,54 @@
     El **tótem puede ser destruido por el jugador** y cuenta con **50 puntos de vida**.  
     Si el castor recupera el **100% de su vida**, el tótem se destruye automáticamente.  
     Esta habilidad **solo puede usarse una vez por combate** y tiene una **probabilidad de 1 entre 7** de activarse.
+   
+ ### Enemigo 2: Ciervos
+
+- **Historia de los Ciervos:**  
+  Los **Ciervos** son guerreros experimentados, con cicatrices de batalla y una barba espesa que refleja años de lucha. Aunque no son ancianos, su imponente presencia y habilidades en combate los hacen temidos. Son miembros de la **Secta Albina** y no se detendrán ante nada para eliminar al pinguino.
+
+- **Estilo de arte:**  
+  Los **Ciervos** tienen un cuerpo robusto y musculoso, con grandes cuernos y una barba que les da un aire de veteranos. Las cicatrices de guerra adornan su piel, y su postura en 4 patas refleja su fuerza y agilidad.
+
+- **Ataques y comportamiento:**
+  - **Embestida Arrolladora:**  
+    El **Ciervo** embiste al pinguino con gran fuerza, arrastrándolo hacia las paredes y causando **6 puntos de daño**. Este ataque es rápido y debe ser esquivado para evitar el daño.
+
+  - **Slam de Cuerno:**  
+    El **Ciervo** se pone en pie y realiza un golpe con sus cuernos, causando **5 puntos de daño** en un área pequeña. Este ataque es de corto alcance pero muy potente.
+
+- **Puntos de vida y velocidad:**  
+  - **Vida:** 50 puntos.  
+  - **Velocidad:** Moderada. Aunque no son muy rápidos, su fuerza y poder en combate son su mayor ventaja.
+
+### Enemigo 3: Rhacn
+
+- **Historia de Rhacn:**  
+  **Rhacn** es el líder de la **Secta Albina**, un pinguino mutado más allá de lo que la ciencia debería permitir. Su cuerpo, marcado por una terrible transformación, combina la apariencia elegante de un pinguino con una fuerza descomunal y habilidades sobrehumanas. La **Secta Albina** lo considera una deidad, un ser que ha trascendido las limitaciones de su especie. Su toga, que parece inofensiva, oculta un cuerpo musculoso y monstruoso, capaz de destruir con un solo golpe. Con unos **lentes oscuros** que ocultan su mirada penetrante, Rhacn irradia una aura de frialdad y control absoluto.
+
+- **Estilo de arte:**  
+  Rhacn lleva una toga blanca que lo hace parecer casi inofensivo, pero al levantarla, se revela su cuerpo mutado y fornido, similar al de una bestia. Su rostro, parcialmente cubierto por cicatrices o una máscara, tiene una apariencia pinguina, pero sus ojos, ocultos tras unos **lentes oscuros**, transmiten una sensación de frialdad y dominio. Su postura erguida y su confianza absoluta en sus habilidades lo hacen aún más intimidante.
+
+- **Ataques y comportamiento:**
+  **Rhacn** combate con ataques rápidos y devastadores, utilizando su fuerza mejorada para someter al pinguino con velocidad y precisión.
+
+  - **Puño Mutado:**  
+    Rhacn lanza un golpe extremadamente rápido y devastador con su puño mutado, causando **8 puntos de daño**. El impacto es tan fuerte que puede desorientar al jugador por un breve momento.
+
+  - **Rayo Genético:**  
+    Usando sus habilidades mejoradas, **Rhacn** dispara un rayo de energía genética que puede desintegrar a su objetivo, causando **10 puntos de daño**. El rayo es difícil de evitar, pero puede ser esquivado con buena sincronización.
+
+  - **Despliegue Aéreo:**  
+    Rhacn utiliza su agilidad sobrehumana para moverse a una velocidad increíble, deslizándose hacia el pinguino con un **golpe aéreo** que causa **6 puntos de daño**. Este movimiento lo hace parecer casi invisible, aprovechando su velocidad y destreza.
+
+  - **Técnica de Desintegración (Ultimátum):**  
+    Cuando su vida llega a menos del 30%, Rhacn desata su habilidad final, una **explosión de energía mutada** que consume casi todo su poder, causando **15 puntos de daño** en un área extensa. Este ataque puede acabar con el pinguino si no se esquiva a tiempo.
+
+- **Puntos de vida y velocidad:**  
+  - **Vida:** 100 puntos.  
+  - **Velocidad:** Muy alta. Rhacn se mueve con velocidad sobrenatural, siendo capaz de aparecer y desaparecer del campo de batalla con movimientos instantáneos, similares a los de un depredador acechando a su presa.
+
+
 
 
 ## Estrecho de Bering
@@ -138,4 +203,25 @@
 
   - **(Coca Cola para la familia) Potenciar:**  
     Cuando los Osos Polares bajan de la **mitad de su vida**, tienen una **probabilidad** de tomarse una Coca Cola, lo que les **regenera 10 puntos de vida** y les **aumenta el daño en 2 o 3 puntos adicionales**.
+### Enemigo 2: Husky
+
+- **Historia del Husky:**  
+  Los **Huskys** son los guardianes finales del **Estrecho de Bering**, encargados de asegurarse de que nada ni nadie cruce su territorio. Criados y entrenados por los miembros más radicales de la **Secta Albina**, estos caninos mutados están completamente enfocados en eliminar a cualquier intruso. Con su aspecto de lobo feroz, y armados con **AK-47**, los **Huskys** son letales en combate a distancia. Su misión es poner fin a la pinguinezca existencia de cualquier ser que intente atravesar su dominio.
+
+- **Estilo de arte:**  
+  Los **Huskys** tienen una apariencia robusta, con pelaje grueso que varía entre blanco, gris y negro, reflejando su naturaleza salvaje y feroz. Sus ojos brillan con intensidad, mostrando su furia y determinación. Llevan bandoleras de munición y empuñan **AK-47** con destreza, siempre listos para la acción. Su postura erguida y su actitud confiada transmiten una sensación de poder y control absoluto.
+
+- **Ataques y comportamiento:**
+  Los **Huskys** son expertos en combate a distancia, disparando su **AK-47** con precisión mientras mantienen su distancia del enemigo. Son letales, pero vulnerables en combate cercano.
+
+  - **Ráfaga de AK-47:**  
+    El **Husky** dispara una ráfaga rápida de balas en dirección al pinguino, causando **5 puntos de daño** por bala. Si el pinguino no esquiva, puede recibir múltiples impactos rápidamente.
+
+  - **Disparo de Precisión:**  
+    El **Husky** apunta cuidadosamente y lanza un disparo de alta precisión, causando **8 puntos de daño**. Es más lento pero mucho más difícil de esquivar.
+
+- **Puntos de vida y velocidad:**  
+  - **Vida:** 60 puntos.  
+  - **Velocidad:** Moderada. Aunque no es extremadamente rápido en el combate cuerpo a cuerpo, su destreza con las armas y su capacidad para moverse ágilmente lo hacen muy peligroso a distancia.
+
 
