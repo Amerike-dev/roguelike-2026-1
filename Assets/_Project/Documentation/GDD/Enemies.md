@@ -338,7 +338,32 @@ El quetzal
 
   - **(Coca Cola para la familia) Potenciar:**  
     Cuando los Osos Polares bajan de la **mitad de su vida**, tienen una **probabilidad** de tomarse una Coca Cola, lo que les **regenera 10 puntos de vida** y les **aumenta el daño en 2 o 3 puntos adicionales**.
-### Enemigo 2: Husky
+
+### Enemigo 2: Snowmans
+
+- **Historia de los prisioneros:**
+
+  Los Snowman (hombres de nieve) fueron originalmente para defensa de el lugar de santa claus sin embargo con fin de burlarse de los pingüinos les dio accesorios de su tribu como sus vendas y mas cosas 
+- **Estilo de arte:**
+ 
+  Conservan el estilo chibi y cartoon característico del juego, con un nivel de detalle superior que permite distinguirlos de los personajes principales.
+  
+  Su diseño combina lo adorable y lo grotesco: cuerpos de nieve redondeados, sonrisas heladas y ramas torcidas por brazos. Los ojos, antes simples botones, ahora brillan con una luz fría y antinatural, evidenciando la influencia de la magia oscura que los anima.
+- **Ataques y comportamiento:**
+ 
+  - Los Snowman son enemigos lentos y torpes, pero sus movimientos tienen un peso peligroso. Se desplazan tambaleándose, moviendo su torso entero en lugar de los brazos, lo que les da una apariencia extraña y desequilibrada, casi cómica, pero inquietante.
+  
+  - Sus ataques consisten en girar el cuerpo con fuerza, usando sus propios brazos como si fueran látigos de nieve compacta.
+
+  -  Cada golpe inflige 7 puntos de daño al jugador.
+
+  -  Además, sus ataques enfrían el ambiente, reduciendo la humedad del jugador en 35 puntos.
+
+  - Tiene 25 de vida 
+  Su lentitud permite esquivarlos con facilidad, pero su impacto es devastador si logran conectar un golpe. 
+  - Este golpe lanza una bola de nieve que es la que hace el daño de este enemigo
+
+### Enemigo 3: Husky
 
 - **Historia del Husky:**  
   Los **Huskys** son los guardianes finales del **Estrecho de Bering**, encargados de asegurarse de que nada ni nadie cruce su territorio. Criados y entrenados por los miembros más radicales de la **Secta Albina**, estos caninos mutados están completamente enfocados en eliminar a cualquier intruso. Con su aspecto de lobo feroz, y armados con **AK-47**, los **Huskys** son letales en combate a distancia. Su misión es poner fin a la pinguinezca existencia de cualquier ser que intente atravesar su dominio.
