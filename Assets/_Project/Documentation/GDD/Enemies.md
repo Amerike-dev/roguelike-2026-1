@@ -114,6 +114,22 @@
   - Arriba del **50 % de vida:** una pequeña embestida de corto rango que hace **1 punto de daño**.  
   - Debajo del **50 % de vida:** sacarán dos cuchillas y comenzarán a embestir al jugador con ataques muy rápidos mientras avanzan, y cada uno de los ataques hace **2 puntos de daño**.
 
+### Enemigo 3: Iguanas
+
+- **Historia de las Iguanas:**
+
+  Secuaces del Rey de Oro, esclavizados para cumplir como informantes estos gracias a su agilidad y habilidad de hacerse invisibles le ayudan al rey del oro a mantener su reinado sobre Perú
+
+- **Estilo de arte:**
+
+  Las iguanas mantienen un estilo chibi y cartoon, pero con un nivel de detalle ligeramente superior, seran de varios colores sin embargi el color verde es que predominara. Esto les da una apariencia dinámica y distintiva dentro del entorno, reforzando su personalidad ágil y escurridiza.
+
+- **Ataques y comportamiento:**
+
+  - Tienen 20 punto de vida
+  - Su comportamiento es similar al de los zorros, aunque adaptado a su naturaleza reptil. Son criaturas ágiles y escurridizas, capaces de golpear con su lengua y su cola.
+  - Sus ataques causan 4 puntos de daño al jugador, pero solo reducen 15 puntos de humedad, ya que sus golpes son más rápidos. 
+  - Su ritmo de ataque es más veloz que el de los zorros, ya que poseen la habilidad de hacer invisibles tras lanzar un ataque.
 
   ### Enemigo Jefe : El Rey del Oro
 - **Historia de El Rey del Oro:**  
