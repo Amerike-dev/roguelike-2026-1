@@ -254,7 +254,34 @@ El quetzal
   - **Vida:** 50 puntos.  
   - **Velocidad:** Moderada. Aunque no son muy rápidos, su fuerza y poder en combate son su mayor ventaja.
 
-### Enemigo 3: Rhacn
+### Enemigo 5: Venados
+
+- **Historia de los prisioneros:**
+
+  Los venados son el resultado de rituales oscuros y experimentos fallidos realizados por una secta presente en esta región. Estos rituales pretendían crear recipientes para espíritus malignos, pero terminaron condenando a los pobres animales a una existencia de sufrimiento eterno.
+
+  Cada venado lleva en su interior a un ser oscuro que intenta liberarse, causando una lucha constante dentro de su cuerpo. Solo al ser derrotados puede verse su verdadera naturaleza: un esqueleto poseído, liberado momentáneamente del cuerpo que lo contenía.
+  
+  Estos enemigos, atormentados y desfigurados por el dolor, no pueden descansar ni morir realmente hasta ser exorcizados o destruidos por completo. Su historia es un reflejo del horror que la secta ha dejado tras de sí.
+- **Estilo de arte:**
+ 
+  Siguen el mismo estilo chibi y cartoon característico de los enemigos, aunque con detalles más marcados en sus cuernos, ojos y pelaje para diferenciarlos claramente del jugador.
+ 
+  En su segunda fase —cuando emerge el esqueleto— el estilo conserva la estética chibi pero incorpora tonos más oscuros, líneas quebradas y un aire siniestro, evocando la corrupción y la presencia espiritual.
+
+- **Ataques y comportamiento:**
+
+  - Tienen 15 de  vida primera fase y 10 en la segunda
+  - Los venados tienen un comportamiento inicial similar a un animal salvaje.
+  - En su primera forma, atacan con las astas, moviéndose lentamente pero con fuerza.
+  - Al ser vencidos, su cuerpo se desmorona y de su interior surge un esqueleto poseído que adopta un comportamiento agresivo, actuando como un summoner o espíritu vengativo.
+  - En esta segunda fase, el esqueleto se lanza en embestidas rápidas, marcando al jugador antes de atacar, de forma similar a los carpinteros alternativos.
+  - Cada embestida inflige 5 puntos de daño y reduce la humedad en 20 puntos.
+  - Sus movimientos son erráticos y violentos, como si la entidad interna intentara liberarse del dolor a través del ataque.
+  - Este enemigo representa el contraste entre la tristeza y la furia contenida, pasando de la calma del venado vivo a la ferocidad del espíritu que lo domina.
+
+
+### Enemigo 4: Rhacn
 
 - **Historia de Rhacn:**  
   **Rhacn** es el líder de la **Secta Albina**, un pinguino mutado más allá de lo que la ciencia debería permitir. Su cuerpo, marcado por una terrible transformación, combina la apariencia elegante de un pinguino con una fuerza descomunal y habilidades sobrehumanas. La **Secta Albina** lo considera una deidad, un ser que ha trascendido las limitaciones de su especie. Su toga, que parece inofensiva, oculta un cuerpo musculoso y monstruoso, capaz de destruir con un solo golpe. Con unos **lentes oscuros** que ocultan su mirada penetrante, Rhacn irradia una aura de frialdad y control absoluto.
