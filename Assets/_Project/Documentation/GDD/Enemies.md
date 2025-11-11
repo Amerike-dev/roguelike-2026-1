@@ -17,23 +17,34 @@
 
 ### Enemigo Jefe : Morsov
 - **Historia de Morsov:**  
-  Morsov fue un sujeto de pruebas de un equipo de investigacion Rusa lo que ocaciono que su personalidad sea erratica asi como un anelo por la libertad la cual obtuvo al ser liberado del laboratorio por **Santa**, despues de ser liberado Santa le permitio hacer lo que quiera creando asi su propio club de motocicleta, aunque su tranquilidad se desvanecio caundo su **Salvador** le pidio que se encargara de un pinguino que se atrevio a amenazarlo.
+  Morsov fue un sujeto de pruebas de un equipo de investigación Rusa lo que ocasionó que su personalidad sea errática así como un anhelo por la libertad la cual obtuvo al ser liberado del laboratorio por Santa, después de ser liberado Santa le permitió hacer lo que quiera creando así su propio club de motocicleta, aunque su tranquilidad se desvaneció cuando su Salvador le pidió que se encargue de un pingüino que se atrevió a amenazarlo.
 
 - **Estilo de arte:**  
-  Morsov tiene un parche en el ojo derecho, varias cicatrices por los expeimenyos del laboratorio, cabello en punta *(Aunque en realidad es un peluquin)* y tiene varias cicatrices en casi todo el cuerpo.
+  Morsov tiene un parche en el ojo derecho, varias cicatrices por los experimentos del laboratorio, cabello en punta (Aunque en realidad es un peluquín) y tiene varias cicatrices en casi todo el cuerpo.
 
 - **Ataques y Comportamiento**  
-  Morsov cuenta con 2 Faces, 2 Ataques y 3 etapas de combate.
-  Morsov cuenta con 80 pontos de vida, su velocidad sera igual 3/4 de la velocidad del jugador y sus ataques no gastan humedad.  
-  **Fases**
-  - **Primera Fase:**
-  Vida entre el 100% y 41% Morsov solo se mueve de un lado al otro mientras ataca.  
-  -**Segunda Fase**
+  Morsov cuenta con 2 fases, 2 ataques y 3 etapas de combate.
+  Morsov cuenta con 50 puntos de vida, su velocidad será igual 3/4 de la velocidad del jugador y sus ataques no gastan humedad.  
+- **Fases**
+   - **Primera Fase:**
+  Vida entre el 100% y 41% Morsov solo se mueve de izquierda a derecha en la parte superior del mapa mientras ataca.  
+   - **Segunda Fase:**
   Vida entre 40% y 0% Morsov ya se puede por toda la zona de Agua y los tiles que conectan el agua con la tierra.
 
-  **Ataques**  
-  - **Mele**
-  Morsov azota el suelo generando daño en area causando 7 puntos de daño.
+  **Ataques:**  
+  - **Mele:**
+  Morsov azota el suelo generando daño en área causando 7 puntos de daño, con un cooldown de 5 segundos.
+  - **Distancia:**
+  Morsov lanza a 1 de sus secuaces cada 7 segundos, el cual causa el doble de daño, persigue al Jugador y muere después de 3 segundos.  
+
+  **Combate:**
+  - **Primera Etapa:**
+  Morsov no atacará y el jugador solo se enfrenta contra sus secuaces.
+  - **Segunda Etapa**
+  El jugador ya podrá acercarse a Morsov y tendrá que subirse a los trozos de hielo flotante para poder atacar, por su parte Morsov continuará con sus ataques a distancia.
+  - **Tercera Etapa**
+  Empieza cuando la vida de Morsov baja del 41% y se activa su segunda fase, se puede mover por toda la zona del agua y el principio de la tierra lo que permite Morsov pueda hacer su ataque mele si el jugador está lo suficientemente cerca de él, esto para que el jugador tenga que estar en movimiento constante.
+
 
 ## Perú
 ### Enemigo 1: Anacondas
@@ -49,6 +60,29 @@
   Los ataques de las anacondas serán de dos tipos, estos cuentan con 36 puntos de vida pero en la cabeza les podras hacer el doble de daño, su velocidad sera rapida:  
   - **A distancia:** atacarán con un disparo usando su flauta dulce peruana cada vez que se encuentren lejos del jugador, esto bajara 5 puntos de vida.  
   - **A melee:** realizarán una picadura que reducirá la **humedad** del jugador, esto bajara 3 puntos de vida.
+
+  ### Enemigo Jefe : El Rey del Oro
+- **Historia de El Rey del Oro:**  
+  El Rey del Oro fue un cuy muy apreciado y respetado por el hecho de ser más grande y fuerte que el resto de los cuy, siendo esto lo que generó un sentido de superioridad y soberbia, pero que gracias a su naturaleza amable siempre veía por la seguridad de los suyos.
+  Siendo estos últimos los que cambiaron y se intensificaron el día que durante una batalla perdió a varios de sus compañeros y terminó quemado en toda la parte inferior de su cuerpo, ocasionado un intenso deseo que cuidar a los suyos y una gran hostilidad hacia cualquier extraño que se acerque a sus tierras.
+
+- **Estilo de arte:**  
+  Cuenta con un pelaje lacio y largo dividido en 3 tipos de colores teniendo el abdomen de color naranja rojiso, los costados de color naranja claro y una linea blanca de pelaje que va desde la frente hasta la espalda siguiendo la línea de la columna, por otro lado cuenta coon la mitad inferior de su cuerpo cubierta en oro.
+- **Ataques y comportamiento:**  
+  El enfrentamiento contra El Rey del Oro cuenta con 2 etapas , 2 fases y 1 ataque. El Rey del Oro cuenta con 110 puntos de vida, velocidad de 5, su ataque gasta 1/3 de su humedad total, cada 3 ataques el se toma 4 segundos para tomar 1 vaso de jugo de manzana y después continúa atacando.  
+- **Fases**  
+    - **Primera Fase:**
+    Vida entre el 100% y el 35% de la vida El Rey del Oro persigue al jugador para atacar con su martillo.
+    - **Segunda Fase:**
+    Vida entre el 35% y el 0% de la vida El Rey del Oro Pier el oro de la parte inferior de su cuerpo y su velocidad aumenta a 7 y continúa atacando con su martillo pero la humedad que gasta baja a ¼ por ataque y el tiempo que dura el ataque y la recuperación de la humedad se reduce a la mitad.
+- **Ataque:**
+    - **Mele:**
+    Cuando llega al rango de ataque, ejecuta el ataque que dura 2 segundos de animación, hace 9 de daño, termina y continúa persiguiendo al jugador y repite el proceso.
+- **Combate:**
+    - **Primera Etapa:**
+    El Rey del Oro persigue al jugador junto con sus secuaces los cuales varían entre 6 y 8.
+    - **Segunda Etapa:**
+    El Rey del Oro se vuelve más agresivo haciendo que el después de su cuarto ataque vuelva a atacar cuando termina la animación pero pierde el 5% de su vida.
 
 ## México
 
@@ -70,6 +104,11 @@
   - **A melee:** este ataque será similar al de la Guacamaya, realizando **picotazos** que reducen **3 puntos de vida** al jugador.  
   - **Llamar a la clika (invocar enemigos):** este ataque invoca **3 Mulatos Azules** en **formación triangular**.  
     Estos Mulatos tienen **menos vida que el original** y **no mueren si el invocador es derrotado**, solo si el jugador los elimina directamente.
+
+### Enemigo Jefe : Qetzal
+- **Historia de Quetzal:**  
+El quetzal 
+    
 ## Alaska
 
 ### Enemigo 1: Castores
