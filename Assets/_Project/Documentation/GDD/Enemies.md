@@ -36,6 +36,23 @@
     - Trinche de una Luca  
     - El Guerrillero
 
+### Enemigo 3: Zorros
+
+- **Historia de los Zorros:**
+
+  Estos zorros fueron enviados para acompañar a Morsov con el objetivo de detener al pingüino, el protagonista del juego. Poseen una lealtad ciega hacia Santa Claus, ya que cada uno de ellos porta un suéter tejido especialmente por él. Este gesto los une emocionalmente y refuerza su devoción hacia su líder.
+
+- **Estilo de arte:**
+
+  El diseño mantiene un estilo tipo cartoon y chibi, aunque con un nivel de detalle ligeramente mayor para distinguirlos visualmente del protagonista.estos serán como zorros normales con un color anaranjado y marcas negras en patas, cola  y hocico pero tiene una bufanda con diseño de suéteres feos que sean su “brazos”
+
+- **Ataques y comportamiento:**
+
+  - Los zorros son más veloces de lo habitual, lo que les permite moverse ágilmente durante el combate.
+  - Tienen 15 puntos de vida
+  - Su forma de ataque principal consiste en usar sus bufandas como si fueran brazos o látigos, golpeando al jugador con movimientos rápidos y encadenados.
+  - Aunque sus ataques no causan un gran daño individual (aproximadamente 3 puntos de vida), compensan con su capacidad de ataque repetitivo. Además, cada golpe reduce la humedad del jugador en 25 puntos, ya que las bufandas absorben y enfrían su entorno.
+
 ### Enemigo Jefe : Morsov
 - **Historia de Morsov:**  
   Morsov fue un sujeto de pruebas de un equipo de investigación Rusa lo que ocasionó que su personalidad sea errática así como un anhelo por la libertad la cual obtuvo al ser liberado del laboratorio por Santa, después de ser liberado Santa le permitió hacer lo que quiera creando así su propio club de motocicleta, aunque su tranquilidad se desvaneció cuando su Salvador le pidió que se encargue de un pingüino que se atrevió a amenazarlo.
@@ -65,8 +82,6 @@
   El jugador ya podrá acercarse a Morsov y tendrá que subirse a los trozos de hielo flotante para poder atacar, por su parte Morsov continuará con sus ataques a distancia.
   - **Tercera Etapa**
   Empieza cuando la vida de Morsov baja del 41% y se activa su segunda fase, se puede mover por toda la zona del agua y el principio de la tierra lo que permite Morsov pueda hacer su ataque mele si el jugador está lo suficientemente cerca de él, esto para que el jugador tenga que estar en movimiento constante.
-
-
 
 ## Perú
 ### Enemigo 1: Anacondas
