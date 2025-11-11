@@ -192,10 +192,9 @@
   - **Vida:** 30 puntos.  
   - **Velocidad:** Alta. Se mueve rápidamente, realizando acrobacias y ataques impredecibles.
 
-### Enemigo Jefe : Qetzal
+### Enemigo Jefe : Quetzal
 - **Historia de Quetzal:**  
-El quetzal 
-
+El Quetzal se volvio una de las ave
 
 ## Alaska
 
