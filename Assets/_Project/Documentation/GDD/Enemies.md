@@ -63,6 +63,7 @@
 - **Ataques y Comportamiento**  
   Morsov cuenta con 2 fases, 2 ataques y 3 etapas de combate.
   Morsov cuenta con 50 puntos de vida, su velocidad será igual 3/4 de la velocidad del jugador y sus ataques no gastan humedad.  
+
 - **Fases**
    - **Primera Fase:**
   Vida entre el 100% y 41% Morsov solo se mueve de izquierda a derecha en la parte superior del mapa mientras ataca.  
@@ -131,7 +132,7 @@
   - Sus ataques causan 4 puntos de daño al jugador, pero solo reducen 15 puntos de humedad, ya que sus golpes son más rápidos. 
   - Su ritmo de ataque es más veloz que el de los zorros, ya que poseen la habilidad de hacer invisibles tras lanzar un ataque.
 
-  ### Enemigo Jefe : El Rey del Oro
+ ### Enemigo Jefe : El Rey del Oro
 - **Historia de El Rey del Oro:**  
   El Rey del Oro fue un cuy muy apreciado y respetado por el hecho de ser más grande y fuerte que el resto de los cuy, siendo esto lo que generó un sentido de superioridad y soberbia, pero que gracias a su naturaleza amable siempre veía por la seguridad de los suyos.
   Siendo estos últimos los que cambiaron y se intensificaron el día que durante una batalla perdió a varios de sus compañeros y terminó quemado en toda la parte inferior de su cuerpo, ocasionado un intenso deseo que cuidar a los suyos y una gran hostilidad hacia cualquier extraño que se acerque a sus tierras.
@@ -147,7 +148,7 @@
     Vida entre el 35% y el 0% de la vida El Rey del Oro Pier el oro de la parte inferior de su cuerpo y su velocidad aumenta a 7 y continúa atacando con su martillo pero la humedad que gasta baja a ¼ por ataque y el tiempo que dura el ataque y la recuperación de la humedad se reduce a la mitad.
 - **Ataque:**
     - **Mele:**
-    Cuando llega al rango de ataque, ejecuta el ataque que dura 2 segundos de animación, hace 9 de daño, termina y continúa persiguiendo al jugador y repite el proceso.
+    Cuando llega al rango de ataque, ejecuta el ataque que dura 2 segundos de animación, hace 9 puntos de daño, termina y continúa persiguiendo al jugador y repite el proceso.
 - **Combate:**
     - **Primera Etapa:**
     El Rey del Oro persigue al jugador junto con sus secuaces los cuales varían entre 6 y 8.
@@ -210,7 +211,41 @@
 
 ### Enemigo Jefe : Qetzal
 - **Historia de Quetzal:**  
-El quetzal 
+ El quetzal se volvió un ave desconfiada y agresiva por partes iguales a causa de las continúas capturas de los miembros de sus especie.  
+ Por este motivo se va a encargar de que nadie se acerque a su territorio para que su especie no vuelva a sufrir vuelva a sufrir mas perdidas aunque eso le cueste la vida.
+
+- **Estilo de arte:**  
+ El Quetzal tiene un plumaje cuyos colores son una mezcla de tonos verdes rojizos y negros.
+
+- **Ataques y Comportamiento:** 
+El enfrentamiento contra el Quetzal consta de 2 fases con 1 oculta, 2 tipos de ataque y 2 etapas principales con 1 oculta.  
+El quetzal tiene 130 puntos de vida, una velocidad de 8 y cada uno de sus ataques gastan 1/6 de su humedad total, despues de eso regresa a el centro del mapa donde come algunas frutas para recuperar toda su humedad en 3 segundo antes de volver atacar.
+
+- **Fases:**
+  - **Primera Fase:**
+  Vida entre el 100% y el 35% el Quetzal ataca se mueve al rededor del escenario y ataca cada 6 segundos, el ataque depende de que tan cerca esta del enemigo.
+  - **Segunda Fase:**
+  Vida entre 34% y el 0% el Quetzal ronda al jugador y ataca cada 4 segundos, despues se queda en sus ultiama posicion 2 segundos antes de volver al centro del mapa para recuperar su humedad.  
+
+  ***Solo si el jugador trabaja con los Gavilanes***
+  - **Oculto:**
+  Vida de 15% al 5% el Quetzal ronda al jugador y ataca cada 3 segundos y cada ataque le resta 1% de su vida, si su vida llega al 5% se dirige al centro del escenario y se rinde. 
+
+- **Ataque:**
+  - **Larga Distancia:**
+ Si el Quetazal esta a mas de 5 tiles de distancia se lanza en linea recta hacia la posicion del jugador en linea recta, ocaciona 8 puntos de daño, despues no se mueve durante 2 segundos antes de lanzarse hacia el jugador y espera 2 segundo antes de hacer su siguiente accion.
+  - **Corta Disatancia:**
+ Si el Quetzal esta a 5 o menos tiles de distacia se detiene 2   segundos antes de lanzarse contra el jugador causando 6 puntos de daño, despues no se mueve durante 1.5 segundos antes de hacer su siguiente accion.
+
+- **Combate:**  
+  - **Primera Etapa:**  
+  El Quetzal ataca al jugador con 8 secuaces; 3 igunas y 5 guacamayas.
+  - **Segunda Etapa:**  
+  El quetzan ataca al jugador junto con 3 guacamayas.
+
+  ***Solo si el jugador trabaja con los Gavilanes***
+  - **Oculto:**
+  El Quetzal ataca solo.
 
 
 ## Alaska
@@ -253,6 +288,27 @@ El quetzal
 - **Puntos de vida y velocidad:**  
   - **Vida:** 50 puntos.  
   - **Velocidad:** Moderada. Aunque no son muy rápidos, su fuerza y poder en combate son su mayor ventaja.
+
+### Enemigo 4: Osos Gordos
+ - **Historia de los Osos Gordos:**  
+ Los Osos Gordos originalmente eran simples cachorros de gizzly que quedaron solos al perder a sus padres a causa de cazadores furtivos lo cual causo que vagaran sin rumbo fijo, ocacionando que sus cuerpos y almas se contaminaran con las escencias residuales de los experimento hechos por la **Secta Albina** trastornando sus sentido y creando seres que se rigen por maximos absolutos dejando de considerar su propio bienestar.
+ Es a causa de esta energia que ven a los otros seres que fueron sometidos a los rituales como su familia.  
+  Los Osos Gordos tienen cuerpos pequeños en conparacion con los Osos Grizzl adultos pero aun asi son bastante corpulentos al contar son una buena cantidad de musculo y grasa.
+ 
+
+ - **Estilo de Arte**  
+ Los Osos Gordos tienen cuerpos pequeños bastante redondos, cuantan con un pelaje naranja oscuro, ojos blancos sin pupila y asi como heridas en sus patas por caminar sin rumbo. 
+
+ - **Ataques y Comportamiento**  
+ Los Osos Gordos sol cuantas con 100 punos de vida, 1 ataque Mele de Corto alcanze que es un golpe con la pata que causa 6 puntos de daño, tiene un cooldown de 4 segundos y no gasta humedad, este lo utiliza dependiendo de la vida del compañero mas cercano.
+
+   - **Proteccion**
+    - **Pasiva**
+     Si la vida de su compañero se encuantra entre el 100% y el 26% se mantendra cerca de el para tratar de bloquear los ataque del Jugador pero sin atacar.
+
+     - **Activa**
+     Si la vida de su compañero es menor al 25% corre hacia el Jugador y empieza a atacarlo para que se tenga que sentrar en el.
+
 
 ### Enemigo 5: Venados
 
@@ -339,6 +395,27 @@ El quetzal
   - **(Coca Cola para la familia) Potenciar:**  
     Cuando los Osos Polares bajan de la **mitad de su vida**, tienen una **probabilidad** de tomarse una Coca Cola, lo que les **regenera 10 puntos de vida** y les **aumenta el daño en 2 o 3 puntos adicionales**.
 
+### Enemigo 3 Duendes
+ - **Historia de los Duendes**
+ Los Duendes son los sirvientes mas cercanos de Santa Claus y el motivo mas inportante de su odio hacia los pinguinos no es que se quieran enfrentar a Santa Clos, sino poruqe tener que peliar con ellos les esta quitando valioso tiempo que podiran estar ocupando en hacer los regalos de ese año.
+
+ - **Estilo de Arte**
+ Los Duedes se dividen en dos tipos cullas apariencias demuestran cuanto tiempo llevan trabajando con Santa Claus.  
+ Los primaros tienen trajecitos mayormente verdes con rayas azules pero tiene ojeras muy profundas en los ojos que demuestran el estres extremo que es preparar todos lo regalos cada año.
+ Los segundo tienen trajes rojos con rayas verdes y dorada, con cascabeles en el gorro y en las mangas, en contraste con los primeros es que no tiene ojeras por que ya no sufren de estres pero sus ojos grandes demuestran cierto grado de esquizofrenia y delirios.
+
+ - **Ataques y Comportamiento**
+ Los Duendes no tienen mucho miedo a morir acausa del estres y esquizofrenia que padecen asi que se dirijen hacia el jugador para poder acabar con el jugador lo mas pronto posible y volver a trabajar.
+ Los **Estresados** corren hacia el jugador con un baston de caramelo para golparlo.
+ Los **Ezquizofrenicos** caminan rapido para no caerce con un pequeño **regalo** en las manos que estan seguros que te encantara.
+
+   - **Tipo de Duende**
+     - **Estresado**
+     Cuentan con 30 puntos de vida, 6 puntos de velocidad y 1 ataque mele que hace 4 puntos de daño.
+     - **Esquizofrenico**
+     Cuenta con 20 puntos de vida, 5 puntos de velocidad y 1 ataque de area de 2 tiles de radio que hace 8 puntos de daño "***Si es golpeado se cae y el regalo explota despues de 4 segundos***".
+
+### Enemigo 2: Husky
 ### Enemigo 2: Snowmans
 
 - **Historia de los prisioneros:**
