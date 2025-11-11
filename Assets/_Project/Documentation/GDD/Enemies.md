@@ -63,6 +63,7 @@
 - **Ataques y Comportamiento**  
   Morsov cuenta con 2 fases, 2 ataques y 3 etapas de combate.
   Morsov cuenta con 50 puntos de vida, su velocidad será igual 3/4 de la velocidad del jugador y sus ataques no gastan humedad.  
+
 - **Fases**
    - **Primera Fase:**
   Vida entre el 100% y 41% Morsov solo se mueve de izquierda a derecha en la parte superior del mapa mientras ataca.  
@@ -131,7 +132,7 @@
   - Sus ataques causan 4 puntos de daño al jugador, pero solo reducen 15 puntos de humedad, ya que sus golpes son más rápidos. 
   - Su ritmo de ataque es más veloz que el de los zorros, ya que poseen la habilidad de hacer invisibles tras lanzar un ataque.
 
-  ### Enemigo Jefe : El Rey del Oro
+### Enemigo Jefe : El Rey del Oro
 - **Historia de El Rey del Oro:**  
   El Rey del Oro fue un cuy muy apreciado y respetado por el hecho de ser más grande y fuerte que el resto de los cuy, siendo esto lo que generó un sentido de superioridad y soberbia, pero que gracias a su naturaleza amable siempre veía por la seguridad de los suyos.
   Siendo estos últimos los que cambiaron y se intensificaron el día que durante una batalla perdió a varios de sus compañeros y terminó quemado en toda la parte inferior de su cuerpo, ocasionado un intenso deseo que cuidar a los suyos y una gran hostilidad hacia cualquier extraño que se acerque a sus tierras.
@@ -193,8 +194,46 @@
   - **Velocidad:** Alta. Se mueve rápidamente, realizando acrobacias y ataques impredecibles.
 
 ### Enemigo Jefe : Quetzal
+
 - **Historia de Quetzal:**  
-El Quetzal se volvio una de las ave
+ El Quetzal se volvió un ave desconfiada y agresiva por partes iguales a causa de las continúas capturas de los miembros de sus especie.  
+ Por este motivo se va a encargar de que nadie se acerque a su territorio para que su especie no vuelva a sufrir vuelva a sufrir mas perdidas aunque eso le cueste la vida.
+
+- **Estilo de arte:**  
+ El Quetzal tiene un plumaje cuyos colores son una mezcla de tonos verdes rojizos y negros, revisar () para referencias.
+
+- **Ataques y Comportamiento:** 
+El enfrentamiento contra el Quetzal consta de 2 fases con 1 oculta, 2 tipos de ataque y 2 etapas principales con 1 oculta.  
+El quetzal tiene 130 puntos de vida, una velocidad de 8 y cada uno de sus ataques gastan 1/6 de su humedad total, despues de eso regresa a el centro del mapa donde come algunas frutas para recuperar toda su humedad en 3 segundo antes de volver atacar.
+
+- **Fases:**
+  - **Primera Fase:**
+  Vida entre el 100% y el 35% el Quetzal ataca se mueve al rededor del escenario y ataca cada 6 segundos, el ataque depende de que tan cerca esta del enemigo.
+  - **Segunda Fase:**
+  Vida entre 34% y el 0% el Quetzal ronda al jugador y ataca cada 4 segundos, despues se queda en sus ultiama posicion 2 segundos antes de volver al centro del mapa para recuperar su humedad.  
+
+  ***Solo si el jugador trabaja con los Gavilanes***
+  - **Oculto**
+  Vida de 15% al 5% el Quetzal ronda al jugador y ataca cada 3 segundos y cada ataque le resta 1% de su vida, si su vida llega al 5% se dirige al centro del escenario y se rinde. 
+
+- **Ataque:**
+  - **Larga Distancia:**
+ Si el Quetazal esta a mas de 5 tiles de distancia se lanza en linea recta hacia la posicion del jugador en linea recta, ocaciona 8 puntos de daño, despues no se mueve durante 2 segundos antes de lanzarse hacia el jugador y espera 2 segundo antes de hacer su siguiente accion.
+  - **Corta Disatancia**
+ Si el Quetzal esta a 5 o menos tiles de distacia se detiene 2   segundos antes de lanzarse contra el jugador causando 6 puntos de daño, despues no se mueve durante 1.5 segundos antes de hacer su siguiente accion.
+
+- **Combate:**  
+  - **Primera Etapa**  
+  El Quetzal ataca al jugador con 8 secuaces; 3 igunas y 5 guacamayas.
+  - **Segunda Etapa**  
+  El quetzan ataca al jugador junto con 3 guacamayas.
+
+  ***Solo si el jugador trabaja con los Gavilanes***
+  - **Oculto**
+  El Quetzal ataca solo.
+
+
+
 
 ## Alaska
 
