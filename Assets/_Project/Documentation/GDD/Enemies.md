@@ -192,6 +192,22 @@
   - **Vida:** 30 puntos.  
   - **Velocidad:** Alta. Se mueve rápidamente, realizando acrobacias y ataques impredecibles.
 
+### Enemigo 3: Carpinteros
+- **Historia de los Carpinteros:**
+
+  Los carpinteros son animales que aprendieron a vivir en comunidad tras una antigua catástrofe que los obligó a unirse para sobrevivir. Con el tiempo comprendieron que la unidad hace la fuerza, y juntos se dedicaron a construir sus hogares en grupos de empalizadas. Esta cooperación los volvió inseparables y también más peligrosos: cuando golpean el suelo al unísono, pueden generar ligeros temblores capaces de aturdir o espantar a sus enemigos.
+- **Estilo de arte:**
+
+  Conservan el mismo estilo chibi y cartoon que el resto de los enemigos, aunque con un nivel de detalle ligeramente superior para diferenciarlos del jugador. Su diseño refleja su naturaleza colectiva, con plumas suaves, herramientas rudimentarias y gestos coordinados entre sí.
+- **Ataques y comportamiento:**
+
+  - Los carpinteros se mueven en grupo, asemejándose a una parvada. Son ligeramente más lentos que los zorros o las iguanas, pero atacan de forma sincronizada.
+  - Cuando golpean con sus picos, causan 30 puntos de daño al jugador.
+  - Al golpear el suelo al unísono, generan una onda sísmica que inflige 25 puntos de daño.
+  - Ambos tipos de ataque reducen 20 puntos de humedad del jugador.
+  - Su patrón combina coordinación y ritmo, ofreciendo al jugador oportunidades de esquiva entre los ataques en conjunto.
+
+
 ### Enemigo Jefe : Qetzal
 - **Historia de Quetzal:**  
 El quetzal 
