@@ -193,8 +193,23 @@
   - **Vida:** 30 puntos.  
   - **Velocidad:** Alta. Se mueve rápidamente, realizando acrobacias y ataques impredecibles.
 
-### Enemigo Jefe : Quetzal
+### Enemigo 3: Carpinteros
+- **Historia de los Carpinteros:**
 
+  Los carpinteros son animales que aprendieron a vivir en comunidad tras una antigua catástrofe que los obligó a unirse para sobrevivir. Con el tiempo comprendieron que la unidad hace la fuerza, y juntos se dedicaron a construir sus hogares en grupos de empalizadas. Esta cooperación los volvió inseparables y también más peligrosos: cuando golpean el suelo al unísono, pueden generar ligeros temblores capaces de aturdir o espantar a sus enemigos.
+- **Estilo de arte:**
+
+  Conservan el mismo estilo chibi y cartoon que el resto de los enemigos, aunque con un nivel de detalle ligeramente superior para diferenciarlos del jugador. Su diseño refleja su naturaleza colectiva, con plumas suaves, herramientas rudimentarias y gestos coordinados entre sí.
+- **Ataques y comportamiento:**
+
+  - Los carpinteros se mueven en grupo, asemejándose a una parvada. Son ligeramente más lentos que los zorros o las iguanas, pero atacan de forma sincronizada.
+  - Cuando golpean con sus picos, causan 30 puntos de daño al jugador.
+  - Al golpear el suelo al unísono, generan una onda sísmica que inflige 25 puntos de daño.
+  - Ambos tipos de ataque reducen 20 puntos de humedad del jugador.
+  - Su patrón combina coordinación y ritmo, ofreciendo al jugador oportunidades de esquiva entre los ataques en conjunto.
+
+
+### Enemigo Jefe : Quetzal
 - **Historia de Quetzal:**  
  El Quetzal se volvió un ave desconfiada y agresiva por partes iguales a causa de las continúas capturas de los miembros de sus especie.  
  Por este motivo se va a encargar de que nadie se acerque a su territorio para que su especie no vuelva a sufrir vuelva a sufrir mas perdidas aunque eso le cueste la vida.
@@ -231,8 +246,6 @@ El quetzal tiene 130 puntos de vida, una velocidad de 8 y cada uno de sus ataque
   ***Solo si el jugador trabaja con los Gavilanes***
   - **Oculto**
   El Quetzal ataca solo.
-
-
 
 
 ## Alaska
@@ -276,7 +289,34 @@ El quetzal tiene 130 puntos de vida, una velocidad de 8 y cada uno de sus ataque
   - **Vida:** 50 puntos.  
   - **Velocidad:** Moderada. Aunque no son muy rápidos, su fuerza y poder en combate son su mayor ventaja.
 
-### Enemigo 3: Rhacn
+### Enemigo 5: Venados
+
+- **Historia de los prisioneros:**
+
+  Los venados son el resultado de rituales oscuros y experimentos fallidos realizados por una secta presente en esta región. Estos rituales pretendían crear recipientes para espíritus malignos, pero terminaron condenando a los pobres animales a una existencia de sufrimiento eterno.
+
+  Cada venado lleva en su interior a un ser oscuro que intenta liberarse, causando una lucha constante dentro de su cuerpo. Solo al ser derrotados puede verse su verdadera naturaleza: un esqueleto poseído, liberado momentáneamente del cuerpo que lo contenía.
+  
+  Estos enemigos, atormentados y desfigurados por el dolor, no pueden descansar ni morir realmente hasta ser exorcizados o destruidos por completo. Su historia es un reflejo del horror que la secta ha dejado tras de sí.
+- **Estilo de arte:**
+ 
+  Siguen el mismo estilo chibi y cartoon característico de los enemigos, aunque con detalles más marcados en sus cuernos, ojos y pelaje para diferenciarlos claramente del jugador.
+ 
+  En su segunda fase —cuando emerge el esqueleto— el estilo conserva la estética chibi pero incorpora tonos más oscuros, líneas quebradas y un aire siniestro, evocando la corrupción y la presencia espiritual.
+
+- **Ataques y comportamiento:**
+
+  - Tienen 15 de  vida primera fase y 10 en la segunda
+  - Los venados tienen un comportamiento inicial similar a un animal salvaje.
+  - En su primera forma, atacan con las astas, moviéndose lentamente pero con fuerza.
+  - Al ser vencidos, su cuerpo se desmorona y de su interior surge un esqueleto poseído que adopta un comportamiento agresivo, actuando como un summoner o espíritu vengativo.
+  - En esta segunda fase, el esqueleto se lanza en embestidas rápidas, marcando al jugador antes de atacar, de forma similar a los carpinteros alternativos.
+  - Cada embestida inflige 5 puntos de daño y reduce la humedad en 20 puntos.
+  - Sus movimientos son erráticos y violentos, como si la entidad interna intentara liberarse del dolor a través del ataque.
+  - Este enemigo representa el contraste entre la tristeza y la furia contenida, pasando de la calma del venado vivo a la ferocidad del espíritu que lo domina.
+
+
+### Enemigo 4: Rhacn
 
 - **Historia de Rhacn:**  
   **Rhacn** es el líder de la **Secta Albina**, un pinguino mutado más allá de lo que la ciencia debería permitir. Su cuerpo, marcado por una terrible transformación, combina la apariencia elegante de un pinguino con una fuerza descomunal y habilidades sobrehumanas. La **Secta Albina** lo considera una deidad, un ser que ha trascendido las limitaciones de su especie. Su toga, que parece inofensiva, oculta un cuerpo musculoso y monstruoso, capaz de destruir con un solo golpe. Con unos **lentes oscuros** que ocultan su mirada penetrante, Rhacn irradia una aura de frialdad y control absoluto.
