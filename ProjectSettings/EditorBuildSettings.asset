@@ -20,6 +20,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Project/Scenes/_TestScenes/MainMenu.unity
     guid: eb1ad969758fa40488363e1ec25973aa
+  - enabled: 1
+    path: Assets/_Project/Scenes/_TestScenes/GenerateFirstMap.unity
+    guid: f7e1675f32dbdc049aa14b0b9827a148
+  - enabled: 1
+    path: Assets/_Project/Scenes/Core/Credits.unity
+    guid: 1fb571df4c26c9a4ba7f90d8ca5bd957
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 3590b91b4603b465dbb4216d601bff33, type: 3}
   m_UseUCBPForAssetBundles: 0
