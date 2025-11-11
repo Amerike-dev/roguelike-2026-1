@@ -13,4 +13,15 @@ public class JsonReader
         DungeonData data = JsonUtility.FromJson<DungeonData>(json);
         return data;
     }
+
+    public SavedGameData ReadGame(string path)
+    {
+        string jsonPath;
+        jsonPath = Path.Combine(Application.streamingAssetsPath + path);
+        string json = File.ReadAllText(jsonPath);
+
+        SavedGameData data = JsonUtility.FromJson<SavedGameData>(json);
+
+        return data;
+    }
 }
