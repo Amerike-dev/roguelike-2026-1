@@ -16,8 +16,9 @@ public class JsonReader
 
     public SavedGameData ReadGame(string path)
     {
-        string jsonPath;
-        jsonPath = Path.Combine(Application.streamingAssetsPath + path);
+        string jsonPath = Path.Combine(Application.persistentDataPath, path);
+        if (!File.Exists(jsonPath)) return new SavedGameData();
+        
         string json = File.ReadAllText(jsonPath);
 
         SavedGameData data = JsonUtility.FromJson<SavedGameData>(json);
