@@ -132,7 +132,7 @@
   - Sus ataques causan 4 puntos de daño al jugador, pero solo reducen 15 puntos de humedad, ya que sus golpes son más rápidos. 
   - Su ritmo de ataque es más veloz que el de los zorros, ya que poseen la habilidad de hacer invisibles tras lanzar un ataque.
 
-### Enemigo Jefe : El Rey del Oro
+ ### Enemigo Jefe : El Rey del Oro
 - **Historia de El Rey del Oro:**  
   El Rey del Oro fue un cuy muy apreciado y respetado por el hecho de ser más grande y fuerte que el resto de los cuy, siendo esto lo que generó un sentido de superioridad y soberbia, pero que gracias a su naturaleza amable siempre veía por la seguridad de los suyos.
   Siendo estos últimos los que cambiaron y se intensificaron el día que durante una batalla perdió a varios de sus compañeros y terminó quemado en toda la parte inferior de su cuerpo, ocasionado un intenso deseo que cuidar a los suyos y una gran hostilidad hacia cualquier extraño que se acerque a sus tierras.
@@ -148,7 +148,7 @@
     Vida entre el 35% y el 0% de la vida El Rey del Oro Pier el oro de la parte inferior de su cuerpo y su velocidad aumenta a 7 y continúa atacando con su martillo pero la humedad que gasta baja a ¼ por ataque y el tiempo que dura el ataque y la recuperación de la humedad se reduce a la mitad.
 - **Ataque:**
     - **Mele:**
-    Cuando llega al rango de ataque, ejecuta el ataque que dura 2 segundos de animación, hace 9 puntos de daño, tarda 3 segundos en desatorarlo y despues continúa persiguiendo al jugador y repite el proceso.
+    Cuando llega al rango de ataque, ejecuta el ataque que dura 2 segundos de animación, hace 9 puntos de daño, termina y continúa persiguiendo al jugador y repite el proceso.
 - **Combate:**
     - **Primera Etapa:**
     El Rey del Oro persigue al jugador junto con sus secuaces los cuales varían entre 6 y 8.
@@ -209,9 +209,9 @@
   - Su patrón combina coordinación y ritmo, ofreciendo al jugador oportunidades de esquiva entre los ataques en conjunto.
 
 
-### Enemigo Jefe : Quetzal
+### Enemigo Jefe : Qetzal
 - **Historia de Quetzal:**  
- El Quetzal se volvió un ave desconfiada y agresiva por partes iguales a causa de las continúas capturas de los miembros de sus especie.  
+ El quetzal se volvió un ave desconfiada y agresiva por partes iguales a causa de las continúas capturas de los miembros de sus especie.  
  Por este motivo se va a encargar de que nadie se acerque a su territorio para que su especie no vuelva a sufrir vuelva a sufrir mas perdidas aunque eso le cueste la vida.
 
 - **Estilo de arte:**  
@@ -307,7 +307,7 @@ El quetzal tiene 130 puntos de vida, una velocidad de 8 y cada uno de sus ataque
      Si la vida de su compañero se encuantra entre el 100% y el 26% se mantendra cerca de el para tratar de bloquear los ataque del Jugador pero sin atacar.
 
      - **Activa**
-     Si la vida de su compañero es menor al 25% corre hacia el Jugador y empieza a atacarlo para que se tenga que sentrar en el. 
+     Si la vida de su compañero es menor al 25% corre hacia el Jugador y empieza a atacarlo para que se tenga que sentrar en el.
 
 
 ### Enemigo 5: Venados
@@ -395,7 +395,6 @@ El quetzal tiene 130 puntos de vida, una velocidad de 8 y cada uno de sus ataque
   - **(Coca Cola para la familia) Potenciar:**  
     Cuando los Osos Polares bajan de la **mitad de su vida**, tienen una **probabilidad** de tomarse una Coca Cola, lo que les **regenera 10 puntos de vida** y les **aumenta el daño en 2 o 3 puntos adicionales**.
 
-<<<<<<< HEAD
 ### Enemigo 3 Duendes
  - **Historia de los Duendes**
  Los Duendes son los sirvientes mas cercanos de Santa Claus y el motivo mas inportante de su odio hacia los pinguinos no es que se quieran enfrentar a Santa Clos, sino poruqe tener que peliar con ellos les esta quitando valioso tiempo que podiran estar ocupando en hacer los regalos de ese año.
@@ -417,7 +416,6 @@ El quetzal tiene 130 puntos de vida, una velocidad de 8 y cada uno de sus ataque
      Cuenta con 20 puntos de vida, 5 puntos de velocidad y 1 ataque de area de 2 tiles de radio que hace 8 puntos de daño "***Si es golpeado se cae y el regalo explota despues de 4 segundos***".
 
 ### Enemigo 2: Husky
-=======
 ### Enemigo 2: Snowmans
 
 - **Historia de los prisioneros:**
@@ -443,7 +441,6 @@ El quetzal tiene 130 puntos de vida, una velocidad de 8 y cada uno de sus ataque
   - Este golpe lanza una bola de nieve que es la que hace el daño de este enemigo
 
 ### Enemigo 3: Husky
->>>>>>> main
 
 - **Historia del Husky:**  
   Los **Huskys** son los guardianes finales del **Estrecho de Bering**, encargados de asegurarse de que nada ni nadie cruce su territorio. Criados y entrenados por los miembros más radicales de la **Secta Albina**, estos caninos mutados están completamente enfocados en eliminar a cualquier intruso. Con su aspecto de lobo feroz, y armados con **AK-47**, los **Huskys** son letales en combate a distancia. Su misión es poner fin a la pinguinezca existencia de cualquier ser que intente atravesar su dominio.
