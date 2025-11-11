@@ -1,0 +1,14 @@
+{
+    "game": {
+        "started": "10/11/2025 06:40:47 p. m.",
+        "routes": [
+            {
+                "name": "starting",
+                "status": "mot finished",
+                "discoveries": [
+                    {}
+                ]
+            }
+        ]
+    }
+}
