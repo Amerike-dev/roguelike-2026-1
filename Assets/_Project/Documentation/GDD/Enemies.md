@@ -395,8 +395,29 @@ El quetzal tiene 130 puntos de vida, una velocidad de 8 y cada uno de sus ataque
   - **(Coca Cola para la familia) Potenciar:**  
     Cuando los Osos Polares bajan de la **mitad de su vida**, tienen una **probabilidad** de tomarse una Coca Cola, lo que les **regenera 10 puntos de vida** y les **aumenta el daño en 2 o 3 puntos adicionales**.
 
+<<<<<<< HEAD
+### Enemigo 3 Duendes
+ - **Historia de los Duendes**
+ Los Duendes son los sirvientes mas cercanos de Santa Claus y el motivo mas inportante de su odio hacia los pinguinos no es que se quieran enfrentar a Santa Clos, sino poruqe tener que peliar con ellos les esta quitando valioso tiempo que podiran estar ocupando en hacer los regalos de ese año.
+
+ - **Estilo de Arte**
+ Los Duedes se dividen en dos tipos cullas apariencias demuestran cuanto tiempo llevan trabajando con Santa Claus.  
+ Los primaros tienen trajecitos mayormente verdes con rayas azules pero tiene ojeras muy profundas en los ojos que demuestran el estres extremo que es preparar todos lo regalos cada año.
+ Los segundo tienen trajes rojos con rayas verdes y dorada, con cascabeles en el gorro y en las mangas, en contraste con los primeros es que no tiene ojeras por que ya no sufren de estres pero sus ojos grandes demuestran cierto grado de esquizofrenia y delirios.
+
+ - **Ataques y Comportamiento**
+ Los Duendes no tienen mucho miedo a morir acausa del estres y esquizofrenia que padecen asi que se dirijen hacia el jugador para poder acabar con el jugador lo mas pronto posible y volver a trabajar.
+ Los **Estresados** corren hacia el jugador con un baston de caramelo para golparlo.
+ Los **Ezquizofrenicos** caminan rapido para no caerce con un pequeño **regalo** en las manos que estan seguros que te encantara.
+
+   - **Tipo de Duende**
+     - **Estresado**
+     Cuentan con 30 puntos de vida, 6 puntos de velocidad y 1 ataque mele que hace 4 puntos de daño.
+     - **Esquizofrenico**
+     Cuenta con 20 puntos de vida, 5 puntos de velocidad y 1 ataque de area de 2 tiles de radio que hace 8 puntos de daño "***Si es golpeado se cae y el regalo explota despues de 4 segundos***".
 
 ### Enemigo 2: Husky
+=======
 ### Enemigo 2: Snowmans
 
 - **Historia de los prisioneros:**
@@ -421,28 +442,8 @@ El quetzal tiene 130 puntos de vida, una velocidad de 8 y cada uno de sus ataque
   Su lentitud permite esquivarlos con facilidad, pero su impacto es devastador si logran conectar un golpe. 
   - Este golpe lanza una bola de nieve que es la que hace el daño de este enemigo
 
-### Enemigo 3 Duendes
- - **Historia de los Duendes**
- Los Duendes son los sirvientes mas cercanos de Santa Claus y el motivo mas inportante de su odio hacia los pinguinos no es que se quieran enfrentar a Santa Clos, sino poruqe tener que peliar con ellos les esta quitando valioso tiempo que podiran estar ocupando en hacer los regalos de ese año.
-
- - **Estilo de Arte**
- Los Duedes se dividen en dos tipos cullas apariencias demuestran cuanto tiempo llevan trabajando con Santa Claus.  
- Los primaros tienen trajecitos mayormente verdes con rayas azules pero tiene ojeras muy profundas en los ojos que demuestran el estres extremo que es preparar todos lo regalos cada año.
- Los segundo tienen trajes rojos con rayas verdes y dorada, con cascabeles en el gorro y en las mangas, en contraste con los primeros es que no tiene ojeras por que ya no sufren de estres pero sus ojos grandes demuestran cierto grado de esquizofrenia y delirios.
-
- - **Ataques y Comportamiento**
- Los Duendes no tienen mucho miedo a morir acausa del estres y esquizofrenia que padecen asi que se dirijen hacia el jugador para poder acabar con el jugador lo mas pronto posible y volver a trabajar.
- Los **Estresados** corren hacia el jugador con un baston de caramelo para golparlo.
- Los **Ezquizofrenicos** caminan rapido para no caerce con un pequeño **regalo** en las manos que estan seguros que te encantara.
-
-   - **Tipo de Duende**
-     - **Estresado**
-     Cuentan con 30 puntos de vida, 6 puntos de velocidad y 1 ataque mele que hace 4 puntos de daño.
-     - **Esquizofrenico**
-     Cuenta con 20 puntos de vida, 5 puntos de velocidad y 1 ataque de area de 2 tiles de radio que hace 8 puntos de daño "***Si es golpeado se cae y el regalo explota despues de 4 segundos***".
-
-
 ### Enemigo 3: Husky
+>>>>>>> main
 
 - **Historia del Husky:**  
   Los **Huskys** son los guardianes finales del **Estrecho de Bering**, encargados de asegurarse de que nada ni nadie cruce su territorio. Criados y entrenados por los miembros más radicales de la **Secta Albina**, estos caninos mutados están completamente enfocados en eliminar a cualquier intruso. Con su aspecto de lobo feroz, y armados con **AK-47**, los **Huskys** son letales en combate a distancia. Su misión es poner fin a la pinguinezca existencia de cualquier ser que intente atravesar su dominio.
