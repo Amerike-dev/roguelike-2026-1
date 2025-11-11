@@ -15,6 +15,74 @@
   En cuanto reciban daño, su velocidad de movimiento aumentará a **medianamente rápida**.  
   *(Este enemigo no puede aturdir al jugador).*
 
+### Enemigo 2: Prisioneros
+
+- **Historia de los prisioneros:**  
+  Morsov es un ser vil y malvado, el científico perverso de Santa Claus. Desarrolló una tecnología secreta capaz de controlar la mente de los animales mediante gorritos navideños con antenas.  
+  Los prisioneros son los antiguos amigos, compañeros y familiares de nuestro protagonista, convertidos en recipientes vacíos de lo que solían ser.  
+  Solo la promesa de un convivio navideño con ponche gratis fue suficiente para convencerlos de caer en el engaño que los llevó a donde están ahora.  
+  Nuestro héroe no tiene ninguna manera de revertir el control sobre ellos; su única opción es derrotarlos en combate.
+
+- **Estilo de arte:**  
+  Pingüinos con gorro de Navidad que incluye una antena.
+
+- **Ataques y comportamiento:**  
+  Los ataques de los prisioneros serán de varios tipos. Tienen **40 puntos de vida** y sus ataques reducen **5 puntos de vida** al jugador.  
+
+  - **Ataques y comportamiento:**  
+    Los ataques vendrán en variantes más débiles de las armas iniciales del jugador:
+
+    - Cachetada Ártica  
+    - Trinche de una Luca  
+    - El Guerrillero
+
+### Enemigo 3: Zorros
+
+- **Historia de los Zorros:**
+
+  Estos zorros fueron enviados para acompañar a Morsov con el objetivo de detener al pingüino, el protagonista del juego. Poseen una lealtad ciega hacia Santa Claus, ya que cada uno de ellos porta un suéter tejido especialmente por él. Este gesto los une emocionalmente y refuerza su devoción hacia su líder.
+
+- **Estilo de arte:**
+
+  El diseño mantiene un estilo tipo cartoon y chibi, aunque con un nivel de detalle ligeramente mayor para distinguirlos visualmente del protagonista.estos serán como zorros normales con un color anaranjado y marcas negras en patas, cola  y hocico pero tiene una bufanda con diseño de suéteres feos que sean su “brazos”
+
+- **Ataques y comportamiento:**
+
+  - Los zorros son más veloces de lo habitual, lo que les permite moverse ágilmente durante el combate.
+  - Tienen 15 puntos de vida
+  - Su forma de ataque principal consiste en usar sus bufandas como si fueran brazos o látigos, golpeando al jugador con movimientos rápidos y encadenados.
+  - Aunque sus ataques no causan un gran daño individual (aproximadamente 3 puntos de vida), compensan con su capacidad de ataque repetitivo. Además, cada golpe reduce la humedad del jugador en 25 puntos, ya que las bufandas absorben y enfrían su entorno.
+
+### Enemigo Jefe : Morsov
+- **Historia de Morsov:**  
+  Morsov fue un sujeto de pruebas de un equipo de investigación Rusa lo que ocasionó que su personalidad sea errática así como un anhelo por la libertad la cual obtuvo al ser liberado del laboratorio por Santa, después de ser liberado Santa le permitió hacer lo que quiera creando así su propio club de motocicleta, aunque su tranquilidad se desvaneció cuando su Salvador le pidió que se encargue de un pingüino que se atrevió a amenazarlo.
+
+- **Estilo de arte:**  
+  Morsov tiene un parche en el ojo derecho, varias cicatrices por los experimentos del laboratorio, cabello en punta (Aunque en realidad es un peluquín) y tiene varias cicatrices en casi todo el cuerpo.
+
+- **Ataques y Comportamiento**  
+  Morsov cuenta con 2 fases, 2 ataques y 3 etapas de combate.
+  Morsov cuenta con 50 puntos de vida, su velocidad será igual 3/4 de la velocidad del jugador y sus ataques no gastan humedad.  
+- **Fases**
+   - **Primera Fase:**
+  Vida entre el 100% y 41% Morsov solo se mueve de izquierda a derecha en la parte superior del mapa mientras ataca.  
+   - **Segunda Fase:**
+  Vida entre 40% y 0% Morsov ya se puede por toda la zona de Agua y los tiles que conectan el agua con la tierra.
+
+  **Ataques:**  
+  - **Mele:**
+  Morsov azota el suelo generando daño en área causando 7 puntos de daño, con un cooldown de 5 segundos.
+  - **Distancia:**
+  Morsov lanza a 1 de sus secuaces cada 7 segundos, el cual causa el doble de daño, persigue al Jugador y muere después de 3 segundos.  
+
+  **Combate:**
+  - **Primera Etapa:**
+  Morsov no atacará y el jugador solo se enfrenta contra sus secuaces.
+  - **Segunda Etapa**
+  El jugador ya podrá acercarse a Morsov y tendrá que subirse a los trozos de hielo flotante para poder atacar, por su parte Morsov continuará con sus ataques a distancia.
+  - **Tercera Etapa**
+  Empieza cuando la vida de Morsov baja del 41% y se activa su segunda fase, se puede mover por toda la zona del agua y el principio de la tierra lo que permite Morsov pueda hacer su ataque mele si el jugador está lo suficientemente cerca de él, esto para que el jugador tenga que estar en movimiento constante.
+
 ## Perú
 ### Enemigo 1: Anacondas
 
@@ -28,7 +96,63 @@
 - **Ataques y comportamiento:**  
   Los ataques de las anacondas serán de dos tipos, estos cuentan con 36 puntos de vida pero en la cabeza les podras hacer el doble de daño, su velocidad sera rapida:  
   - **A distancia:** atacarán con un disparo usando su flauta dulce peruana cada vez que se encuentren lejos del jugador, esto bajara 5 puntos de vida.  
-  - **A melee:** realizarán una picadura que reducirá la **humedad** del jugador, esto bajara 3 puntos de vida.
+  - **A melee:** realizarán una picadura que reducirá la **humedad** del jugador, esto bajara 3 puntos de vida. 
+
+  ### Enemigo 2: Cuys
+- **Historia de los cuys:**  
+
+  Los cuys son el musculo del rey. El rey cuy ha podido reinar con un puño de hierro gracias a ellos. Ágiles, letales pero no tan resistentes, los cuys fungen como la gestapo peruana.
+
+- **Estilo de arte:**  
+
+  Los cuys deben verse muy tiernos, con ojos grandes que transmitan inocencia como máscara de su letalidad. Cuando atacan, dejan atrás su fachada adorable para convertirse en máquinas letales de asesinato.
+
+- **Ataques y comportamiento:**  
+
+  Los ataques de los cuys serán de un solo tipo, pero usarán uno diferente cuando su vida sea menor a la mitad. Estos cuentan con **16 puntos de vida** y su **velocidad será muy rápida**:  
+
+  - Arriba del **50 % de vida:** una pequeña embestida de corto rango que hace **1 punto de daño**.  
+  - Debajo del **50 % de vida:** sacarán dos cuchillas y comenzarán a embestir al jugador con ataques muy rápidos mientras avanzan, y cada uno de los ataques hace **2 puntos de daño**.
+
+### Enemigo 3: Iguanas
+
+- **Historia de las Iguanas:**
+
+  Secuaces del Rey de Oro, esclavizados para cumplir como informantes estos gracias a su agilidad y habilidad de hacerse invisibles le ayudan al rey del oro a mantener su reinado sobre Perú
+
+- **Estilo de arte:**
+
+  Las iguanas mantienen un estilo chibi y cartoon, pero con un nivel de detalle ligeramente superior, seran de varios colores sin embargi el color verde es que predominara. Esto les da una apariencia dinámica y distintiva dentro del entorno, reforzando su personalidad ágil y escurridiza.
+
+- **Ataques y comportamiento:**
+
+  - Tienen 20 punto de vida
+  - Su comportamiento es similar al de los zorros, aunque adaptado a su naturaleza reptil. Son criaturas ágiles y escurridizas, capaces de golpear con su lengua y su cola.
+  - Sus ataques causan 4 puntos de daño al jugador, pero solo reducen 15 puntos de humedad, ya que sus golpes son más rápidos. 
+  - Su ritmo de ataque es más veloz que el de los zorros, ya que poseen la habilidad de hacer invisibles tras lanzar un ataque.
+
+  ### Enemigo Jefe : El Rey del Oro
+- **Historia de El Rey del Oro:**  
+  El Rey del Oro fue un cuy muy apreciado y respetado por el hecho de ser más grande y fuerte que el resto de los cuy, siendo esto lo que generó un sentido de superioridad y soberbia, pero que gracias a su naturaleza amable siempre veía por la seguridad de los suyos.
+  Siendo estos últimos los que cambiaron y se intensificaron el día que durante una batalla perdió a varios de sus compañeros y terminó quemado en toda la parte inferior de su cuerpo, ocasionado un intenso deseo que cuidar a los suyos y una gran hostilidad hacia cualquier extraño que se acerque a sus tierras.
+
+- **Estilo de arte:**  
+  Cuenta con un pelaje lacio y largo dividido en 3 tipos de colores teniendo el abdomen de color naranja rojiso, los costados de color naranja claro y una linea blanca de pelaje que va desde la frente hasta la espalda siguiendo la línea de la columna, por otro lado cuenta coon la mitad inferior de su cuerpo cubierta en oro.
+- **Ataques y comportamiento:**  
+  El enfrentamiento contra El Rey del Oro cuenta con 2 etapas , 2 fases y 1 ataque. El Rey del Oro cuenta con 110 puntos de vida, velocidad de 5, su ataque gasta 1/3 de su humedad total, cada 3 ataques el se toma 4 segundos para tomar 1 vaso de jugo de manzana y después continúa atacando.  
+- **Fases**  
+    - **Primera Fase:**
+    Vida entre el 100% y el 35% de la vida El Rey del Oro persigue al jugador para atacar con su martillo.
+    - **Segunda Fase:**
+    Vida entre el 35% y el 0% de la vida El Rey del Oro Pier el oro de la parte inferior de su cuerpo y su velocidad aumenta a 7 y continúa atacando con su martillo pero la humedad que gasta baja a ¼ por ataque y el tiempo que dura el ataque y la recuperación de la humedad se reduce a la mitad.
+- **Ataque:**
+    - **Mele:**
+    Cuando llega al rango de ataque, ejecuta el ataque que dura 2 segundos de animación, hace 9 de daño, termina y continúa persiguiendo al jugador y repite el proceso.
+- **Combate:**
+    - **Primera Etapa:**
+    El Rey del Oro persigue al jugador junto con sus secuaces los cuales varían entre 6 y 8.
+    - **Segunda Etapa:**
+    El Rey del Oro se vuelve más agresivo haciendo que el después de su cuarto ataque vuelva a atacar cuando termina la animación pero pierde el 5% de su vida.
 
 ## México
 
@@ -50,6 +174,45 @@
   - **A melee:** este ataque será similar al de la Guacamaya, realizando **picotazos** que reducen **3 puntos de vida** al jugador.  
   - **Llamar a la clika (invocar enemigos):** este ataque invoca **3 Mulatos Azules** en **formación triangular**.  
     Estos Mulatos tienen **menos vida que el original** y **no mueren si el invocador es derrotado**, solo si el jugador los elimina directamente.
+
+    
+### Enemigo 2: Guacamayas
+
+- **Historia de las Guacamayas:**  
+  Guerreras agresivas y luchadoras por naturaleza. Con la valentía de un luchador profesional, atacan al pinguino sin retroceder, buscando una victoria rápida sin importar el daño que reciban.
+
+- **Estilo de arte:**  
+  Plumajes brillantes en rojo, azul y amarillo, acompañados de una **máscara de luchador** que cubre su rostro, dándoles una apariencia intimidante. Su postura desafiante refleja la actitud de un luchador profesional.
+
+- **Ataques y comportamiento:**
+  - **Embestida Aérea (Luchador Volador):** La **Guacamaya** salta y se lanza hacia el pinguino, causando **4 puntos de daño**.
+  - **Golpe de Pico (Luchador de Pico):** Un ataque rápido con su pico afilado, causando **2 puntos de daño**.
+
+- **Puntos de vida y velocidad:**  
+  - **Vida:** 30 puntos.  
+  - **Velocidad:** Alta. Se mueve rápidamente, realizando acrobacias y ataques impredecibles.
+
+### Enemigo 3: Carpinteros
+- **Historia de los Carpinteros:**
+
+  Los carpinteros son animales que aprendieron a vivir en comunidad tras una antigua catástrofe que los obligó a unirse para sobrevivir. Con el tiempo comprendieron que la unidad hace la fuerza, y juntos se dedicaron a construir sus hogares en grupos de empalizadas. Esta cooperación los volvió inseparables y también más peligrosos: cuando golpean el suelo al unísono, pueden generar ligeros temblores capaces de aturdir o espantar a sus enemigos.
+- **Estilo de arte:**
+
+  Conservan el mismo estilo chibi y cartoon que el resto de los enemigos, aunque con un nivel de detalle ligeramente superior para diferenciarlos del jugador. Su diseño refleja su naturaleza colectiva, con plumas suaves, herramientas rudimentarias y gestos coordinados entre sí.
+- **Ataques y comportamiento:**
+
+  - Los carpinteros se mueven en grupo, asemejándose a una parvada. Son ligeramente más lentos que los zorros o las iguanas, pero atacan de forma sincronizada.
+  - Cuando golpean con sus picos, causan 30 puntos de daño al jugador.
+  - Al golpear el suelo al unísono, generan una onda sísmica que inflige 25 puntos de daño.
+  - Ambos tipos de ataque reducen 20 puntos de humedad del jugador.
+  - Su patrón combina coordinación y ritmo, ofreciendo al jugador oportunidades de esquiva entre los ataques en conjunto.
+
+
+### Enemigo Jefe : Qetzal
+- **Historia de Quetzal:**  
+El quetzal 
+
+
 ## Alaska
 
 ### Enemigo 1: Castores
@@ -71,6 +234,54 @@
     El **tótem puede ser destruido por el jugador** y cuenta con **50 puntos de vida**.  
     Si el castor recupera el **100% de su vida**, el tótem se destruye automáticamente.  
     Esta habilidad **solo puede usarse una vez por combate** y tiene una **probabilidad de 1 entre 7** de activarse.
+   
+ ### Enemigo 2: Ciervos
+
+- **Historia de los Ciervos:**  
+  Los **Ciervos** son guerreros experimentados, con cicatrices de batalla y una barba espesa que refleja años de lucha. Aunque no son ancianos, su imponente presencia y habilidades en combate los hacen temidos. Son miembros de la **Secta Albina** y no se detendrán ante nada para eliminar al pinguino.
+
+- **Estilo de arte:**  
+  Los **Ciervos** tienen un cuerpo robusto y musculoso, con grandes cuernos y una barba que les da un aire de veteranos. Las cicatrices de guerra adornan su piel, y su postura en 4 patas refleja su fuerza y agilidad.
+
+- **Ataques y comportamiento:**
+  - **Embestida Arrolladora:**  
+    El **Ciervo** embiste al pinguino con gran fuerza, arrastrándolo hacia las paredes y causando **6 puntos de daño**. Este ataque es rápido y debe ser esquivado para evitar el daño.
+
+  - **Slam de Cuerno:**  
+    El **Ciervo** se pone en pie y realiza un golpe con sus cuernos, causando **5 puntos de daño** en un área pequeña. Este ataque es de corto alcance pero muy potente.
+
+- **Puntos de vida y velocidad:**  
+  - **Vida:** 50 puntos.  
+  - **Velocidad:** Moderada. Aunque no son muy rápidos, su fuerza y poder en combate son su mayor ventaja.
+
+### Enemigo 3: Rhacn
+
+- **Historia de Rhacn:**  
+  **Rhacn** es el líder de la **Secta Albina**, un pinguino mutado más allá de lo que la ciencia debería permitir. Su cuerpo, marcado por una terrible transformación, combina la apariencia elegante de un pinguino con una fuerza descomunal y habilidades sobrehumanas. La **Secta Albina** lo considera una deidad, un ser que ha trascendido las limitaciones de su especie. Su toga, que parece inofensiva, oculta un cuerpo musculoso y monstruoso, capaz de destruir con un solo golpe. Con unos **lentes oscuros** que ocultan su mirada penetrante, Rhacn irradia una aura de frialdad y control absoluto.
+
+- **Estilo de arte:**  
+  Rhacn lleva una toga blanca que lo hace parecer casi inofensivo, pero al levantarla, se revela su cuerpo mutado y fornido, similar al de una bestia. Su rostro, parcialmente cubierto por cicatrices o una máscara, tiene una apariencia pinguina, pero sus ojos, ocultos tras unos **lentes oscuros**, transmiten una sensación de frialdad y dominio. Su postura erguida y su confianza absoluta en sus habilidades lo hacen aún más intimidante.
+
+- **Ataques y comportamiento:**
+  **Rhacn** combate con ataques rápidos y devastadores, utilizando su fuerza mejorada para someter al pinguino con velocidad y precisión.
+
+  - **Puño Mutado:**  
+    Rhacn lanza un golpe extremadamente rápido y devastador con su puño mutado, causando **8 puntos de daño**. El impacto es tan fuerte que puede desorientar al jugador por un breve momento.
+
+  - **Rayo Genético:**  
+    Usando sus habilidades mejoradas, **Rhacn** dispara un rayo de energía genética que puede desintegrar a su objetivo, causando **10 puntos de daño**. El rayo es difícil de evitar, pero puede ser esquivado con buena sincronización.
+
+  - **Despliegue Aéreo:**  
+    Rhacn utiliza su agilidad sobrehumana para moverse a una velocidad increíble, deslizándose hacia el pinguino con un **golpe aéreo** que causa **6 puntos de daño**. Este movimiento lo hace parecer casi invisible, aprovechando su velocidad y destreza.
+
+  - **Técnica de Desintegración (Ultimátum):**  
+    Cuando su vida llega a menos del 30%, Rhacn desata su habilidad final, una **explosión de energía mutada** que consume casi todo su poder, causando **15 puntos de daño** en un área extensa. Este ataque puede acabar con el pinguino si no se esquiva a tiempo.
+
+- **Puntos de vida y velocidad:**  
+  - **Vida:** 100 puntos.  
+  - **Velocidad:** Muy alta. Rhacn se mueve con velocidad sobrenatural, siendo capaz de aparecer y desaparecer del campo de batalla con movimientos instantáneos, similares a los de un depredador acechando a su presa.
+
+
 
 
 ## Estrecho de Bering
@@ -100,4 +311,25 @@
 
   - **(Coca Cola para la familia) Potenciar:**  
     Cuando los Osos Polares bajan de la **mitad de su vida**, tienen una **probabilidad** de tomarse una Coca Cola, lo que les **regenera 10 puntos de vida** y les **aumenta el daño en 2 o 3 puntos adicionales**.
+### Enemigo 2: Husky
+
+- **Historia del Husky:**  
+  Los **Huskys** son los guardianes finales del **Estrecho de Bering**, encargados de asegurarse de que nada ni nadie cruce su territorio. Criados y entrenados por los miembros más radicales de la **Secta Albina**, estos caninos mutados están completamente enfocados en eliminar a cualquier intruso. Con su aspecto de lobo feroz, y armados con **AK-47**, los **Huskys** son letales en combate a distancia. Su misión es poner fin a la pinguinezca existencia de cualquier ser que intente atravesar su dominio.
+
+- **Estilo de arte:**  
+  Los **Huskys** tienen una apariencia robusta, con pelaje grueso que varía entre blanco, gris y negro, reflejando su naturaleza salvaje y feroz. Sus ojos brillan con intensidad, mostrando su furia y determinación. Llevan bandoleras de munición y empuñan **AK-47** con destreza, siempre listos para la acción. Su postura erguida y su actitud confiada transmiten una sensación de poder y control absoluto.
+
+- **Ataques y comportamiento:**
+  Los **Huskys** son expertos en combate a distancia, disparando su **AK-47** con precisión mientras mantienen su distancia del enemigo. Son letales, pero vulnerables en combate cercano.
+
+  - **Ráfaga de AK-47:**  
+    El **Husky** dispara una ráfaga rápida de balas en dirección al pinguino, causando **5 puntos de daño** por bala. Si el pinguino no esquiva, puede recibir múltiples impactos rápidamente.
+
+  - **Disparo de Precisión:**  
+    El **Husky** apunta cuidadosamente y lanza un disparo de alta precisión, causando **8 puntos de daño**. Es más lento pero mucho más difícil de esquivar.
+
+- **Puntos de vida y velocidad:**  
+  - **Vida:** 60 puntos.  
+  - **Velocidad:** Moderada. Aunque no es extremadamente rápido en el combate cuerpo a cuerpo, su destreza con las armas y su capacidad para moverse ágilmente lo hacen muy peligroso a distancia.
+
 
