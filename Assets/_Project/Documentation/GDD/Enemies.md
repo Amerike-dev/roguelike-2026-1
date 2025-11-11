@@ -307,7 +307,7 @@ El quetzal tiene 130 puntos de vida, una velocidad de 8 y cada uno de sus ataque
      Si la vida de su compañero se encuantra entre el 100% y el 26% se mantendra cerca de el para tratar de bloquear los ataque del Jugador pero sin atacar.
 
      - **Activa**
-     Si la vida de su compañero es menor al 25% corre hacia el Jugador y empieza a atacarlo para que se tenga que sentrar en el.
+     Si la vida de su compañero es menor al 25% corre hacia el Jugador y empieza a atacarlo para que se tenga que sentrar en el. 
 
 
 ### Enemigo 5: Venados
