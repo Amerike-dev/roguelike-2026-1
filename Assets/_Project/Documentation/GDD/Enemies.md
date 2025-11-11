@@ -148,7 +148,7 @@
     Vida entre el 35% y el 0% de la vida El Rey del Oro Pier el oro de la parte inferior de su cuerpo y su velocidad aumenta a 7 y continúa atacando con su martillo pero la humedad que gasta baja a ¼ por ataque y el tiempo que dura el ataque y la recuperación de la humedad se reduce a la mitad.
 - **Ataque:**
     - **Mele:**
-    Cuando llega al rango de ataque, ejecuta el ataque que dura 2 segundos de animación, hace 9 de daño, termina y continúa persiguiendo al jugador y repite el proceso.
+    Cuando llega al rango de ataque, ejecuta el ataque que dura 2 segundos de animación, hace 9 puntos de daño, tarda 3 segundos en desatorarlo y despues continúa persiguiendo al jugador y repite el proceso.
 - **Combate:**
     - **Primera Etapa:**
     El Rey del Oro persigue al jugador junto con sus secuaces los cuales varían entre 6 y 8.
@@ -215,7 +215,7 @@
  Por este motivo se va a encargar de que nadie se acerque a su territorio para que su especie no vuelva a sufrir vuelva a sufrir mas perdidas aunque eso le cueste la vida.
 
 - **Estilo de arte:**  
- El Quetzal tiene un plumaje cuyos colores son una mezcla de tonos verdes rojizos y negros, revisar () para referencias.
+ El Quetzal tiene un plumaje cuyos colores son una mezcla de tonos verdes rojizos y negros.
 
 - **Ataques y Comportamiento:** 
 El enfrentamiento contra el Quetzal consta de 2 fases con 1 oculta, 2 tipos de ataque y 2 etapas principales con 1 oculta.  
@@ -373,6 +373,27 @@ El quetzal tiene 130 puntos de vida, una velocidad de 8 y cada uno de sus ataque
 
   - **(Coca Cola para la familia) Potenciar:**  
     Cuando los Osos Polares bajan de la **mitad de su vida**, tienen una **probabilidad** de tomarse una Coca Cola, lo que les **regenera 10 puntos de vida** y les **aumenta el daño en 2 o 3 puntos adicionales**.
+
+### Enemigo 3 Duendes
+ - **Historia de los Duendes**
+ Los Duendes son los sirvientes mas cercanos de Santa Claus y el motivo mas inportante de su odio hacia los pinguinos no es que se quieran enfrentar a Santa Clos, sino poruqe tener que peliar con ellos les esta quitando valioso tiempo que podiran estar ocupando en hacer los regalos de ese año.
+
+ - **Estilo de Arte**
+ Los Duedes se dividen en dos tipos cullas apariencias demuestran cuanto tiempo llevan trabajando con Santa Claus.  
+ Los primaros tienen trajecitos mayormente verdes con rayas azules pero tiene ojeras muy profundas en los ojos que demuestran el estres extremo que es preparar todos lo regalos cada año.
+ Los segundo tienen trajes rojos con rayas verdes y dorada, con cascabeles en el gorro y en las mangas, en contraste con los primeros es que no tiene ojeras por que ya no sufren de estres pero sus ojos grandes demuestran cierto grado de esquizofrenia y delirios.
+
+ - **Ataques y Comportamiento**
+ Los Duendes no tienen mucho miedo a morir acausa del estres y esquizofrenia que padecen asi que se dirijen hacia el jugador para poder acabar con el jugador lo mas pronto posible y volver a trabajar.
+ Los **Estresados** corren hacia el jugador con un baston de caramelo para golparlo.
+ Los **Ezquizofrenicos** caminan rapido para no caerce con un pequeño **regalo** en las manos que estan seguros que te encantara.
+
+   - **Tipo de Duende**
+     - **Estresado**
+     Cuentan con 30 puntos de vida, 6 puntos de velocidad y 1 ataque mele que hace 4 puntos de daño.
+     - **Esquizofrenico**
+     Cuenta con 20 puntos de vida, 5 puntos de velocidad y 1 ataque de area de 2 tiles de radio que hace 8 puntos de daño "***Si es golpeado se cae y el regalo explota despues de 4 segundos***".
+
 ### Enemigo 2: Husky
 
 - **Historia del Husky:**  
