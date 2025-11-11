@@ -228,23 +228,23 @@ El quetzal tiene 130 puntos de vida, una velocidad de 8 y cada uno de sus ataque
   Vida entre 34% y el 0% el Quetzal ronda al jugador y ataca cada 4 segundos, despues se queda en sus ultiama posicion 2 segundos antes de volver al centro del mapa para recuperar su humedad.  
 
   ***Solo si el jugador trabaja con los Gavilanes***
-  - **Oculto**
+  - **Oculto:**
   Vida de 15% al 5% el Quetzal ronda al jugador y ataca cada 3 segundos y cada ataque le resta 1% de su vida, si su vida llega al 5% se dirige al centro del escenario y se rinde. 
 
 - **Ataque:**
   - **Larga Distancia:**
  Si el Quetazal esta a mas de 5 tiles de distancia se lanza en linea recta hacia la posicion del jugador en linea recta, ocaciona 8 puntos de daño, despues no se mueve durante 2 segundos antes de lanzarse hacia el jugador y espera 2 segundo antes de hacer su siguiente accion.
-  - **Corta Disatancia**
+  - **Corta Disatancia:**
  Si el Quetzal esta a 5 o menos tiles de distacia se detiene 2   segundos antes de lanzarse contra el jugador causando 6 puntos de daño, despues no se mueve durante 1.5 segundos antes de hacer su siguiente accion.
 
 - **Combate:**  
-  - **Primera Etapa**  
+  - **Primera Etapa:**  
   El Quetzal ataca al jugador con 8 secuaces; 3 igunas y 5 guacamayas.
-  - **Segunda Etapa**  
+  - **Segunda Etapa:**  
   El quetzan ataca al jugador junto con 3 guacamayas.
 
   ***Solo si el jugador trabaja con los Gavilanes***
-  - **Oculto**
+  - **Oculto:**
   El Quetzal ataca solo.
 
 
@@ -288,6 +288,27 @@ El quetzal tiene 130 puntos de vida, una velocidad de 8 y cada uno de sus ataque
 - **Puntos de vida y velocidad:**  
   - **Vida:** 50 puntos.  
   - **Velocidad:** Moderada. Aunque no son muy rápidos, su fuerza y poder en combate son su mayor ventaja.
+
+### Enemigo 4: Osos Gordos
+ - **Historia de los Osos Gordos:**  
+ Los Osos Gordos originalmente eran simples cachorros de gizzly que quedaron solos al perder a sus padres a causa de cazadores furtivos lo cual causo que vagaran sin rumbo fijo, ocacionando que sus cuerpos y almas se contaminaran con las escencias residuales de los experimento hechos por la **Secta Albina** trastornando sus sentido y creando seres que se rigen por maximos absolutos dejando de considerar su propio bienestar.
+ Es a causa de esta energia que ven a los otros seres que fueron sometidos a los rituales como su familia.  
+  Los Osos Gordos tienen cuerpos pequeños en conparacion con los Osos Grizzl adultos pero aun asi son bastante corpulentos al contar son una buena cantidad de musculo y grasa.
+ 
+
+ - **Estilo de Arte**  
+ Los Osos Gordos tienen cuerpos pequeños bastante redondos, cuantan con un pelaje naranja oscuro, ojos blancos sin pupila y asi como heridas en sus patas por caminar sin rumbo. 
+
+ - **Ataques y Comportamiento**  
+ Los Osos Gordos sol cuantas con 100 punos de vida, 1 ataque Mele de Corto alcanze que es un golpe con la pata que causa 6 puntos de daño, tiene un cooldown de 4 segundos y no gasta humedad, este lo utiliza dependiendo de la vida del compañero mas cercano.
+
+   - **Proteccion**
+    - **Pasiva**
+     Si la vida de su compañero se encuantra entre el 100% y el 26% se mantendra cerca de el para tratar de bloquear los ataque del Jugador pero sin atacar.
+
+     - **Activa**
+     Si la vida de su compañero es menor al 25% corre hacia el Jugador y empieza a atacarlo para que se tenga que sentrar en el.
+
 
 ### Enemigo 5: Venados
 
