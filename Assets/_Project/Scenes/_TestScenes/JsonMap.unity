@@ -241,12 +241,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ProceduralMapController
   filePath: /niveles.json
+  enemiesPath: /enemies.json
   dungeonData:
     dungeons: []
   tiles:
   - {fileID: 11400000, guid: 4e175092a69e05e4e89e63ddda24a3a4, type: 2}
   - {fileID: 11400000, guid: 2bf34184d7dcd0e4b8b781a25704a177, type: 2}
   - {fileID: 11400000, guid: eb189c04cde1bf94c8cc8a97f0ec1386, type: 2}
+  enemiesSprites:
+  - {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
+  - {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  - {fileID: -712631045867808456, guid: b670ab75dde984907b8570040daa08c5, type: 3}
+  - {fileID: -9095717837082945937, guid: 207ee8102dd4143d288186ef0be518ee, type: 3}
 --- !u!4 &1142318212
 Transform:
   m_ObjectHideFlags: 0

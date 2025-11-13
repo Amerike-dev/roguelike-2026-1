@@ -25,4 +25,15 @@ public class JsonReader
 
         return data;
     }
+
+    public ListEnemyData ReadEnemies(string path)
+    {
+        string jsonPath;
+        jsonPath = Path.Combine(Application.streamingAssetsPath + path);
+        string json = File.ReadAllText(jsonPath);
+
+        ListEnemyData data = JsonUtility.FromJson<ListEnemyData>(json);
+
+        return data;
+    }
 }
