@@ -21,7 +21,7 @@
             [
                 {
                     "name": "Entrance",
-                    "type": 2,
+                    "type": 1,
                     "locations":
                     [
                         {
@@ -34,7 +34,7 @@
                 },
                 {
                     "name": "Exit",
-                    "type": 2,
+                    "type": 1,
                     "locations":
                     [
                         {

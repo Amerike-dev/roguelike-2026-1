@@ -245,8 +245,15 @@ MonoBehaviour:
     dungeons: []
   tiles:
   - {fileID: 11400000, guid: 8cf57fc31a04d0a43a3ceccd5082eac3, type: 2}
+  - {fileID: 11400000, guid: 12b5d7711aed52147bce94ab787e7814, type: 2}
   - {fileID: 11400000, guid: 1448b95c5b02a014c853708bff676500, type: 2}
+  - {fileID: 11400000, guid: 4be6bccab4fd98a43972a0ade190a6db, type: 2}
+  - {fileID: 11400000, guid: b92b1e91cd3f4ce4899365c0f35031e7, type: 2}
+  - {fileID: 11400000, guid: 128903992b634f442bb60c8f542aac99, type: 2}
+  - {fileID: 11400000, guid: 2f4e34a9e7cd8ac46a624e0cd10e8947, type: 2}
+  - {fileID: 11400000, guid: 8a5c9ef39579c304f94c7049219f388b, type: 2}
   - {fileID: 11400000, guid: 257602d95d228c64e880a1c33d364743, type: 2}
+  - {fileID: 11400000, guid: 45782728ccef69d489d0ef60e3cd3282, type: 2}
 --- !u!4 &1142318212
 Transform:
   m_ObjectHideFlags: 0
