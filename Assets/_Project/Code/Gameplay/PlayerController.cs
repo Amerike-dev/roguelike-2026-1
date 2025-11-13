@@ -6,7 +6,6 @@ public class PlayerController : MonoBehaviour
 {
     private Player player;
     private Rigidbody2D rb;
-    private GameObject playerGO;
     [SerializeField] private Sprite capsuleSprite;
     
     private CombatManager combatManager;
@@ -17,19 +16,19 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
-        playerGO = new GameObject("Player");
-        playerGO.transform.parent = transform;
         
-        SpriteRenderer spriteRenderer = playerGO.AddComponent<SpriteRenderer>();
+        
+        
+        SpriteRenderer spriteRenderer = gameObject.AddComponent<SpriteRenderer>();
         if(capsuleSprite != null) spriteRenderer.sprite = capsuleSprite;
 
-        rb = playerGO.AddComponent<Rigidbody2D>();
+        rb = gameObject.AddComponent<Rigidbody2D>();
         rb.gravityScale = 0;
-        playerGO.AddComponent<CapsuleCollider2D>();
+        gameObject.AddComponent<CapsuleCollider2D>();
 
         player = new Player(rb);
         
-        combatManager = playerGO.AddComponent<CombatManager>();
+        combatManager = gameObject.AddComponent<CombatManager>();
 
         InitializeWeapon();
     }
