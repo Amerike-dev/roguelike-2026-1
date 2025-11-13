@@ -25,7 +25,7 @@ public class ProceduralMapController : MonoBehaviour
 
         Grid gridComponent = grid.GetComponent<Grid>();
         gridComponent.cellLayout = GridLayout.CellLayout.Isometric;
-        gridComponent.cellSize = new Vector3(0.32f, 0.16f, 0.32f);
+        gridComponent.cellSize = new Vector3(1f, 0.5f, 1f);
 
         GameObject tileMap = new GameObject();
         tileMap.name = "Tile Map";
@@ -41,7 +41,7 @@ public class ProceduralMapController : MonoBehaviour
         Tilemap tilemap = tileMap.GetComponent<Tilemap>();
 
         //Map Generation
-        MapData mapData = dungeonData.dungeons[2];
+        MapData mapData = dungeonData.dungeons[0]; // este parametro es para generar el tipo de mapa, me di cuenta muy tarde :(
 
         Map map = new Map(Vector2Int.zero, new Vector2Int(mapData.size[0], mapData.size[1]), tilemap);
         List<Vector3Int> coordinates = map.GenerateCoordinates();

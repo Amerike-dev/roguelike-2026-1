@@ -244,9 +244,9 @@ MonoBehaviour:
   dungeonData:
     dungeons: []
   tiles:
-  - {fileID: 11400000, guid: 4e175092a69e05e4e89e63ddda24a3a4, type: 2}
-  - {fileID: 11400000, guid: 2bf34184d7dcd0e4b8b781a25704a177, type: 2}
-  - {fileID: 11400000, guid: eb189c04cde1bf94c8cc8a97f0ec1386, type: 2}
+  - {fileID: 11400000, guid: 8cf57fc31a04d0a43a3ceccd5082eac3, type: 2}
+  - {fileID: 11400000, guid: 1448b95c5b02a014c853708bff676500, type: 2}
+  - {fileID: 11400000, guid: 257602d95d228c64e880a1c33d364743, type: 2}
 --- !u!4 &1142318212
 Transform:
   m_ObjectHideFlags: 0
