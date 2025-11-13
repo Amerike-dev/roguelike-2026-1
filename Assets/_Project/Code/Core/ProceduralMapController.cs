@@ -5,10 +5,12 @@ using UnityEngine.Tilemaps;
 public class ProceduralMapController : MonoBehaviour
 {
     public string filePath;
+    public string enemiesPath;
     public DungeonData dungeonData;
     private JsonReader _reader;
 
     public Tile[] tiles;
+    public List<Sprite> enemiesSprites;
 
     private void Awake()
     {
@@ -41,7 +43,7 @@ public class ProceduralMapController : MonoBehaviour
         Tilemap tilemap = tileMap.GetComponent<Tilemap>();
 
         //Map Generation
-        MapData mapData = dungeonData.dungeons[2];
+        MapData mapData = dungeonData.dungeons[0];
 
         Map map = new Map(Vector2Int.zero, new Vector2Int(mapData.size[0], mapData.size[1]), tilemap);
         List<Vector3Int> coordinates = map.GenerateCoordinates();
@@ -54,6 +56,15 @@ public class ProceduralMapController : MonoBehaviour
                 PlaceNewTiles(location, new Vector3Int(location.positions[0], location.positions[1]), tiles[decoration.type], tilemap);
             }
         }
+
+        EnemyGenerator enemyGenerator = new EnemyGenerator(enemiesSprites);
+
+        foreach (EnemyData enemyData in mapData.enemies)
+        {
+            enemyGenerator.GenerateEnemies(enemyData.enemyType, gridComponent, enemiesPath ,enemiesSprites, enemyData.position);
+
+        }
+
     }
 
     void PlaceNewTiles(LocationData location, Vector3Int coordinates, Tile tile, Tilemap tilemap)
