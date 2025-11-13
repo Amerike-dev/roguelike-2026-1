@@ -615,11 +615,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51394f9e3834e164ebfadd217814714b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyBehaviour
+  health: 0
+  _primaryState: 
   target: {fileID: 526084690}
   enemy: {fileID: 1321151948}
   maxVelocity: 5
   viewRadius: 4
   _currentStateName: 
+  enemyObject: {fileID: 0}
   distX: 14
   distY: 8
   changeTime: 3

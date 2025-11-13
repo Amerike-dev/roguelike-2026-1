@@ -26,6 +26,7 @@ public class WanderState : IState
         
         float playerDistance = Vector2.Distance(enemy.target.position, enemy.transform.position);
         if (playerDistance < enemy.viewRadius) enemy.ChangeState(new SeekState(enemy));
+        if (enemy.health <= 0f) enemy.ChangeState(new DeathState(enemy));
 
         enemy.circleOrigin = (target - currentPos).normalized * enemy.circleDistance;
         Debug.DrawLine(currentPos, enemy.circleOrigin + currentPos, Color.blue);

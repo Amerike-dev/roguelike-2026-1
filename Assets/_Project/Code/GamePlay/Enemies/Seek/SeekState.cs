@@ -21,7 +21,15 @@ public class SeekState : IState
         if (distance > enemy.viewRadius)
         {
             enemy.ChangeState(new IdleState(enemy));
-        }        
+        }
+        if (enemy.health <= 0f)
+        {
+            enemy.ChangeState(new DeathState(enemy));
+        }
+        else
+        {
+
+        }
     }
     public void Exit()
     {

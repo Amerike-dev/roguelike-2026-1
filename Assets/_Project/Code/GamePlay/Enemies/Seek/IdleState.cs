@@ -19,9 +19,13 @@ public class IdleState : IState
         {
             enemy.ChangeState(new SeekState(enemy));
         }
+        if(enemy.health <= 0f)
+        {
+            enemy.ChangeState(new DeathState(enemy));
+        }
         else
         {
-            enemy.ChangeState(new WanderState(enemy));
+
         }
     }
     public void Exit()

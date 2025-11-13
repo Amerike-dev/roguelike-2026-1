@@ -7,14 +7,21 @@ public class EnemyBehaviour : MonoBehaviour
     private StateMachine stateMachine;
     public Seek _seekMovement;
 
-    [Header("Properties")]
+    [Header("Stats")]
+    public float health;
+    public string _primaryState="";
+
+    [Header("Properties Seek")]
     public Transform target;
     public Transform enemy;
     public float maxVelocity = 5f;
     public float viewRadius = 4f;
     public string _currentStateName="";
-    
-    [Header("Wander")]
+
+    [Header("Properties Seek")]
+    public GameObject enemyObject;
+
+    [Header("Properties Wander")]
     public float distX;
     public float distY;
     public float changeTime;

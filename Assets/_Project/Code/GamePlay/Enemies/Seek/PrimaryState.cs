@@ -1,15 +1,16 @@
 using UnityEngine;
 
-public class DeathState : IState
+public class PrimaryState : IState
 {
     public EnemyBehaviour enemy;
-    public DeathState(EnemyBehaviour enemy)
+    public PrimaryState(EnemyBehaviour enemy)
     {
         this.enemy = enemy;
     }
+
     public void Enter()
     {
-        Debug.Log("Death State ON");
+        Debug.Log("Start Random PrimaryState");
     }
     public void Update()
     {
@@ -17,7 +18,6 @@ public class DeathState : IState
     }
     public void Exit()
     {
-        Debug.Log("Death State OFF");
-        Debug.Log("Reaturn Menu");
+
     }
 }
