@@ -4,6 +4,8 @@ using UnityEngine.Tilemaps;
 
 public class ProceduralMapController : MonoBehaviour
 {
+    public Transform playerTransform;
+
     public string filePath;
     public string enemiesPath;
     public DungeonData dungeonData;
@@ -12,6 +14,7 @@ public class ProceduralMapController : MonoBehaviour
     public Tile[] tiles;
     public List<Sprite> enemiesSprites;
 
+    public List<GameObject> enemiesPrefabs;
     private void Awake()
     {
         _reader = new JsonReader();
@@ -61,7 +64,7 @@ public class ProceduralMapController : MonoBehaviour
 
         foreach (EnemyData enemyData in mapData.enemies)
         {
-            enemyGenerator.GenerateEnemies(enemyData.enemyType, gridComponent, enemiesPath ,enemiesSprites, enemyData.position);
+            enemyGenerator.GenerateEnemies(enemyData.enemyType, gridComponent, enemiesPath ,enemiesSprites, enemyData.position, enemiesPrefabs, playerTransform);
 
         }
 
