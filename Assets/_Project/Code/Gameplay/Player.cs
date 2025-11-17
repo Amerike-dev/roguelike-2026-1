@@ -15,8 +15,16 @@ public class Player
     public float bossWeaponSpeedModifier;
     
     private Rigidbody2D rb;
+
+    public bool isDashing;
+    private float dashSpeed;
+    private float dashDuration;
+    private float dashTimer;
+    private float dashCost;
+
     
-    public Player(Rigidbody2D rb, float baseSpeed = 5f, float humidity = 200f, PlayerCondition initialCondition = PlayerCondition.Normal, List<Collectable> initialCollectables = null)
+    public Player(Rigidbody2D rb, float baseSpeed = 5f, float humidity = 200f, PlayerCondition initialCondition = PlayerCondition.Normal, List<Collectable> initialCollectables = null,
+        float dashSpeed = 20f, float dashDuration = 0.2f, float dashCost = 5)
     {
         this.rb = rb;
         this.baseSpeed = baseSpeed;
@@ -24,11 +32,50 @@ public class Player
         this.playerCondition = initialCondition;
         this.collectables = initialCollectables ?? new List<Collectable>();
         
+        this.dashSpeed = dashSpeed;
+        this.dashDuration = dashDuration;
+        this.dashCost = dashCost;
+
         this.invertInput = false;
+    }
+
+    public void DashTimer(float passDeltaTime)
+    {
+        if (isDashing)
+        {
+            dashTimer -= passDeltaTime;
+            if (dashTimer < 0)
+            {
+                isDashing = false;
+            }
+        }
+    }
+
+    public void Dash(float xInput, float yInput)
+    {
+        if (humidity >= dashCost && !isDashing)
+        {
+            humidity -= dashCost;
+
+            isDashing = true;
+            dashTimer = dashDuration;
+
+            Vector2 dashDirection = new Vector2(xInput, yInput).normalized;
+
+            if (dashDirection == Vector2.zero) return;
+
+            rb.linearVelocity = dashDirection * dashSpeed;
+        }
+        else
+        {
+            return;
+        }
     }
 
     public void PlayerMovement(float horizontalInput, float verticalInput)
     {
+        if(isDashing) return;
+
         float finalSpeed = ChangeSpeed();
 
         if (playerCondition == PlayerCondition.Dizzy && invertInput)

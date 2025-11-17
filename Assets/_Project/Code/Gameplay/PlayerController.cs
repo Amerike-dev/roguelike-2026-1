@@ -7,7 +7,10 @@ public class PlayerController : MonoBehaviour
     private Player player;
     private Rigidbody2D rb;
     [SerializeField] private Sprite capsuleSprite;
-    
+    [SerializeField] private float humidity;
+    [SerializeField] private float dashSpeed;
+
+
     private CombatManager combatManager;
     [SerializeField] private List<Weapons> weaponList = new List<Weapons>();
     [SerializeField] private int initialWeapon = 0;
@@ -26,8 +29,8 @@ public class PlayerController : MonoBehaviour
         rb.gravityScale = 0;
         gameObject.AddComponent<CapsuleCollider2D>();
 
-        player = new Player(rb);
-        
+        player = new Player(rb, dashSpeed: dashSpeed);   
+
         combatManager = gameObject.AddComponent<CombatManager>();
 
         InitializeWeapon();
@@ -38,9 +41,17 @@ public class PlayerController : MonoBehaviour
     {
         float horizontalInput = Input.GetAxisRaw("Horizontal");
         float verticalInput = Input.GetAxisRaw("Vertical");
+
+        player.DashTimer(Time.deltaTime);
+
+        if (Input.GetButtonDown("Jump"))
+            player.Dash(horizontalInput, verticalInput);
+
         HandleAnimation(horizontalInput, verticalInput);
         player.PlayerMovement(horizontalInput, verticalInput); 
         SystemCombat();
+
+        humidity = player.humidity;
     }
 
     private void SystemCombat()
