@@ -1,6 +1,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
+using System.Linq;
+
 
 public class ProceduralMapController : MonoBehaviour
 {
@@ -15,6 +17,14 @@ public class ProceduralMapController : MonoBehaviour
     public List<Sprite> enemiesSprites;
 
     public List<GameObject> enemiesPrefabs;
+
+    List<MapData> sequence = new List<MapData>();
+
+    public int totalRooms;
+    public bool shopAppeared = false;
+    public float normalRate = 0.5f;
+    public float shopRate = 0.5f;
+    
     private void Awake()
     {
         _reader = new JsonReader();
@@ -23,6 +33,12 @@ public class ProceduralMapController : MonoBehaviour
 
     void Start()
     {
+        totalRooms = Random.Range(6, 9);
+
+        GenerateMapSequence(dungeonData.dungeons.ToList());
+
+        Debug.Log("Sequence: [" + string.Join(", ", sequence.Select(m => m.type)) + "]");
+        
         GameObject grid = new GameObject();
         grid.name = "Grid";
 
@@ -54,9 +70,10 @@ public class ProceduralMapController : MonoBehaviour
 
         foreach (DecorationData decoration in mapData.decorations)
         {
-            foreach(LocationData location in decoration.locations)
+            foreach (LocationData location in decoration.locations)
             {
-                PlaceNewTiles(location, new Vector3Int(location.positions[0], location.positions[1]), tiles[decoration.type], tilemap);
+                PlaceNewTiles(location, new Vector3Int(location.positions[0], location.positions[1]),
+                    tiles[decoration.type], tilemap);
             }
         }
 
@@ -64,7 +81,8 @@ public class ProceduralMapController : MonoBehaviour
 
         foreach (EnemyData enemyData in mapData.enemies)
         {
-            enemyGenerator.GenerateEnemies(enemyData.enemyType, gridComponent, enemiesPath ,enemiesSprites, enemyData.position, enemiesPrefabs, playerTransform);
+            enemyGenerator.GenerateEnemies(enemyData.enemyType, gridComponent, enemiesPath, enemiesSprites,
+                enemyData.position, enemiesPrefabs, playerTransform);
 
         }
 
@@ -73,7 +91,7 @@ public class ProceduralMapController : MonoBehaviour
     void PlaceNewTiles(LocationData location, Vector3Int coordinates, Tile tile, Tilemap tilemap)
     {
 
-        switch(location.type)
+        switch (location.type)
         {
             case 0:
 
@@ -84,6 +102,7 @@ public class ProceduralMapController : MonoBehaviour
                         tilemap.SetTile(new Vector3Int(x, y), tile);
                     }
                 }
+
                 break;
 
             case 1:
@@ -92,6 +111,7 @@ public class ProceduralMapController : MonoBehaviour
                 {
                     tilemap.SetTile(new Vector3Int(x, location.positions[1]), tile);
                 }
+
                 break;
 
             case 2:
@@ -100,9 +120,53 @@ public class ProceduralMapController : MonoBehaviour
                 {
                     tilemap.SetTile(new Vector3Int(location.positions[0], y), tile);
                 }
+
                 break;
         }
 
-        
     }
+    
+    private List<MapData> GenerateMapSequence(List<MapData> allMaps)
+    {
+        sequence.Clear();
+        shopAppeared = false;
+        
+        MapData firstNormal = allMaps.Find(m => m.type == "normal");
+        sequence.Add(firstNormal);
+        
+        for (int i = 1; i < totalRooms - 1; i++)
+        {
+            float rate = Random.value;
+            MapData mapToAdd = null;
+
+            if (!shopAppeared && rate < shopRate)
+            {
+                mapToAdd = allMaps.Find(m => m.type == "shop");
+                shopAppeared = true;
+            }
+            else
+            {
+                mapToAdd = allMaps.Find(m => m.type == "normal");
+            }
+
+            sequence.Add(mapToAdd);
+        }
+        
+        if (!shopAppeared)
+        {
+            int randomIndex = Random.Range(1, totalRooms - 1);
+            sequence[randomIndex] = allMaps.Find(m => m.type == "shop");
+            shopAppeared = true;
+        }
+        
+        MapData boss = allMaps.Find(m => m.type == "boss");
+        sequence.Add(boss);
+
+        return sequence;
+    }
+
+
+
 }
+    
+    
