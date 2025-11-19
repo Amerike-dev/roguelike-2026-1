@@ -9,12 +9,17 @@
                 {
                     "wave": 0,
                     "position": [4 , 10],
-                    "enemyType": 1
+                    "enemyType": 0
                 },
                 {
                     "wave": 1,
                     "position": [10 , 10],
                     "enemyType": 2
+                },
+                {
+                    "wave": 1,
+                    "position": [7 , 9],
+                    "enemyType": 1
                 }
             ],
             "decorations":
