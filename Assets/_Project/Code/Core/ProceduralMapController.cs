@@ -38,12 +38,29 @@ public class ProceduralMapController : MonoBehaviour
         tileMap.AddComponent<Tilemap>();
         tileMap.AddComponent<TilemapRenderer>();
 
+        tileMap.AddComponent<CompositeCollider2D>();
+        tileMap.AddComponent<TilemapCollider2D>();
+        tileMap.AddComponent<Rigidbody2D>();
+
         TilemapRenderer tilemapRenderer = tileMap.GetComponent<TilemapRenderer>();
         tilemapRenderer.sortOrder = TilemapRenderer.SortOrder.TopRight;
 
-        tileMap.transform.parent = grid.transform;
-
         Tilemap tilemap = tileMap.GetComponent<Tilemap>();
+
+        CompositeCollider2D compositeCollider2D = tileMap.GetComponent<CompositeCollider2D>();
+
+        TilemapCollider2D tilemapCollider2D = tileMap.GetComponent<TilemapCollider2D>();
+
+        Rigidbody2D rigidbody2D = tileMap.GetComponent<Rigidbody2D>();
+
+        rigidbody2D.bodyType = RigidbodyType2D.Kinematic;
+        rigidbody2D.interpolation = RigidbodyInterpolation2D.Interpolate;
+        rigidbody2D.constraints = RigidbodyConstraints2D.FreezeAll;
+        rigidbody2D.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
+
+        tilemapCollider2D.compositeOperation = TilemapCollider2D.CompositeOperation.Flip;
+
+        tileMap.transform.parent = grid.transform;
 
         //Map Generation
         MapData mapData = dungeonData.dungeons[0];
