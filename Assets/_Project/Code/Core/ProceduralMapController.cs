@@ -30,7 +30,7 @@ public class ProceduralMapController : MonoBehaviour
 
         Grid gridComponent = grid.GetComponent<Grid>();
         gridComponent.cellLayout = GridLayout.CellLayout.Isometric;
-        gridComponent.cellSize = new Vector3(0.32f, 0.16f, 0.32f);
+        gridComponent.cellSize = new Vector3(1f, 0.5f, 1f);
 
         GameObject tileMap = new GameObject();
         tileMap.name = "Tile Map";
