@@ -27,6 +27,8 @@ public class PlayerController : MonoBehaviour
 
         rb = gameObject.AddComponent<Rigidbody2D>();
         rb.gravityScale = 0;
+        rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+
         gameObject.AddComponent<CapsuleCollider2D>();
 
         player = new Player(rb, dashSpeed: dashSpeed);   
