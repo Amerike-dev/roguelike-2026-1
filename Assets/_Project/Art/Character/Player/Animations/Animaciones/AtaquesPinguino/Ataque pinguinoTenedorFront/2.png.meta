@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -56,7 +56,7 @@ TextureImporter:
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
-  spriteTessellationDetail: -1
+  spriteTessellationDetail: 0
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -85,6 +85,19 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
     buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -108,7 +121,7 @@ TextureImporter:
         width: 363
         height: 443
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -123,10 +136,63 @@ TextureImporter:
       weights: []
     outline: []
     customData: 
-    physicsShape: []
+    physicsShape:
+    - - {x: -75, y: -174}
+      - {x: -59, y: -221}
+      - {x: 56, y: -222}
+      - {x: 68, y: -168}
+      - {x: 72, y: -129}
+      - {x: 74, y: -90}
+      - {x: 99, y: -90}
+      - {x: 119, y: -102}
+      - {x: 138, y: -107}
+      - {x: 168, y: -102}
+      - {x: 181, y: -93}
+      - {x: 184, y: -85}
+      - {x: 145, y: -61}
+      - {x: 147, y: -31}
+      - {x: 143, y: -12}
+      - {x: 136, y: 7}
+      - {x: 127, y: 14}
+      - {x: 117, y: 36}
+      - {x: 117, y: 60}
+      - {x: 110, y: 82}
+      - {x: 93, y: 106}
+      - {x: 83, y: 145}
+      - {x: 98, y: 160}
+      - {x: 107, y: 172}
+      - {x: 97, y: 199}
+      - {x: 76, y: 192}
+      - {x: 56, y: 171}
+      - {x: 42, y: 177}
+      - {x: 49, y: 200}
+      - {x: 37, y: 223}
+      - {x: 24, y: 216}
+      - {x: 6, y: 199}
+      - {x: -4, y: 200}
+      - {x: -27, y: 220}
+      - {x: -35, y: 222}
+      - {x: -47, y: 199}
+      - {x: -34, y: 183}
+      - {x: -56, y: 168}
+      - {x: -82, y: 189}
+      - {x: -102, y: 194}
+      - {x: -111, y: 164}
+      - {x: -83, y: 140}
+      - {x: -88, y: 113}
+      - {x: -98, y: 102}
+      - {x: -111, y: 65}
+      - {x: -112, y: 28}
+      - {x: -143, y: -28}
+      - {x: -140, y: -58}
+      - {x: -175, y: -74}
+      - {x: -181, y: -81}
+      - {x: -169, y: -96}
+      - {x: -144, y: -103}
+      - {x: -83, y: -93}
     bones: []
-    spriteID: 
-    internalID: 0
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 1537655665
     vertices: []
     indices: 
     edges: []

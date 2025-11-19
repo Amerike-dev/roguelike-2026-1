@@ -3,6 +3,7 @@ using System.Collections.Generic;
 
 public class Poolmanager : MonoBehaviour
 {
+    public static Poolmanager instance { get; private set; }
     public GameObject prefab;
     public int poolSize = 50;
 
