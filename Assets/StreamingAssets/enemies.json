@@ -1,0 +1,11 @@
+{
+    "enemies":
+    [
+        {
+            "name": "Prisionero",
+            "id": 0,
+            "asset": 0,
+            "attack": 5
+        }
+    ]
+}

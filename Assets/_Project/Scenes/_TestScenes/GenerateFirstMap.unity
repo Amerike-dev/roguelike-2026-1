@@ -159,8 +159,8 @@ MonoBehaviour:
   mapOrigins:
   - {x: 0, y: 0}
   tiles:
-  - {fileID: 11400000, guid: 4e175092a69e05e4e89e63ddda24a3a4, type: 2}
-  - {fileID: 11400000, guid: 2bf34184d7dcd0e4b8b781a25704a177, type: 2}
+  - {fileID: 11400000, guid: 8cf57fc31a04d0a43a3ceccd5082eac3, type: 2}
+  - {fileID: 11400000, guid: b92b1e91cd3f4ce4899365c0f35031e7, type: 2}
 --- !u!4 &945697793
 Transform:
   m_ObjectHideFlags: 0

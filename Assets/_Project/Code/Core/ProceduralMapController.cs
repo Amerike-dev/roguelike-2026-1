@@ -4,12 +4,17 @@ using UnityEngine.Tilemaps;
 
 public class ProceduralMapController : MonoBehaviour
 {
+    public Transform playerTransform;
+
     public string filePath;
+    public string enemiesPath;
     public DungeonData dungeonData;
     private JsonReader _reader;
 
     public Tile[] tiles;
+    public List<Sprite> enemiesSprites;
 
+    public List<GameObject> enemiesPrefabs;
     private void Awake()
     {
         _reader = new JsonReader();
@@ -25,7 +30,7 @@ public class ProceduralMapController : MonoBehaviour
 
         Grid gridComponent = grid.GetComponent<Grid>();
         gridComponent.cellLayout = GridLayout.CellLayout.Isometric;
-        gridComponent.cellSize = new Vector3(0.32f, 0.16f, 0.32f);
+        gridComponent.cellSize = new Vector3(1f, 0.5f, 1f);
 
         GameObject tileMap = new GameObject();
         tileMap.name = "Tile Map";
@@ -33,15 +38,32 @@ public class ProceduralMapController : MonoBehaviour
         tileMap.AddComponent<Tilemap>();
         tileMap.AddComponent<TilemapRenderer>();
 
+        tileMap.AddComponent<CompositeCollider2D>();
+        tileMap.AddComponent<TilemapCollider2D>();
+        tileMap.AddComponent<Rigidbody2D>();
+
         TilemapRenderer tilemapRenderer = tileMap.GetComponent<TilemapRenderer>();
         tilemapRenderer.sortOrder = TilemapRenderer.SortOrder.TopRight;
 
-        tileMap.transform.parent = grid.transform;
-
         Tilemap tilemap = tileMap.GetComponent<Tilemap>();
 
+        CompositeCollider2D compositeCollider2D = tileMap.GetComponent<CompositeCollider2D>();
+
+        TilemapCollider2D tilemapCollider2D = tileMap.GetComponent<TilemapCollider2D>();
+
+        Rigidbody2D rigidbody2D = tileMap.GetComponent<Rigidbody2D>();
+
+        rigidbody2D.bodyType = RigidbodyType2D.Kinematic;
+        rigidbody2D.interpolation = RigidbodyInterpolation2D.Interpolate;
+        rigidbody2D.constraints = RigidbodyConstraints2D.FreezeAll;
+        rigidbody2D.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
+
+        tilemapCollider2D.compositeOperation = TilemapCollider2D.CompositeOperation.Flip;
+
+        tileMap.transform.parent = grid.transform;
+
         //Map Generation
-        MapData mapData = dungeonData.dungeons[2];
+        MapData mapData = dungeonData.dungeons[0];
 
         Map map = new Map(Vector2Int.zero, new Vector2Int(mapData.size[0], mapData.size[1]), tilemap);
         List<Vector3Int> coordinates = map.GenerateCoordinates();
@@ -54,6 +76,15 @@ public class ProceduralMapController : MonoBehaviour
                 PlaceNewTiles(location, new Vector3Int(location.positions[0], location.positions[1]), tiles[decoration.type], tilemap);
             }
         }
+
+        EnemyGenerator enemyGenerator = new EnemyGenerator(enemiesSprites);
+
+        foreach (EnemyData enemyData in mapData.enemies)
+        {
+            enemyGenerator.GenerateEnemies(enemyData.enemyType, gridComponent, enemiesPath ,enemiesSprites, enemyData.position, enemiesPrefabs, playerTransform);
+
+        }
+
     }
 
     void PlaceNewTiles(LocationData location, Vector3Int coordinates, Tile tile, Tilemap tilemap)
