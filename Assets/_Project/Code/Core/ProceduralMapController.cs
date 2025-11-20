@@ -18,7 +18,7 @@ public class ProceduralMapController : MonoBehaviour
 
     public List<GameObject> enemiesPrefabs;
 
-    List<MapData> sequence = new List<MapData>();
+    public List<MapData> sequence = new List<MapData>();
 
     public int totalRooms;
     public bool shopAppeared = false;
@@ -62,28 +62,33 @@ public class ProceduralMapController : MonoBehaviour
         Tilemap tilemap = tileMap.GetComponent<Tilemap>();
 
         //Map Generation
-        MapData mapData = dungeonData.dungeons[0];
+        Vector3Int origin = Vector3Int.zero;
 
-        Map map = new Map(Vector2Int.zero, new Vector2Int(mapData.size[0], mapData.size[1]), tilemap);
-        List<Vector3Int> coordinates = map.GenerateCoordinates();
-        map.Render(tiles[0], coordinates);
-
-        foreach (DecorationData decoration in mapData.decorations)
+        foreach (MapData mapData in sequence)
         {
-            foreach (LocationData location in decoration.locations)
+            if(mapData.type == "normal")
             {
-                PlaceNewTiles(location, new Vector3Int(location.positions[0], location.positions[1]),
-                    tiles[decoration.type], tilemap);
+                MapData normal = dungeonData.dungeons[0];
+
+                GenerateMap(normal, origin, tilemap, gridComponent);
             }
-        }
+            else if(mapData.type == "shop")
+            {
+                MapData shop = dungeonData.dungeons[1];
 
-        EnemyGenerator enemyGenerator = new EnemyGenerator(enemiesSprites);
-
-        foreach (EnemyData enemyData in mapData.enemies)
-        {
-            enemyGenerator.GenerateEnemies(enemyData.enemyType, gridComponent, enemiesPath, enemiesSprites,
-                enemyData.position, enemiesPrefabs, playerTransform);
-
+                GenerateMap(shop, origin, tilemap, gridComponent);
+            }
+            else if(mapData.type == "boss")
+            {
+                MapData boss = dungeonData.dungeons[2];
+                Debug.Log(origin);
+                GenerateMap(boss, origin, tilemap, gridComponent);
+            }
+            else
+            {
+                Debug.Log("no tengo mapa");
+            }
+            origin = new Vector3Int(origin.x + mapData.size[0], (origin.y + mapData.size[1])/2, 0);
         }
 
     }
@@ -166,7 +171,31 @@ public class ProceduralMapController : MonoBehaviour
     }
 
 
+    // agregar Vector3Int origin que se va a asignar al map.
+    public void GenerateMap(MapData mapData,Vector3Int origin ,  Tilemap tilemap, Grid gridComponent)
+    {
+        Map map = new Map(new Vector2Int (origin.x, origin.y) , new Vector2Int(mapData.size[0], mapData.size[1]), tilemap);
+        List<Vector3Int> coordinates = map.GenerateCoordinates();
+        map.Render(tiles[0], coordinates);
 
+        foreach (DecorationData decoration in mapData.decorations)
+        {
+            foreach (LocationData location in decoration.locations)
+            {
+                PlaceNewTiles(location, new Vector3Int(location.positions[0], location.positions[1]),
+                    tiles[decoration.type], tilemap);
+            }
+        }
+
+        EnemyGenerator enemyGenerator = new EnemyGenerator(enemiesSprites);
+
+        foreach (EnemyData enemyData in mapData.enemies)
+        {
+            enemyGenerator.GenerateEnemies(enemyData.enemyType, gridComponent, enemiesPath, enemiesSprites,
+                enemyData.position, enemiesPrefabs, playerTransform);
+
+        }
+    }
 }
     
     
