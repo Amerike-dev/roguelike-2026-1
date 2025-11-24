@@ -9,7 +9,8 @@ public class EnemyBehaviour : MonoBehaviour
     public Death _Death;
 
     [Header("Stats")]
-    public float health;
+    public float health = 10;
+    public float Damage = 10;
     public string _primaryState="";
 
     [Header("Properties Seek")]
@@ -21,7 +22,7 @@ public class EnemyBehaviour : MonoBehaviour
 
     [Header("Properties Death")]
     public GameObject enemyGO;
-    public SpriteRenderer spriteR;
+    private SpriteRenderer _spriteRenderer;
 
     [Header("Properties Wander")]
     public float distX;
@@ -39,13 +40,13 @@ public class EnemyBehaviour : MonoBehaviour
     public void Initialized()
     {
         _seekMovement = new Seek(enemy, target, maxVelocity);
-        _Death = new Death(enemyGO, spriteR);
+        _Death = new Death(enemyGO, health);
     }
     void Start()
     {
         enemyGO = this.gameObject;
         enemy = GetComponent<Transform>();
-        spriteR = GetComponent<SpriteRenderer>();
+        _spriteRenderer = GetComponent<SpriteRenderer>();
         Initialized();
         stateMachine = new StateMachine();
         ChangeState(new IdleState(this));
@@ -92,5 +93,41 @@ public class EnemyBehaviour : MonoBehaviour
             wanderAngle = Random.Range(0, 360f);
             yield return new WaitForSeconds(changeAngle);
         }
+    }
+
+
+    public void TakeDamage(float damage)
+    {
+        health -= damage;
+    }
+    public void Dispel()
+    {
+        StartCoroutine(FadeSprite());
+    }
+    IEnumerator FadeSprite()
+    {
+        float time = 0f;
+        Color c = _spriteRenderer.color;
+
+        while (time < 1.5f)
+        {
+            float t = time / 1.5f;
+            _spriteRenderer.color = new Color(0f, 0f, 0f, Mathf.Lerp(0f, 1f, t));
+            time += Time.deltaTime;
+            yield return null;
+        }
+        _spriteRenderer.color = new Color(0f, 0f, 0f, 1f);
+
+        yield return new WaitForSeconds(2f);
+
+        time = 0f;
+        while (time < 1.5f)
+        {
+            float t = time / 1.5f;
+            _spriteRenderer.color = new Color(0f, 0f, 0f, Mathf.Lerp(1f, 0f, t));
+            time += Time.deltaTime;
+            yield return null;
+        }
+        _spriteRenderer.color = new Color(0f, 0f, 0f, 0f);
     }
 }

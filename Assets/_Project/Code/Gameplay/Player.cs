@@ -22,7 +22,7 @@ public class Player
     private float dashTimer;
     private float dashCost;
 
-    public float coin;
+
 
     
     public Player(Rigidbody2D rb, float baseSpeed = 5f, float humidity = 200f, PlayerCondition initialCondition = PlayerCondition.Normal, List<Collectable> initialCollectables = null,
@@ -119,8 +119,5 @@ public class Player
         
         return Mathf.Clamp(finalSpeed, 1f, 15f);
     }
-    public void AddCoin(float value)
-    {
-        coin += value;
-    }
+
 }

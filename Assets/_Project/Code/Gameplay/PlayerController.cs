@@ -15,7 +15,11 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private List<Weapons> weaponList = new List<Weapons>();
     [SerializeField] private int initialWeapon = 0;
     private Animator animator;
-    
+
+    [Header("Death")]
+    public float health = 10;
+    public int coin = 0;
+
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -116,6 +120,22 @@ public class PlayerController : MonoBehaviour
         {
             animator.SetBool(AnimationParameters.PlayerPar.walkSide, false);
         }
+    }
+    public void AddCoin(int value)
+    {
+        coin += value;
+    }
+    public void TakeDamage(float damage)
+    {
+        health -= damage;
+        if (health <= 0)
+        {
+            Die();
+        }
+    }
+    public void Die()
+    {
+        Debug.Log("Pinguino Deshidratado");
     }
 }
 

@@ -4,7 +4,7 @@ public class Coin : MonoBehaviour
 {
     [Header("Resources")]
     public Seek _seekMovement;
-    public Player mainPlayer;
+    public PlayerController mainPlayer;
 
     [Header("Value")]
     public int value = 1;
@@ -23,16 +23,19 @@ public class Coin : MonoBehaviour
 
     void Start()
     {
-        //player=FindObjectOfType<Player>();
-        _playerPos = player.GetComponent<Transform>();
-        mainPlayer=player.GetComponent<Player>();
         coin =GetComponent<Transform>();
+        FindPlayerSt();
         Initialized();
     }
 
     void Update()
     {
         Seek();
+    }
+    public void FindPlayerSt()
+    {
+        player = Object.FindFirstObjectByType<PlayerController>().gameObject;
+        _playerPos = player.GetComponent<Transform>();
     }
 
     public void Seek()
@@ -47,7 +50,7 @@ public class Coin : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            Player mainPlayer = collision.GetComponent<Player>();
+            PlayerController mainPlayer = collision.GetComponent<PlayerController>();
 
             if (mainPlayer != null)
             {

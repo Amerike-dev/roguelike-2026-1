@@ -1,17 +1,11 @@
-using UnityEditor.EditorTools;
 using UnityEngine;
 
-public class CoinDrop : MonoBehaviour
+public class CoinDrop
 {
     public Poolmanager poolManager;
+    public EnemyBehaviour enemy;
     public int minDrops = 2;
     public int maxDrops = 20;
-
-    public void Die()
-    {
-        GenerateDrops();
-        gameObject.SetActive(false);
-    }
 
     void GenerateDrops()
     {
@@ -27,7 +21,7 @@ public class CoinDrop : MonoBehaviour
                 Random.Range(-0.5f, 0.5f),
                 0f
             );
-            drop.transform.position = transform.position + offset;
+            drop.transform.position = enemy.transform.position + offset;
         }
     }
 }
