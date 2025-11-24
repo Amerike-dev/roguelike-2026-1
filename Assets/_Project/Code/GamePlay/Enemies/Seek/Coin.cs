@@ -11,10 +11,10 @@ public class Coin : MonoBehaviour
 
     [Header("Properties Seek")]
     public GameObject player;
-    private Transform _playerPos;
+    public Transform _playerPos;
     public Transform coin;
     public float maxVelocity = 5f;
-    public float viewRadius = 2f;
+    public float viewRadius = 5f;
 
     public void Initialized()
     {
@@ -23,9 +23,10 @@ public class Coin : MonoBehaviour
 
     void Start()
     {
-        player = GameObject.Find("Player");
+        //player=FindObjectOfType<Player>();
         _playerPos = player.GetComponent<Transform>();
-        coin = GetComponent<Transform>();
+        mainPlayer=player.GetComponent<Player>();
+        coin =GetComponent<Transform>();
         Initialized();
     }
 
@@ -46,7 +47,13 @@ public class Coin : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            
+            Player mainPlayer = collision.GetComponent<Player>();
+
+            if (mainPlayer != null)
+            {
+                mainPlayer.AddCoin(value);
+            }
+            gameObject.SetActive(false);
         }
     }
 }

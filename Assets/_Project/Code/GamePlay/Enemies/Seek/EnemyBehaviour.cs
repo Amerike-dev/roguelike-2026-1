@@ -6,6 +6,7 @@ public class EnemyBehaviour : MonoBehaviour
     [Header("Resources")]
     private StateMachine stateMachine;
     public Seek _seekMovement;
+    public Death _Death;
 
     [Header("Stats")]
     public float health;
@@ -18,8 +19,9 @@ public class EnemyBehaviour : MonoBehaviour
     public float viewRadius = 4f;
     public string _currentStateName="";
 
-    [Header("Properties Seek")]
-    public GameObject enemyObject;
+    [Header("Properties Death")]
+    public GameObject enemyGO;
+    public SpriteRenderer spriteR;
 
     [Header("Properties Wander")]
     public float distX;
@@ -37,10 +39,13 @@ public class EnemyBehaviour : MonoBehaviour
     public void Initialized()
     {
         _seekMovement = new Seek(enemy, target, maxVelocity);
+        _Death = new Death(enemyGO, spriteR);
     }
     void Start()
     {
+        enemyGO = this.gameObject;
         enemy = GetComponent<Transform>();
+        spriteR = GetComponent<SpriteRenderer>();
         Initialized();
         stateMachine = new StateMachine();
         ChangeState(new IdleState(this));
