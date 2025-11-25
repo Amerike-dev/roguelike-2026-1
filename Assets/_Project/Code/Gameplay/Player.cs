@@ -117,4 +117,17 @@ public class Player
         
         return Mathf.Clamp(finalSpeed, 1f, 15f);
     }
+
+    public void ApplyBlessing(Blessing blessing)
+    {
+        switch (blessing._type)
+        {
+            case TypeBlessing.Humidity:
+                this.humidity += blessing._value;
+                break;
+            case TypeBlessing.Speed:
+                this.baseSpeed += blessing._value;
+                break;
+        }
+    }
 }

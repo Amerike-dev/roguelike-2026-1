@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    private Player player;
+    public Player player;
     private Rigidbody2D rb;
     [SerializeField] private Sprite capsuleSprite;
     [SerializeField] private float humidity;
@@ -15,8 +15,6 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private List<Weapons> weaponList = new List<Weapons>();
     [SerializeField] private int initialWeapon = 0;
     private Animator animator;
-
-    public bool enterPress = false;
     
     void Start()
     {
