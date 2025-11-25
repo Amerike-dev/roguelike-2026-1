@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using System.Collections;
 
 
 public class PlayerController : MonoBehaviour
@@ -19,6 +20,7 @@ public class PlayerController : MonoBehaviour
     [Header("Death")]
     public float health = 10;
     public int coin = 0;
+    public CanvasGroup Fade;
 
     void Start()
     {
@@ -130,13 +132,24 @@ public class PlayerController : MonoBehaviour
         health -= damage;
         if (health <= 0)
         {
-            Die();
+            //Die();
         }
     }
-    public void Die()
+    /*public void Die()
     {
-        Debug.Log("Pinguino Deshidratado");
+        StartCoroutine(FadeToBlack());
     }
+    IEnumerator FadeToBlack()
+    {
+        float t = 0;
+        while (t < 1f)
+        {
+            darkVision.alpha = t;
+            t += Time.deltaTime;
+            yield return null;
+        }
+        darkVision.alpha = 1f;
+    }*/
 }
 
 public static class AnimationParameters

@@ -7,6 +7,7 @@ public class EnemyBehaviour : MonoBehaviour
     private StateMachine stateMachine;
     public Seek _seekMovement;
     public Death _Death;
+    public CoinDrop _drops;
 
     [Header("Stats")]
     public float health = 10;
@@ -41,6 +42,7 @@ public class EnemyBehaviour : MonoBehaviour
     {
         _seekMovement = new Seek(enemy, target, maxVelocity);
         _Death = new Death(enemyGO, health);
+        _drops = new CoinDrop(enemyGO);
     }
     void Start()
     {
@@ -63,6 +65,10 @@ public class EnemyBehaviour : MonoBehaviour
     public void Seek()
     {
         _seekMovement?.GetSteering();
+    }
+    public void Drops()
+    {
+        _drops?.GenerateDrops();
     }
     public void EnterWander()
     {
@@ -112,11 +118,11 @@ public class EnemyBehaviour : MonoBehaviour
         while (time < 1.5f)
         {
             float t = time / 1.5f;
-            _spriteRenderer.color = new Color(0f, 0f, 0f, Mathf.Lerp(0f, 1f, t));
+            _spriteRenderer.color = new Color(0f, 0f, 0f, Mathf.Lerp(1f, 0f, t));
             time += Time.deltaTime;
             yield return null;
         }
-        _spriteRenderer.color = new Color(0f, 0f, 0f, 1f);
+        _spriteRenderer.color = new Color(0f, 0f, 0f, 0f);
 
         yield return new WaitForSeconds(2f);
 
@@ -124,10 +130,11 @@ public class EnemyBehaviour : MonoBehaviour
         while (time < 1.5f)
         {
             float t = time / 1.5f;
-            _spriteRenderer.color = new Color(0f, 0f, 0f, Mathf.Lerp(1f, 0f, t));
+            _spriteRenderer.color = new Color(0f, 0f, 0f, Mathf.Lerp(0f, 1f, t));
             time += Time.deltaTime;
             yield return null;
         }
-        _spriteRenderer.color = new Color(0f, 0f, 0f, 0f);
+        _spriteRenderer.color = new Color(0f, 0f, 0f, 1f);
+        enemyGO.SetActive(false);
     }
 }

@@ -3,11 +3,18 @@ using UnityEngine;
 public class CoinDrop
 {
     public Poolmanager poolManager;
-    public EnemyBehaviour enemy;
+
     public int minDrops = 2;
     public int maxDrops = 20;
 
-    void GenerateDrops()
+    public GameObject cDrops;
+
+    public CoinDrop(GameObject cDrops)
+    {
+        this.cDrops = cDrops;
+    }
+
+    public void GenerateDrops()
     {
         int amount = Random.Range(minDrops, maxDrops + 1);
 
@@ -21,7 +28,7 @@ public class CoinDrop
                 Random.Range(-0.5f, 0.5f),
                 0f
             );
-            drop.transform.position = enemy.transform.position + offset;
+            drop.transform.position = cDrops.transform.position + offset;
         }
     }
 }

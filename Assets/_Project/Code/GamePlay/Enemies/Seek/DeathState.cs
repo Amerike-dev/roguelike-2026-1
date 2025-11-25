@@ -3,7 +3,7 @@ using UnityEngine;
 public class DeathState : IState
 {
     public EnemyBehaviour enemy;
-    public CoinDrop CDrop;
+    public CoinDrop cDrop;
     public DeathState(EnemyBehaviour enemy)
     {
         this.enemy = enemy;
@@ -14,7 +14,10 @@ public class DeathState : IState
     }
     public void Update()
     {
+        enemy?.Dispel();
+        cDrop?.GenerateDrops();
         
+
     }
     public void Exit()
     {
