@@ -16,6 +16,7 @@ public class CoinDrop
 
     public void GenerateDrops()
     {
+
         int amount = Random.Range(minDrops, maxDrops + 1);
 
         for (int i = 0; i < amount; i++)

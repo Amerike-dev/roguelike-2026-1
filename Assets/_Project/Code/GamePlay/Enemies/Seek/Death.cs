@@ -3,13 +3,33 @@ using System.Collections;
 
 public class Death
 {
-    private GameObject _enemy;
-    private float _health;
+    public Poolmanager poolManager;
 
-    public Death(GameObject enemy,float health)
+    public int minDrops = 2;
+    public int maxDrops = 20;
+    public GameObject dropPoint;
+
+    public Death(GameObject dropPoint)
     {
-        this._enemy = enemy;
-        this._health = health;
+        this.dropPoint = dropPoint;
+    }
+    public void GenerateDrops()
+    {
+        Debug.Log("Haa");
+        int amount = Random.Range(minDrops, maxDrops + 1);
+
+        for (int i = 0; i < amount; i++)
+        {
+            GameObject drop = poolManager.GetFromPool();
+            drop.SetActive(true);
+
+            Vector3 offset = new Vector3(
+                Random.Range(-0.5f, 0.5f),
+                Random.Range(-0.5f, 0.5f),
+                0f
+            );
+            drop.transform.position = dropPoint.transform.position + offset;
+        }
     }
 
 }

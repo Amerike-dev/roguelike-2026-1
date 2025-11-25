@@ -15,7 +15,9 @@ public class DeathState : IState
     public void Update()
     {
         enemy?.Dispel();
-        cDrop?.GenerateDrops();
+        enemy?.Drops();
+        Debug.Log("castroso");
+        //cDrop?.GenerateDrops();
         
 
     }

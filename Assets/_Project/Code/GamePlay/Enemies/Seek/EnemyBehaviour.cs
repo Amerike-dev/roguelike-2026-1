@@ -6,7 +6,8 @@ public class EnemyBehaviour : MonoBehaviour
     [Header("Resources")]
     private StateMachine stateMachine;
     public Seek _seekMovement;
-    public Death _Death;
+    public UI_G _uiG;
+    public Death _death;
     public CoinDrop _drops;
 
     [Header("Stats")]
@@ -41,8 +42,8 @@ public class EnemyBehaviour : MonoBehaviour
     public void Initialized()
     {
         _seekMovement = new Seek(enemy, target, maxVelocity);
-        _Death = new Death(enemyGO, health);
-        _drops = new CoinDrop(enemyGO);
+        //_drops = new CoinDrop(enemyGO);
+        _death= new Death(enemyGO);
     }
     void Start()
     {
@@ -68,7 +69,7 @@ public class EnemyBehaviour : MonoBehaviour
     }
     public void Drops()
     {
-        _drops?.GenerateDrops();
+        _death?.GenerateDrops();
     }
     public void EnterWander()
     {
