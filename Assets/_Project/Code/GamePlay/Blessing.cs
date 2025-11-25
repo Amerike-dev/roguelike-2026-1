@@ -1,9 +1,14 @@
 using System;
 using UnityEngine;
 
-public enum TypeBlessing {  }
-public class Blessing : MonoBehaviour
+public class Blessing
 {
-    public TypeBlessing typeBlessing;
-    public string name;
+    public string _name;
+    public string _description;
+
+    public Blessing(string name, string description)
+    {
+        _name = name;
+        _description = description;
+    }
 }

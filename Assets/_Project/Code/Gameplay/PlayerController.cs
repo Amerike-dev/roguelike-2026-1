@@ -15,6 +15,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private List<Weapons> weaponList = new List<Weapons>();
     [SerializeField] private int initialWeapon = 0;
     private Animator animator;
+
+    public bool enterPress = false;
     
     void Start()
     {
