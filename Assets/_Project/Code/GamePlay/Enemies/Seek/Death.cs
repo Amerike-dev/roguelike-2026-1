@@ -7,9 +7,9 @@ public class Death
 
     public int minDrops = 2;
     public int maxDrops = 20;
-    public GameObject dropPoint;
+    public Transform dropPoint;
 
-    public Death(GameObject dropPoint)
+    public Death(Transform dropPoint)
     {
         this.dropPoint = dropPoint;
     }
@@ -28,7 +28,7 @@ public class Death
                 Random.Range(-0.5f, 0.5f),
                 0f
             );
-            drop.transform.position = dropPoint.transform.position + offset;
+            drop.transform.position = dropPoint.position + offset;
         }
     }
 

@@ -43,11 +43,11 @@ public class EnemyBehaviour : MonoBehaviour
     {
         _seekMovement = new Seek(enemy, target, maxVelocity);
         //_drops = new CoinDrop(enemyGO);
-        _death= new Death(enemyGO);
+        _death= new Death(enemy);
     }
     void Start()
     {
-        enemyGO = this.gameObject;
+        //enemyGO = this.gameObject;
         enemy = GetComponent<Transform>();
         _spriteRenderer = GetComponent<SpriteRenderer>();
         Initialized();
