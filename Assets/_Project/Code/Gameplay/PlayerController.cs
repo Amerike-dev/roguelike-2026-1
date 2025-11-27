@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using System.Collections;
 
 
 public class PlayerController : MonoBehaviour
@@ -15,7 +16,12 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private List<Weapons> weaponList = new List<Weapons>();
     [SerializeField] private int initialWeapon = 0;
     private Animator animator;
-    
+
+    [Header("Death")]
+    public UI_G ui_d;
+    public float health = 10;
+    public int coin = 0;
+
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -29,7 +35,7 @@ public class PlayerController : MonoBehaviour
         rb.gravityScale = 0;
         rb.constraints = RigidbodyConstraints2D.FreezeRotation;
 
-        gameObject.AddComponent<CapsuleCollider2D>();
+        //gameObject.AddComponent<CapsuleCollider2D>();
 
         player = new Player(rb, dashSpeed: dashSpeed);   
 
@@ -117,6 +123,23 @@ public class PlayerController : MonoBehaviour
             animator.SetBool(AnimationParameters.PlayerPar.walkSide, false);
         }
     }
+    public void AddCoin(int value)
+    {
+        coin += value;
+    }
+    public void TakeDamage(float damage)
+    {
+        health -= damage;
+        if (health <= 0)
+        {
+            Die();
+        }
+    }
+    public void Die()
+    {
+        ui_d.DeathUI();
+    }
+
 }
 
 public static class AnimationParameters
