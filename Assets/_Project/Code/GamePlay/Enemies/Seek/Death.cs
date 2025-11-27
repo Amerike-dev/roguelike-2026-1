@@ -3,6 +3,10 @@ using System.Collections;
 
 public class Death
 {
+    private void OnDeath()
+    {
+        int amount = 10;
+    }
     public Poolmanager poolManager;
 
     public int minDrops = 2;

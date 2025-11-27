@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class CoinDrop
+public class CoinDrop:MonoBehaviour
 {
     public Poolmanager poolManager;
 

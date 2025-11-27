@@ -5,6 +5,7 @@ using System.Collections;
 
 public class PlayerController : MonoBehaviour
 {
+
     private Player player;
     private Rigidbody2D rb;
     [SerializeField] private Sprite capsuleSprite;
@@ -18,9 +19,9 @@ public class PlayerController : MonoBehaviour
     private Animator animator;
 
     [Header("Death")]
+    public UI_G ui_d;
     public float health = 10;
     public int coin = 0;
-    public CanvasGroup Fade;
 
     void Start()
     {
@@ -132,24 +133,14 @@ public class PlayerController : MonoBehaviour
         health -= damage;
         if (health <= 0)
         {
-            //Die();
+            Die();
         }
     }
-    /*public void Die()
+    public void Die()
     {
-        StartCoroutine(FadeToBlack());
+        ui_d.DeathUI();
     }
-    IEnumerator FadeToBlack()
-    {
-        float t = 0;
-        while (t < 1f)
-        {
-            darkVision.alpha = t;
-            t += Time.deltaTime;
-            yield return null;
-        }
-        darkVision.alpha = 1f;
-    }*/
+
 }
 
 public static class AnimationParameters

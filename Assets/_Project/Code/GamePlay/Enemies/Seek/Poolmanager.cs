@@ -3,13 +3,17 @@ using System.Collections.Generic;
 
 public class Poolmanager : MonoBehaviour
 {
-    public static Poolmanager instance { get; private set; }
+    public static Poolmanager Instance { get; private set; }
     public GameObject prefab;
     public int poolSize = 50;
 
     private List<GameObject> pool = new List<GameObject>();
 
     void Awake()
+    {
+        Instance = this;
+    }
+    public void CreatPool()
     {
         for (int i = 0; i < poolSize; i++)
         {
@@ -27,7 +31,7 @@ public class Poolmanager : MonoBehaviour
         }
 
         GameObject newObj = Instantiate(prefab);
-        newObj.SetActive(false);
+        newObj.SetActive(true);
         pool.Add(newObj);
         return newObj;
     }
