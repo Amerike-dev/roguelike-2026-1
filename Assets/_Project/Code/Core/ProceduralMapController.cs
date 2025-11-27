@@ -2,10 +2,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 using System.Linq;
+using System;
 
 
 public class ProceduralMapController : MonoBehaviour
 {
+
+    public enum Orientation { North, South, East }
+
     public Transform playerTransform;
 
     public string filePath;
@@ -24,7 +28,7 @@ public class ProceduralMapController : MonoBehaviour
     public bool shopAppeared = false;
     public float normalRate = 0.5f;
     public float shopRate = 0.5f;
-    
+
     private void Awake()
     {
         _reader = new JsonReader();
@@ -33,12 +37,12 @@ public class ProceduralMapController : MonoBehaviour
 
     void Start()
     {
-        totalRooms = Random.Range(6, 9);
+        totalRooms = UnityEngine.Random.Range(6, 9);
 
         GenerateMapSequence(dungeonData.dungeons.ToList());
 
         Debug.Log("Sequence: [" + string.Join(", ", sequence.Select(m => m.type)) + "]");
-        
+
         GameObject grid = new GameObject();
         grid.name = "Grid";
 
@@ -80,32 +84,39 @@ public class ProceduralMapController : MonoBehaviour
 
         //Map Generation
         Vector3Int origin = Vector3Int.zero;
+        List<Vector3Int> origins = new List<Vector3Int>();
+        List<int> mapsOrientations = new List<int>();
 
         foreach (MapData mapData in sequence)
         {
-            if(mapData.type == "normal")
+            int mapOrientation = UnityEngine.Random.Range(0, 1);
+            //origin = GetOrientation(mapOrientation, new Vector3Int(mapData.size[0], mapData.size[1], 0), origin);
+
+            if (mapData.type == "normal")
             {
                 MapData normal = dungeonData.dungeons[0];
-
+                origin = GetOrientation(mapOrientation, new Vector3Int(normal.size[0], normal.size[1], 0), origin);
                 GenerateMap(normal, origin, tilemap, gridComponent);
             }
-            else if(mapData.type == "shop")
+            else if (mapData.type == "shop")
             {
+                //Bug. Se aleja del origen
                 MapData shop = dungeonData.dungeons[1];
-
+                origin = GetOrientation(mapOrientation, new Vector3Int(shop.size[0], shop.size[1], 0), origin);
                 GenerateMap(shop, origin, tilemap, gridComponent);
             }
-            else if(mapData.type == "boss")
+            else if (mapData.type == "boss")
             {
+                //Bug. Se aleja del origen
                 MapData boss = dungeonData.dungeons[2];
-                Debug.Log(origin);
+                origin = GetOrientation(mapOrientation, new Vector3Int(boss.size[0], boss.size[1], 0), origin);
                 GenerateMap(boss, origin, tilemap, gridComponent);
             }
             else
             {
                 Debug.Log("no tengo mapa");
             }
-            origin = new Vector3Int(origin.x + mapData.size[0], (origin.y + mapData.size[1])/2, 0);
+            //origin = new Vector3Int(origin.x + mapData.size[0], (origin.y + mapData.size[1]) / 2, 0);
         }
 
     }
@@ -147,18 +158,18 @@ public class ProceduralMapController : MonoBehaviour
         }
 
     }
-    
+
     private List<MapData> GenerateMapSequence(List<MapData> allMaps)
     {
         sequence.Clear();
         shopAppeared = false;
-        
+
         MapData firstNormal = allMaps.Find(m => m.type == "normal");
         sequence.Add(firstNormal);
-        
+
         for (int i = 1; i < totalRooms - 1; i++)
         {
-            float rate = Random.value;
+            float rate = UnityEngine.Random.value;
             MapData mapToAdd = null;
 
             if (!shopAppeared && rate < shopRate)
@@ -173,14 +184,14 @@ public class ProceduralMapController : MonoBehaviour
 
             sequence.Add(mapToAdd);
         }
-        
+
         if (!shopAppeared)
         {
-            int randomIndex = Random.Range(1, totalRooms - 1);
+            int randomIndex = UnityEngine.Random.Range(1, totalRooms - 1);
             sequence[randomIndex] = allMaps.Find(m => m.type == "shop");
             shopAppeared = true;
         }
-        
+
         MapData boss = allMaps.Find(m => m.type == "boss");
         sequence.Add(boss);
 
@@ -189,9 +200,9 @@ public class ProceduralMapController : MonoBehaviour
 
 
     // agregar Vector3Int origin que se va a asignar al map.
-    public void GenerateMap(MapData mapData,Vector3Int origin ,  Tilemap tilemap, Grid gridComponent)
+    public void GenerateMap(MapData mapData, Vector3Int origin, Tilemap tilemap, Grid gridComponent)
     {
-        Map map = new Map(new Vector2Int (origin.x, origin.y) , new Vector2Int(mapData.size[0], mapData.size[1]), tilemap);
+        Map map = new Map(new Vector2Int(origin.x, origin.y), new Vector2Int(mapData.size[0], mapData.size[1]), tilemap);
         List<Vector3Int> coordinates = map.GenerateCoordinates();
         map.Render(tiles[0], coordinates);
 
@@ -213,6 +224,32 @@ public class ProceduralMapController : MonoBehaviour
 
         }
     }
+
+
+    private Vector3Int GetOrientation(int orientationFinal, Vector3Int size, Vector3Int oldOrigin)
+    {
+        Vector3Int newOrigin = Vector3Int.zero;
+
+        switch (orientationFinal)
+        {
+            case 0:
+
+                newOrigin = new Vector3Int(oldOrigin.x + size.x / 2, oldOrigin.y + size.y, 0);
+                break;
+
+            case 2:
+
+                newOrigin = new Vector3Int(oldOrigin.x + size.x / 2, oldOrigin.y - size.y, 0);
+                break;
+
+            case 1:
+
+                newOrigin = new Vector3Int(oldOrigin.x + size.x, oldOrigin.y + size.y / 2, 0);
+                break;
+        }
+
+        return newOrigin;
+    }
+
 }
-    
-    
+
