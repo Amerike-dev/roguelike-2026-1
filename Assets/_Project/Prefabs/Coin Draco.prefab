@@ -202,4 +202,4 @@ MonoBehaviour:
   _playerPos: {fileID: 0}
   coin: {fileID: 0}
   maxVelocity: 5
-  viewRadius: 2
+  viewRadius: 5

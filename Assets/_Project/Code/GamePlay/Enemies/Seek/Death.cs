@@ -3,37 +3,29 @@ using System.Collections;
 
 public class Death
 {
-    private void OnDeath()
+    public Transform enemyT;
+    public float dispersion = 1.5f;
+    public bool dropSP;
+    public Death(Transform enemyT, float dispersion)
     {
-        int amount = 10;
+        this.enemyT = enemyT;
+        this.dispersion = dispersion;
     }
-    public Poolmanager poolManager;
-
-    public int minDrops = 2;
-    public int maxDrops = 20;
-    public Transform dropPoint;
-
-    public Death(Transform dropPoint)
+    public void OnDeath()
     {
-        this.dropPoint = dropPoint;
-    }
-    public void GenerateDrops()
-    {
-        Debug.Log("Haa");
-        int amount = Random.Range(minDrops, maxDrops + 1);
-
-        for (int i = 0; i < amount; i++)
+        if (!dropSP)
         {
-            GameObject drop = poolManager.GetFromPool();
-            drop.SetActive(true);
-
-            Vector3 offset = new Vector3(
-                Random.Range(-0.5f, 0.5f),
-                Random.Range(-0.5f, 0.5f),
-                0f
-            );
-            drop.transform.position = dropPoint.position + offset;
+            DropGen();
         }
     }
-
+    public void DropGen()
+    { 
+        dropSP = true;
+        int amount = Random.Range(2, 21);
+        for (int i = 0; i < amount; i++)
+        {
+            GameObject obj = Poolmanager.Instance.GetFromPool();
+            obj.transform.position = enemyT.position + (Vector3)Random.insideUnitCircle * dispersion;
+        }
+    }
 }

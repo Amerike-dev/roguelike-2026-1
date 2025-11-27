@@ -8,7 +8,6 @@ public class EnemyBehaviour : MonoBehaviour
     public Seek _seekMovement;
     public UI_G _uiG;
     public Death _death;
-    public CoinDrop _drops;
 
     [Header("Stats")]
     public float health = 10;
@@ -24,6 +23,8 @@ public class EnemyBehaviour : MonoBehaviour
 
     [Header("Properties Death")]
     public GameObject enemyGO;
+    public PolygonCollider2D enemyCol;
+    public float dropRange = 1.5f;
     private SpriteRenderer _spriteRenderer;
 
     [Header("Properties Wander")]
@@ -42,12 +43,12 @@ public class EnemyBehaviour : MonoBehaviour
     public void Initialized()
     {
         _seekMovement = new Seek(enemy, target, maxVelocity);
-        //_drops = new CoinDrop(enemyGO);
-        _death= new Death(enemy);
+        _death= new Death(enemy, dropRange);
     }
     void Start()
     {
-        //enemyGO = this.gameObject;
+        enemyGO = this.gameObject;
+        enemyCol = GetComponent<PolygonCollider2D>();
         enemy = GetComponent<Transform>();
         _spriteRenderer = GetComponent<SpriteRenderer>();
         Initialized();
@@ -69,7 +70,7 @@ public class EnemyBehaviour : MonoBehaviour
     }
     public void Drops()
     {
-        _death?.GenerateDrops();
+        _death?.OnDeath();
     }
     public void EnterWander()
     {
@@ -113,6 +114,7 @@ public class EnemyBehaviour : MonoBehaviour
     }
     IEnumerator FadeSprite()
     {
+        enemyCol.enabled = false;
         float time = 0f;
         Color c = _spriteRenderer.color;
 
