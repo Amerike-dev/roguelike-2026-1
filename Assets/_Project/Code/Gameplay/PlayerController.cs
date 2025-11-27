@@ -5,8 +5,7 @@ using System.Collections;
 
 public class PlayerController : MonoBehaviour
 {
-
-    private Player player;
+    public Player player;
     private Rigidbody2D rb;
     [SerializeField] private Sprite capsuleSprite;
     [SerializeField] private float humidity;
