@@ -1,9 +1,9 @@
 using UnityEngine;
 
-public class ChangeSceneButton : MonoBehaviour
+public class ChangeSceneButton : SceneManager
 {
-    public void ChangeScene(string sceneName)
+    public override void LoadScene(string sceneName)
     {
-        SceneManager.Instance.LoadScene(sceneName);
+        base.LoadScene(sceneName);
     }
 }
