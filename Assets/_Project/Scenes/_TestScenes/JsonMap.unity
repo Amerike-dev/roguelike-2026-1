@@ -227,7 +227,7 @@ Transform:
   m_GameObject: {fileID: 283661075}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.17788674, z: -0, w: 0.984051}
-  m_LocalPosition: {x: -0.08524811, y: 1.3400016, z: 0}
+  m_LocalPosition: {x: -1.76, y: 7.37, z: -0.63}
   m_LocalScale: {x: 0.052649908, y: 0.052649908, z: 0.052649908}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -250,6 +250,9 @@ MonoBehaviour:
   dashSpeed: 20
   weaponList: []
   initialWeapon: 0
+  ui_d: {fileID: 0}
+  health: 10
+  coin: 0
 --- !u!1 &556566533
 GameObject:
   m_ObjectHideFlags: 0
@@ -396,6 +399,11 @@ MonoBehaviour:
   - {fileID: 5053323330844279476, guid: 2b268b685b336114ca4551a60a40a919, type: 3}
   - {fileID: 5053323330844279476, guid: 2b268b685b336114ca4551a60a40a919, type: 3}
   - {fileID: 5053323330844279476, guid: 2b268b685b336114ca4551a60a40a919, type: 3}
+  sequence: []
+  totalRooms: 0
+  shopAppeared: 0
+  normalRate: 0.5
+  shopRate: 0.5
 --- !u!4 &1142318212
 Transform:
   m_ObjectHideFlags: 0
