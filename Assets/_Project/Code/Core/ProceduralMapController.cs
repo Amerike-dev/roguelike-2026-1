@@ -37,7 +37,7 @@ public class ProceduralMapController : MonoBehaviour
 
     void Start()
     {
-        totalRooms = UnityEngine.Random.Range(6, 9);
+        totalRooms = 30;
 
         GenerateMapSequence(dungeonData.dungeons.ToList());
 
@@ -84,15 +84,20 @@ public class ProceduralMapController : MonoBehaviour
 
         //Map Generation
         Vector3Int origin = Vector3Int.zero;
-        List<Vector3Int> origins = new List<Vector3Int>();
-        List<int> mapsOrientations = new List<int>();
+        Vector3Int lastMapSize = Vector3Int.zero;
 
         foreach (MapData mapData in sequence)
         {
-            int mapOrientation = UnityEngine.Random.Range(0, 1);
+            int mapOrientation = UnityEngine.Random.Range(0, 3);
             //origin = GetOrientation(mapOrientation, new Vector3Int(mapData.size[0], mapData.size[1], 0), origin);
+            
+            origin = GetOrientation(mapOrientation, lastMapSize, origin);
+            
+            GenerateMap(mapData, origin, tilemap, gridComponent);
+            
+            lastMapSize = new Vector3Int(mapData.size[0], mapData.size[1], 0);
 
-            if (mapData.type == "normal")
+            /*if (mapData.type == "normal")
             {
                 MapData normal = dungeonData.dungeons[0];
                 origin = GetOrientation(mapOrientation, new Vector3Int(normal.size[0], normal.size[1], 0), origin);
@@ -115,7 +120,7 @@ public class ProceduralMapController : MonoBehaviour
             else
             {
                 Debug.Log("no tengo mapa");
-            }
+            }*/
             //origin = new Vector3Int(origin.x + mapData.size[0], (origin.y + mapData.size[1]) / 2, 0);
         }
 
@@ -162,39 +167,40 @@ public class ProceduralMapController : MonoBehaviour
     private List<MapData> GenerateMapSequence(List<MapData> allMaps)
     {
         sequence.Clear();
-        shopAppeared = false;
-
-        MapData firstNormal = allMaps.Find(m => m.type == "normal");
-        sequence.Add(firstNormal);
-
-        for (int i = 1; i < totalRooms - 1; i++)
+        int targetShops = 7;
+        
+        MapData normalMap = allMaps.Find(m => m.type == "normal");
+        MapData shopMap = allMaps.Find(m => m.type == "shop");
+        MapData bossMap = allMaps.Find(m => m.type == "boss");
+        
+        for (int i = 0; i < totalRooms - 1; i++) 
         {
-            float rate = UnityEngine.Random.value;
-            MapData mapToAdd = null;
-
-            if (!shopAppeared && rate < shopRate)
-            {
-                mapToAdd = allMaps.Find(m => m.type == "shop");
-                shopAppeared = true;
-            }
-            else
-            {
-                mapToAdd = allMaps.Find(m => m.type == "normal");
-            }
-
-            sequence.Add(mapToAdd);
+            sequence.Add(normalMap);
+        }
+        
+        int availableLength = totalRooms - 2; 
+        List<int> availableIndices = new List<int>();
+        
+        for (int i = 1; i <= availableLength; i++)
+        {
+            availableIndices.Add(i);
         }
 
-        if (!shopAppeared)
+        for (int j = 0; j < targetShops; j++)
         {
-            int randomIndex = UnityEngine.Random.Range(1, totalRooms - 1);
-            sequence[randomIndex] = allMaps.Find(m => m.type == "shop");
-            shopAppeared = true;
+            if (availableIndices.Count == 0) break;
+            
+            int listIndex = UnityEngine.Random.Range(0, availableIndices.Count);
+            int roomIndexToReplace = availableIndices[listIndex]; 
+            
+            sequence[roomIndexToReplace] = shopMap;
+
+            availableIndices.RemoveAt(listIndex); 
+            
+            availableIndices.Remove(roomIndexToReplace - 1);
+            availableIndices.Remove(roomIndexToReplace + 1);
         }
-
-        MapData boss = allMaps.Find(m => m.type == "boss");
-        sequence.Add(boss);
-
+        sequence.Add(bossMap);
         return sequence;
     }
 
@@ -226,30 +232,34 @@ public class ProceduralMapController : MonoBehaviour
     }
 
 
-    private Vector3Int GetOrientation(int orientationFinal, Vector3Int size, Vector3Int oldOrigin)
+    private Vector3Int GetOrientation(int orientationFinal, Vector3Int sizeOfPreviousMap, Vector3Int oldOrigin) //int orientationFinal, Vector3Int size, Vector3Int oldOrigin
     {
         Vector3Int newOrigin = Vector3Int.zero;
+        
+        int mapWidth = sizeOfPreviousMap.x;
+        int halfMapHeight = (int)(sizeOfPreviousMap.y / 2.0f);
 
         switch (orientationFinal)
         {
             case 0:
 
-                newOrigin = new Vector3Int(oldOrigin.x + size.x / 2, oldOrigin.y + size.y, 0);
+                //newOrigin = new Vector3Int(oldOrigin.x + size.x / 2, oldOrigin.y + size.y, 0);
+                newOrigin = new Vector3Int(oldOrigin.x + mapWidth, oldOrigin.y + halfMapHeight, 0);
+                break;
+            
+            case 1:
+
+                //newOrigin = new Vector3Int(oldOrigin.x + size.x, oldOrigin.y + size.y / 2, 0);
+                newOrigin = new Vector3Int(oldOrigin.x + mapWidth, oldOrigin.y, 0);
                 break;
 
             case 2:
 
-                newOrigin = new Vector3Int(oldOrigin.x + size.x / 2, oldOrigin.y - size.y, 0);
-                break;
-
-            case 1:
-
-                newOrigin = new Vector3Int(oldOrigin.x + size.x, oldOrigin.y + size.y / 2, 0);
+                //newOrigin = new Vector3Int(oldOrigin.x + size.x / 2, oldOrigin.y - size.y, 0);
+                newOrigin = new Vector3Int(oldOrigin.x + mapWidth, oldOrigin.y - halfMapHeight, 0);
                 break;
         }
-
         return newOrigin;
     }
-
 }
 
