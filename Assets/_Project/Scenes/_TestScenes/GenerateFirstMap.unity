@@ -568,6 +568,9 @@ MonoBehaviour:
   dashSpeed: 20
   weaponList: []
   initialWeapon: 0
+  ui_d: {fileID: 0}
+  health: 10
+  coin: 0
 --- !u!95 &742732553
 Animator:
   serializedVersion: 7
@@ -1221,6 +1224,37 @@ MonoBehaviour:
   - {fileID: 252909623}
   - {fileID: 1254294482}
   - {fileID: 585825388}
+  blessScriptables:
+  - {fileID: 11400000, guid: 39c43665233ce164f9edd1495c4b6462, type: 2}
+  - {fileID: 11400000, guid: cec3a8ef6f851664d9ffea20c8fabb6d, type: 2}
+  - {fileID: 11400000, guid: d50f2ed2fa838094f85d1cf10a2e8b1a, type: 2}
+  - {fileID: 11400000, guid: 805ecb2cf1ec8dc40906a1dd4687e66e, type: 2}
+  - {fileID: 11400000, guid: f581e0ced5546b74cbf8396f4257ef66, type: 2}
+  - {fileID: 11400000, guid: abdc7c7ab7e9d5a4da9d3ece9c39d244, type: 2}
+  - {fileID: 11400000, guid: f73ab79d7583f424f93221aed3e24d95, type: 2}
+  - {fileID: 11400000, guid: 3fd484f010b734840b9a7467102fb58b, type: 2}
+  - {fileID: 11400000, guid: 2729d250d09c9ae42a1e637d0ea4bbee, type: 2}
+  - {fileID: 11400000, guid: 97739ecb8b727cd42bd4a088a70c9ea0, type: 2}
+  - {fileID: 11400000, guid: b50574d6da1352747b6472d2f53f2da3, type: 2}
+  - {fileID: 11400000, guid: aceeccb37f9174e4a928f0c8221cd24a, type: 2}
+  - {fileID: 11400000, guid: 1991210f372038e42bb8953802c5ad60, type: 2}
+  - {fileID: 11400000, guid: da28b29400485424e839685fd7f7fa2d, type: 2}
+  - {fileID: 11400000, guid: 46ca95793ffa95e4386a27ab5dd92930, type: 2}
+  - {fileID: 11400000, guid: 524a1ff6c9df7714e96e669f7d1f4893, type: 2}
+  - {fileID: 11400000, guid: 42f0790a29d20254ca0e749d555c5e7c, type: 2}
+  - {fileID: 11400000, guid: f0c34e36b8ce0c746ae3e5e59ba6d31c, type: 2}
+  - {fileID: 11400000, guid: 0c7e0568b01a1d845a77c0ebf9285875, type: 2}
+  - {fileID: 11400000, guid: bc7962e300adeac4db72b324d3766d3b, type: 2}
+  - {fileID: 11400000, guid: 4e1695eeb35999244be211c1f15f27bc, type: 2}
+  - {fileID: 11400000, guid: 6eff1fcc1ef40e246a41f41f298dd826, type: 2}
+  - {fileID: 11400000, guid: 69604c3b7a5e0284b9dd3a89ddc45655, type: 2}
+  - {fileID: 11400000, guid: 9940e6c06f3810b40b73814e2de3e6fa, type: 2}
+  - {fileID: 11400000, guid: 82abfd3336cc0514d933357de47ea800, type: 2}
+  - {fileID: 11400000, guid: 4512a266e7c10ab419e59a0c0336900a, type: 2}
+  - {fileID: 11400000, guid: 87bd70b5dbc982c43ae83bf832f95d05, type: 2}
+  - {fileID: 11400000, guid: 6c1e989254fdd66439231ba4a7d5f21d, type: 2}
+  - {fileID: 11400000, guid: 57bd5e996f78e04439f3436fabc927f9, type: 2}
+  - {fileID: 11400000, guid: d9701a81ce2b63140879eb012b64e3a5, type: 2}
 --- !u!1 &1456695424
 GameObject:
   m_ObjectHideFlags: 0

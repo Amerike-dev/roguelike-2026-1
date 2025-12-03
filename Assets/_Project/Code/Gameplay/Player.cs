@@ -124,6 +124,9 @@ public class Player
     {
         switch (blessing._type)
         {
+            default:
+                //todos los tipos no implementados
+                break;
             case TypeBlessing.Humidity:
                 this.humidity += blessing._value;
                 break;
