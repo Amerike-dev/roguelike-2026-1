@@ -21,6 +21,8 @@ public class ProceduralMapController : MonoBehaviour
     public List<Sprite> enemiesSprites;
 
     public List<GameObject> enemiesPrefabs;
+    
+    public GameObject blessingPrefab;
 
     public List<MapData> sequence = new List<MapData>();
 
@@ -89,46 +91,16 @@ public class ProceduralMapController : MonoBehaviour
         foreach (MapData mapData in sequence)
         {
             int mapOrientation = UnityEngine.Random.Range(0, 3);
-            //origin = GetOrientation(mapOrientation, new Vector3Int(mapData.size[0], mapData.size[1], 0), origin);
-            
             origin = GetOrientation(mapOrientation, lastMapSize, origin);
-            
             GenerateMap(mapData, origin, tilemap, gridComponent);
+            if (mapData.type == "shop" && blessingPrefab != null) PlaceBlessingPrefab(blessingPrefab, origin, mapData, gridComponent); 
             
             lastMapSize = new Vector3Int(mapData.size[0], mapData.size[1], 0);
-
-            /*if (mapData.type == "normal")
-            {
-                MapData normal = dungeonData.dungeons[0];
-                origin = GetOrientation(mapOrientation, new Vector3Int(normal.size[0], normal.size[1], 0), origin);
-                GenerateMap(normal, origin, tilemap, gridComponent);
-            }
-            else if (mapData.type == "shop")
-            {
-                //Bug. Se aleja del origen
-                MapData shop = dungeonData.dungeons[1];
-                origin = GetOrientation(mapOrientation, new Vector3Int(shop.size[0], shop.size[1], 0), origin);
-                GenerateMap(shop, origin, tilemap, gridComponent);
-            }
-            else if (mapData.type == "boss")
-            {
-                //Bug. Se aleja del origen
-                MapData boss = dungeonData.dungeons[2];
-                origin = GetOrientation(mapOrientation, new Vector3Int(boss.size[0], boss.size[1], 0), origin);
-                GenerateMap(boss, origin, tilemap, gridComponent);
-            }
-            else
-            {
-                Debug.Log("no tengo mapa");
-            }*/
-            //origin = new Vector3Int(origin.x + mapData.size[0], (origin.y + mapData.size[1]) / 2, 0);
         }
-
     }
 
     void PlaceNewTiles(LocationData location, Vector3Int coordinates, Tile tile, Tilemap tilemap)
     {
-
         switch (location.type)
         {
             case 0:
@@ -232,7 +204,7 @@ public class ProceduralMapController : MonoBehaviour
     }
 
 
-    private Vector3Int GetOrientation(int orientationFinal, Vector3Int sizeOfPreviousMap, Vector3Int oldOrigin) //int orientationFinal, Vector3Int size, Vector3Int oldOrigin
+    private Vector3Int GetOrientation(int orientationFinal, Vector3Int sizeOfPreviousMap, Vector3Int oldOrigin)
     {
         Vector3Int newOrigin = Vector3Int.zero;
         
@@ -242,24 +214,35 @@ public class ProceduralMapController : MonoBehaviour
         switch (orientationFinal)
         {
             case 0:
-
-                //newOrigin = new Vector3Int(oldOrigin.x + size.x / 2, oldOrigin.y + size.y, 0);
                 newOrigin = new Vector3Int(oldOrigin.x + mapWidth, oldOrigin.y + halfMapHeight, 0);
                 break;
             
             case 1:
-
-                //newOrigin = new Vector3Int(oldOrigin.x + size.x, oldOrigin.y + size.y / 2, 0);
                 newOrigin = new Vector3Int(oldOrigin.x + mapWidth, oldOrigin.y, 0);
                 break;
 
             case 2:
-
-                //newOrigin = new Vector3Int(oldOrigin.x + size.x / 2, oldOrigin.y - size.y, 0);
                 newOrigin = new Vector3Int(oldOrigin.x + mapWidth, oldOrigin.y - halfMapHeight, 0);
                 break;
         }
         return newOrigin;
+    }
+    
+    private void PlaceBlessingPrefab(GameObject prefab, Vector3Int mapOrigin, MapData mapData, Grid gridComponent)
+    {
+        if (prefab == null) return;
+
+        float centerX = mapOrigin.x + (mapData.size[0] / 2.0f);
+        float centerY = mapOrigin.y + (mapData.size[1] / 2.0f); 
+        
+        Vector3 cellCenter = new Vector3(centerX, centerY, 0);
+        
+        Vector3 worldPosition = gridComponent.CellToWorld(Vector3Int.FloorToInt(cellCenter));
+        
+        worldPosition += gridComponent.cellSize * 0.5f; 
+        
+        GameObject instance = Instantiate(prefab, worldPosition, Quaternion.identity);
+        instance.name = "Blessing_Shop";
     }
 }
 

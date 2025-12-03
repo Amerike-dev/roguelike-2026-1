@@ -1816,6 +1816,7 @@ MonoBehaviour:
   - {fileID: 5053323330844279476, guid: 2b268b685b336114ca4551a60a40a919, type: 3}
   - {fileID: 5053323330844279476, guid: 2b268b685b336114ca4551a60a40a919, type: 3}
   - {fileID: 5053323330844279476, guid: 2b268b685b336114ca4551a60a40a919, type: 3}
+  blessingPrefab: {fileID: 679889162961946902, guid: fc34b2d4889fe244d9ee4e78cc908e6c, type: 3}
   sequence: []
   totalRooms: 0
   shopAppeared: 0
