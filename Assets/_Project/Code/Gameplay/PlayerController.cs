@@ -16,6 +16,11 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private List<Weapons> weaponList = new List<Weapons>();
     [SerializeField] private int initialWeapon = 0;
     private Animator animator;
+    
+    [SerializeField] private LayerMask enemyLayer;
+    [SerializeField] private float attackDuration = 0.35f;
+    private float lastHorizontalInput = 0f;
+    private float lastVerticalInput = -1f;
 
     [Header("Death")]
     public UI_G ui_d;
@@ -52,8 +57,13 @@ public class PlayerController : MonoBehaviour
 
         player.DashTimer(Time.deltaTime);
 
-        if (Input.GetButtonDown("Jump"))
-            player.Dash(horizontalInput, verticalInput);
+        if (Input.GetButtonDown("Jump")) player.Dash(horizontalInput, verticalInput);
+        
+        if (horizontalInput != 0 || verticalInput != 0)
+        {
+            lastHorizontalInput = horizontalInput;
+            lastVerticalInput = verticalInput;
+        }
 
         HandleAnimation(horizontalInput, verticalInput);
         player.PlayerMovement(horizontalInput, verticalInput); 
@@ -68,9 +78,34 @@ public class PlayerController : MonoBehaviour
         
         if (Input.GetButtonDown("Fire1"))
         {
-            Debug.Log("Atacando con el arma " + player.currentWeapon.Name);
-            combatManager.Attack(player.currentWeapon);
+            StopAllCoroutines(); 
+            StartCoroutine(PerformAttack());
         }
+    }
+    
+    private IEnumerator PerformAttack()
+    {
+        int attackCode = 0;
+        
+        if (Mathf.Abs(lastVerticalInput) > Mathf.Abs(lastHorizontalInput))
+        {
+            if (lastVerticalInput > 0)
+                attackCode = 2;
+            else
+                attackCode = 3;
+        }
+        else
+        {
+            if (lastHorizontalInput != 0)
+                attackCode = 1;
+            else
+                attackCode = 3;
+        }
+        
+        animator.SetInteger(AnimationParameters.PlayerPar.attackIndex, attackCode);
+        combatManager.Attack(player.currentWeapon, attackCode);
+        yield return new WaitForSeconds(attackDuration); 
+        animator.SetInteger(AnimationParameters.PlayerPar.attackIndex, AnimationParameters.PlayerPar.attackNeutral);
     }
 
     private void InitializeWeapon()
@@ -87,6 +122,7 @@ public class PlayerController : MonoBehaviour
         Weapons weaponSelected = weaponList[index];
 
         player.currentWeapon = new Weapon(weaponSelected);
+        player.currentWeapon.Setup(transform, enemyLayer);
     }
 
     public void HandleAnimation(float horizontalInput, float verticalInput)
@@ -149,5 +185,7 @@ public static class AnimationParameters
         public const string walkUp ="moveUp";
         public const string walkDown ="moveDown";
         public const string walkSide ="moveSide";
+        public const string attackIndex = "AttackIndex";
+        public const int attackNeutral = 0;
     }
 }

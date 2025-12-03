@@ -103,6 +103,7 @@ GameObject:
   - component: {fileID: 3945503391413773329}
   - component: {fileID: 5125505786136929444}
   - component: {fileID: 1350243638481199665}
+  - component: {fileID: 8151716140283694509}
   m_Layer: 0
   m_Name: EnemyWander
   m_TagString: Untagged
@@ -292,3 +293,16 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &8151716140283694509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5053323330844279476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d4d2fcf43420004b98b426ba94dabd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
+  maxHealth: 1

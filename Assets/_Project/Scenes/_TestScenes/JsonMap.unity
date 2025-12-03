@@ -460,8 +460,12 @@ MonoBehaviour:
   capsuleSprite: {fileID: 0}
   humidity: 0
   dashSpeed: 20
-  weaponList: []
+  weaponList:
+  - {fileID: 11400000, guid: 277b532d7840b1e4793056754e5c0337, type: 2}
   initialWeapon: 0
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 1
   ui_d: {fileID: 0}
   health: 10
   coin: 0
