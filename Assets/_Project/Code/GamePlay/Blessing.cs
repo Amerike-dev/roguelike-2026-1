@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-public enum TypeBlessing { Humidity, Speed }
+public enum TypeBlessing { Humidity, Speed, DashSpeed, DashDuration, MaxHealth, DamageResistance, Miscellaneous, Damage }
 public class Blessing
 {
     public string _name;
